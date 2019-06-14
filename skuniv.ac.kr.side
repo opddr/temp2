@@ -1,0 +1,417 @@
+{
+  "id": "e62d758b-8e1f-476a-acd2-58f55db6c5ee",
+  "version": "2.0",
+  "name": "skuniv.ac.kr",
+  "url": "http://skuniv.ac.kr",
+  "tests": [{
+    "id": "e5a4df86-8a12-40a8-9c8c-b265d276076d",
+    "name": "메인",
+    "commands": [{
+      "id": "c2812f76-416a-481e-9805-7093ea58809e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "604dd016-9bc0-401a-93cb-50085cf13a45",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-link",
+      "targets": [
+        ["id=login-link", "id"],
+        ["linkText=로그인", "linkText"],
+        ["css=#login-link", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@id='login-link']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//section/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "672bae06-032e-46d4-a919-c0bae605fb0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=user_id", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de1f34c0-a2da-4eaa-a24f-bad830a22753",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=user_id", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "2986bcc3-47ef-43a7-b786-94a4ca00accf",
+      "comment": "",
+      "command": "type",
+      "target": "id=upw",
+      "targets": [
+        ["id=upw", "id"],
+        ["name=password", "name"],
+        ["css=#upw", "css:finder"],
+        ["xpath=//input[@id='upw']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "1239263d-f6a3-4d1e-b0ca-98ff3320387a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0793bda2-9959-424f-9a3c-b531d9a5a204",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b403c850-69ee-43c6-971f-f7eaa6fa6434",
+    "name": "신포탈",
+    "commands": [{
+      "id": "22fac855-3f41-42a4-a487-c1a22d1625c3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f64d59ff-f5ef-4b45-8fc4-2a70509a81e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=서경포탈 ",
+      "targets": [
+        ["css=#header_menu_sku_portal_0 > .wrapper", "css:finder"],
+        ["xpath=//a[@id='header_menu_sku_portal_0']/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[9]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'서경포탈')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4128",
+      "windowTimeout": 2000
+    }, {
+      "id": "420c7f07-7fa9-448d-85fe-394484b4457e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9a5fd8c-5187-4551-b7d8-cfb41f0cbd9f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4128}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a240149f-6cab-46a7-a53c-520c1ec6f8c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=신규 포탈 바로가기",
+      "targets": [
+        ["linkText=신규 포탈 바로가기", "linkText"],
+        ["css=.new", "css:finder"],
+        ["xpath=//a[contains(text(),'신규 포탈 바로가기')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://sportal.skuniv.ac.kr/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'신규 포탈 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win639",
+      "windowTimeout": 2000
+    }, {
+      "id": "da83a45d-8ec0-4ede-b696-fa9d1714b94a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win639}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "363a33e1-7343-429f-85c3-579a7ccaa498",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-id input",
+      "targets": [
+        ["css=.input-id input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0fac160-96cd-4d43-a81e-4c21301fdb09",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-id input",
+      "targets": [
+        ["css=.input-id input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "22222222"
+    }, {
+      "id": "f2511c10-22d5-4af0-9d2a-c14e733841a5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.v-btn--block > .v-btn__content",
+      "targets": [
+        ["css=.v-btn--block > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div[3]/div[2]/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0c839a7-3d59-4099-9984-2f014a9c1a26",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-pw input",
+      "targets": [
+        ["css=.input-pw input", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e9cbdf1c-110e-4cb6-87a2-b19474f85808",
+      "comment": "",
+      "command": "click",
+      "target": "css=.v-btn--block > .v-btn__content",
+      "targets": [
+        ["css=.v-btn--block > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div[3]/div[2]/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab6b5d18-4e32-4c14-948c-30747602860f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.v-btn--block > .v-btn__content",
+      "targets": [
+        ["css=.v-btn--block > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='login']/div/main/div/div/div/div/div/div[3]/div[2]/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a3df479-c6f5-48dc-9d3b-2a055942f62b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "551ce3e6-c198-4e9f-b14a-9fef3f45623d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4128}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "844b648c-29cd-4957-b7d3-dc990be7ec35",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93a867ec-71e8-46f8-a6cf-19660fc26458",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c109ed05-69d6-4e02-ac4d-f97a9db9cabf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c1988ef-8e85-4cff-bff7-d67d744ed733",
+    "name": "구포탈",
+    "commands": [{
+      "id": "457ce39b-4d7f-45ed-9a16-e88014949688",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "984900d0-b8a0-4c7b-b3a3-4882027b6606",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e352b8f-ac44-4b83-ae6b-11b5680357f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=서경포탈 ",
+      "targets": [
+        ["css=#header_menu_sku_portal_0 > .wrapper", "css:finder"],
+        ["xpath=//a[@id='header_menu_sku_portal_0']/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[9]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'서경포탈')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3776",
+      "windowTimeout": 2000
+    }, {
+      "id": "9a31ae12-e7bc-4b29-b76b-fe17d6769437",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ac997f4-46f5-4a17-81e6-d9eb3bf71cce",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3776}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c951167-f97f-42d6-a300-55f1ffc11974",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=이전 포탈 바로가기",
+      "targets": [
+        ["linkText=이전 포탈 바로가기", "linkText"],
+        ["css=.old", "css:finder"],
+        ["xpath=//a[contains(text(),'이전 포탈 바로가기')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://portal.skuniv.ac.kr/index.jsp')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'이전 포탈 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8637",
+      "windowTimeout": 2000
+    }, {
+      "id": "cd966009-25e9-4e35-98fb-cc3e3c0ad5e4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8637}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6adcc609-65e6-4ef4-9ced-ff7ca7ba9cb4",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=tr:nth-child(1) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ab896cdd-b2cc-4967-9459-5f32b8e4a24a",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_password",
+      "targets": [
+        ["name=_58_password", "name"],
+        ["css=tr:nth-child(2) > td > .text01", "css:finder"],
+        ["xpath=//input[@name='_58_password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6774a8a1-18a5-45a0-85f9-5ed91fa17ced",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginImg",
+      "targets": [
+        ["id=loginImg", "id"],
+        ["css=#loginImg", "css:finder"],
+        ["xpath=//img[@id='loginImg']", "xpath:attributes"],
+        ["xpath=//td[2]/table/tbody/tr/td[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "484c31c8-3a2f-47a9-ba39-a6f0d195af70",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0359cf4-a94c-44c4-a9ce-78e779d0d8fd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3776}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e5e6b74-8ff1-4f76-9be2-a80e93c55c9b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4213f74d-bf28-48fd-9216-47ee950c3915",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea7618ec-3606-49ce-b316-9ee1a18d5826",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3a5bdd98-d6f0-419a-adc7-8d8672b04736",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e5a4df86-8a12-40a8-9c8c-b265d276076d"]
+  }],
+  "urls": ["http://skuniv.ac.kr/"],
+  "plugins": []
+}

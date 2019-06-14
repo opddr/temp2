@@ -1,0 +1,618 @@
+{
+  "id": "f0fbde41-9d59-4d36-b1b3-9a41b0d45e5f",
+  "version": "2.0",
+  "name": "www.kw.ac.kr/",
+  "url": "http://www.kw.ac.kr",
+  "tests": [{
+    "id": "a44733ec-a024-4471-b538-3b089484eb6b",
+    "name": "main",
+    "commands": [{
+      "id": "aafe093a-3835-492d-b20c-87616fdb3edb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kw.ac.kr/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d70dc1ef-d2ce-4ee0-baaa-c79853a0f2f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ef35a0-46e4-4a92-bfbc-bc93941f07ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "974d3f2d-c7f4-4ad9-a1ee-dcc59dd42936",
+      "comment": "",
+      "command": "click",
+      "target": "name=member_no",
+      "targets": [
+        ["name=member_no", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='member_no']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e9a4f6-d0a3-477f-a401-0e828cb7d221",
+      "comment": "",
+      "command": "type",
+      "target": "name=member_no",
+      "targets": [
+        ["name=member_no", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='member_no']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e387bb79-50d6-4a85-870f-93dbc9c6bd76",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab245c22-cb5c-4d7d-81aa-75a05486c7cc",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bbb0adb6-97f6-4395-9d89-5ee0c4e8686a",
+      "comment": "",
+      "command": "click",
+      "target": "name=image",
+      "targets": [
+        ["name=image", "name"],
+        ["css=td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='image']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6560dfa0-8c34-4792-9277-89bcff76d406",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e84d5abc-1b39-427c-9f18-8ce1a7075267",
+    "name": "KW출첵",
+    "commands": [{
+      "id": "7d368a8d-b610-4eb4-8920-8501153d7f61",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kw.ac.kr/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc1ffad5-906a-44a8-b5cb-59b6e38f6930",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "268a1260-9c0b-4d16-8def-bb428c4895e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=KW출첵",
+      "targets": [
+        ["linkText=KW출첵", "linkText"],
+        ["css=.fr > ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'KW출첵')]", "xpath:link"],
+        ["xpath=//header[@id='header-util']/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://info.kw.ac.kr/webnote/attend/']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'KW출첵')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3107",
+      "windowTimeout": 2000
+    }, {
+      "id": "5552083e-7e2c-4c52-bd0a-2871f16a548f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d1ad778-d3df-4762-9892-c4fac4b40cb2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3107}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f93259b3-c676-4be0-9253-13ff14173c30",
+      "comment": "",
+      "command": "click",
+      "target": "name=member_no",
+      "targets": [
+        ["name=member_no", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='member_no']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0092af9c-b0eb-40a0-ba14-b33baf7ff87b",
+      "comment": "",
+      "command": "type",
+      "target": "name=member_no",
+      "targets": [
+        ["name=member_no", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='member_no']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e254c80a-928c-417d-a5d5-53197734ac38",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e41f5af-a866-49ea-8d5c-5eda62d5f540",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "12c13de3-d4f6-4357-956c-4fd262ab1016",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td:nth-child(1) > input",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6b01782-7f37-401e-a3ce-9181ad76533c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a922009-7b21-44eb-81d7-671a7f07eb73",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cff1045c-dfb4-4bd1-8c96-90bfdb1253f9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "115b97b4-80e4-4d46-a7c8-3f12372067c3",
+    "name": "웹메일",
+    "commands": [{
+      "id": "f1984353-6be4-46d6-b8df-de72592651a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kw.ac.kr/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b17cbd2-024d-4426-87a0-1327ae9b2b59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67de0f27-2764-445a-b7e4-7e37383edd6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=WEB-MAIL",
+      "targets": [
+        ["linkText=WEB-MAIL", "linkText"],
+        ["css=.fr > ul > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'WEB-MAIL')]", "xpath:link"],
+        ["xpath=//header[@id='header-util']/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://wmail.kw.ac.kr']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'WEB-MAIL')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7398",
+      "windowTimeout": 2000
+    }, {
+      "id": "c255c805-dbb0-49cf-9b3b-49bca6f3508a",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "472437d1-8397-45f8-9d20-aeaa5a274a9a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7398}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c81fb1ce-e550-48f4-8429-b402c10293d8",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fd87d86-3d12-43c1-97e2-4ef4abdbf74e",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "939c5442-273d-4e99-b276-0253425aac04",
+      "comment": "",
+      "command": "click",
+      "target": "id=userpass",
+      "targets": [
+        ["id=userpass", "id"],
+        ["name=userpass", "name"],
+        ["css=#userpass", "css:finder"],
+        ["xpath=//input[@id='userpass']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "336c43cd-73c4-4705-9ce2-d7bd166d037b",
+      "comment": "",
+      "command": "type",
+      "target": "id=userpass",
+      "targets": [
+        ["id=userpass", "id"],
+        ["name=userpass", "name"],
+        ["css=#userpass", "css:finder"],
+        ["xpath=//input[@id='userpass']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "857ec50a-4991-4373-93e4-082b28e93d04",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td > a > img",
+      "targets": [
+        ["css=tr:nth-child(2) > td > a > img", "css:finder"],
+        ["xpath=//img[@onclick='javascript:login();']", "xpath:attributes"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "167a8a87-7b28-4cdf-8df6-8fcdab1ae689",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0b4a219-bee0-48b1-9db1-4b23d4484567",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0595f359-6534-4a1b-91c2-3c2a447f3aba",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "567d9769-1d9a-4a27-9ca2-cdb6abad59bc",
+    "name": "IPP 포털",
+    "commands": [{
+      "id": "2c1cfa3e-1df5-45a3-bf3e-8ebe86ee4b0f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kw.ac.kr/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82cfb4ca-098a-4333-aae4-884d206ed658",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=IPP포털시스템",
+      "targets": [
+        ["linkText=IPP포털시스템", "linkText"],
+        ["css=.lnks .lnk03", "css:finder"],
+        ["xpath=//a[contains(text(),'IPP포털시스템')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/section[4]/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://ipp.kw.ac.kr']", "xpath:href"],
+        ["xpath=//section[4]/div/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'IPP포털시스템')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1242",
+      "windowTimeout": 2000
+    }, {
+      "id": "a1fa45ff-c8f1-4028-bd8b-1680e7c6f4c1",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e64d3ae-5f17-4b87-a30f-9e4941d40667",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1242}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea5b097b-f6f6-443c-9c5d-aa8629deaa3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=LOGIN_ID",
+      "targets": [
+        ["id=LOGIN_ID", "id"],
+        ["name=LOGIN_ID", "name"],
+        ["css=#LOGIN_ID", "css:finder"],
+        ["xpath=//input[@id='LOGIN_ID']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d0d6fa-9ed6-4f35-9e00-53dbcf4ff10b",
+      "comment": "",
+      "command": "type",
+      "target": "id=LOGIN_ID",
+      "targets": [
+        ["id=LOGIN_ID", "id"],
+        ["name=LOGIN_ID", "name"],
+        ["css=#LOGIN_ID", "css:finder"],
+        ["xpath=//input[@id='LOGIN_ID']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "0a9d76db-a4c6-4f6b-853a-55ac754f3406",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_PWD",
+      "targets": [
+        ["id=USER_PWD", "id"],
+        ["name=USER_PWD", "name"],
+        ["css=#USER_PWD", "css:finder"],
+        ["xpath=//input[@id='USER_PWD']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "328ba3cd-9e9e-4375-9c87-f0354eb412a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_PWD",
+      "targets": [
+        ["id=USER_PWD", "id"],
+        ["name=USER_PWD", "name"],
+        ["css=#USER_PWD", "css:finder"],
+        ["xpath=//input[@id='USER_PWD']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "8205d9af-5772-44a5-8674-a2947409ab21",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1) > a",
+      "targets": [
+        ["css=p:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:fnSession2();')]", "xpath:href"],
+        ["xpath=//fieldset/div/dl/dd/p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d353b13f-2023-4bdf-a8d8-ff63b819555a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9919e4cb-79f7-4342-816d-b0a400f0d66d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "31514a8c-4071-4fa0-993e-3e104631d36f",
+    "name": "IT-PLUS",
+    "commands": [{
+      "id": "19dde6b1-f07c-49fd-8bf0-fc31dfb9c1e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kw.ac.kr/ko/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09be3bcc-3222-4976-a65a-74756d40c682",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iTPLUS",
+      "targets": [
+        ["linkText=iTPLUS", "linkText"],
+        ["css=.fr > ul > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'iTPLUS')]", "xpath:link"],
+        ["xpath=//header[@id='header-util']/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://itplusinfo.kw.ac.kr/main.do']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iTPLUS')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4583",
+      "windowTimeout": 2000
+    }, {
+      "id": "b59408f1-22af-4d37-9a85-99af16735704",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa4cbdcc-6bf3-4d5d-8762-138c38f7275f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4583}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4894732-733b-4a04-8466-597f54720903",
+      "comment": "",
+      "command": "click",
+      "target": "id=USRID",
+      "targets": [
+        ["id=USRID", "id"],
+        ["name=USRID", "name"],
+        ["css=#USRID", "css:finder"],
+        ["xpath=//input[@id='USRID']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65b217f5-9088-404e-9337-c397589292ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=USRID",
+      "targets": [
+        ["id=USRID", "id"],
+        ["name=USRID", "name"],
+        ["css=#USRID", "css:finder"],
+        ["xpath=//input[@id='USRID']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "570cc261-56d2-4d81-9a61-d8d0a58e44e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=USRPWD",
+      "targets": [
+        ["id=USRPWD", "id"],
+        ["name=USRPWD", "name"],
+        ["css=#USRPWD", "css:finder"],
+        ["xpath=//input[@id='USRPWD']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "817b499b-75da-47b2-bc6f-900312247a45",
+      "comment": "",
+      "command": "type",
+      "target": "id=USRPWD",
+      "targets": [
+        ["id=USRPWD", "id"],
+        ["name=USRPWD", "name"],
+        ["css=#USRPWD", "css:finder"],
+        ["xpath=//input[@id='USRPWD']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4accb43f-7ac0-4b89-bf76-79ee4de44e86",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset a",
+      "targets": [
+        ["css=fieldset a", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:fnLogin();')]", "xpath:href"],
+        ["xpath=//fieldset/dl/dd/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4dc72ae-c60e-4101-802b-9be682646fde",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f6a058d-b750-4882-84ea-038ba0aa8f69",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e81ec381-aeed-461f-b157-36282507037a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f1b10a0d-6f74-42df-8ef3-cc526acafa0f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a44733ec-a024-4471-b538-3b089484eb6b"]
+  }],
+  "urls": ["http://www.kw.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,158 @@
+{
+  "id": "8b9e442d-9aed-4193-8f13-145c50acc37c",
+  "version": "2.0",
+  "name": "wgwangju.knou.ac.kr",
+  "url": "http://wgwangju.knou.ac.kr",
+  "tests": [{
+    "id": "942d08cc-8b1b-40ff-a58a-24571b45d031",
+    "name": "메인페이지",
+    "commands": [{
+      "id": "cad49401-64f4-4c5f-ad12-2da65224ac35",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50da4be2-59c5-40bd-af83-01eae1f8c773",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.top_util li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"popupLogin('https://wgwangju.knou.ac.kr','');return false;\"]", "xpath:attributes"],
+        ["xpath=//body[@id='main']/div[3]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#url')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win256",
+      "windowTimeout": 2000
+    }, {
+      "id": "471ccd08-44de-4537-9221-1221ac2b526b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e8afd75-42e7-4e19-949b-b5845dabd3d9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win256}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7140c98-1b51-477e-b2ec-d85eba852038",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "566fb8be-ecda-4c4e-bba5-5a943c3d57e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3213d735-fbf5-4b01-ae0c-795d95cbc1a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/span/input[2]", "xpath:idRelative"],
+        ["xpath=//span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51db60bf-29f5-4ee5-b236-3a1a4e4cf226",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/span/input[2]", "xpath:idRelative"],
+        ["xpath=//span/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4ae8c23b-0a65-42c8-8224-deafa3ef4d28",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb5f6144-f2df-4977-93c8-e85b1bba062a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9358ca1e-e664-427c-8d3e-7bf715888020",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc790a0a-a9bb-4492-9ae6-4671a75fe5ed",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f8143c3a-85c4-4948-b27e-e1dd83df0716",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["942d08cc-8b1b-40ff-a58a-24571b45d031"]
+  }],
+  "urls": ["https://wgwangju.knou.ac.kr/", "http://wgwangju.knou.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,155 @@
+{
+  "id": "c83882e9-2b4c-4862-9d63-dfa9ae714599",
+  "version": "2.0",
+  "name": "cufs.ac.kr",
+  "url": "http://cufs.ac.kr",
+  "tests": [{
+    "id": "406c9868-b8f5-460b-9d8d-d8d0659fc792",
+    "name": "메인",
+    "commands": [{
+      "id": "f3f651bc-085e-4c3d-a44d-50f05d2af0d9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39af8f44-fb3d-4de6-a7c2-0e451fdba4b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=li:nth-child(2) > .util", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/com/s_com_commlgin.jsp')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "420a2300-4466-4735-9c62-6e8d67396012",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "624d7e00-a4d7-4f14-978a-2b3168cffc03",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c1101444-988a-4553-a544-3f5cae2983b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset:nth-child(5)",
+      "targets": [
+        ["css=fieldset:nth-child(5)", "css:finder"],
+        ["xpath=//form[@id='loginfrm']/fieldset", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6620d1-f39d-491f-9d3e-5fabb05811ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input:nth-child(7)",
+      "targets": [
+        ["css=.input:nth-child(7)", "css:finder"],
+        ["xpath=//form[@id='loginfrm']/fieldset/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c6a5838-4d30-4fe2-80b1-4b9aa1a70d5d",
+      "comment": "",
+      "command": "runScript",
+      "target": "document.getElementById(\"password\").value=\"11111111\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26c4621f-10b1-4dfc-b04b-312304e2fc53",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.submit:nth-child(8)",
+      "targets": [
+        ["css=.submit:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset/input", "xpath:position"]
+      ],
+      "value": "53.199981689453125,50"
+    }, {
+      "id": "5c6c14c2-79c3-4620-910f-3614efb7d8e8",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.submit:nth-child(8)",
+      "targets": [
+        ["css=.submit:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset/input", "xpath:position"]
+      ],
+      "value": "53.199981689453125,50"
+    }, {
+      "id": "c477bb65-a4c8-4168-af30-78d324afb7c5",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.submit:nth-child(8)",
+      "targets": [
+        ["css=.submit:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset/input", "xpath:position"]
+      ],
+      "value": "53.199981689453125,50"
+    }, {
+      "id": "93754f09-2965-43d1-8197-95dea85225a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit:nth-child(8)",
+      "targets": [
+        ["css=.submit:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "999543a2-eece-4509-9fe4-7912c7fa32b3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "447f3e35-ff64-45bb-8b07-c6337565a05d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["406c9868-b8f5-460b-9d8d-d8d0659fc792"]
+  }],
+  "urls": ["http://cufs.ac.kr/"],
+  "plugins": []
+}

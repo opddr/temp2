@@ -1,0 +1,451 @@
+{
+  "id": "1458393d-b18a-4b01-888e-bb170bc37828",
+  "version": "2.0",
+  "name": "daegu.ac.kr",
+  "url": "http://daegu.ac.kr",
+  "tests": [{
+    "id": "dfaa5030-94c6-420d-957e-8843a0feb140",
+    "name": "login",
+    "commands": [{
+      "id": "530bff1a-69c7-42ed-b052-32c84afcd50d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92635a84-9964-4213-9a48-e707e35f5952",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "148a7851-45fa-47a3-96c7-977bdca667f6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "dece5924-2782-40dd-92d4-7dc3fabedd1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd272bc4-6c23-4384-9fa3-88dd21bb592c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=usr_id",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "cf78230f-9a5b-4df7-9395-c98e21b31af6",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=loginName", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9a0fa61-686e-46d4-99ce-d376a241951c",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=loginName", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "28a67064-77f3-4db1-b34a-fe80a3dace67",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr_pw",
+      "targets": [
+        ["id=usr_pw", "id"],
+        ["name=password", "name"],
+        ["css=#usr_pw", "css:finder"],
+        ["xpath=//input[@id='usr_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f47f7dfe-6fcc-488f-8e2b-5e8dd326ee96",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pw",
+      "targets": [
+        ["id=usr_pw", "id"],
+        ["name=password", "name"],
+        ["css=#usr_pw", "css:finder"],
+        ["xpath=//input[@id='usr_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "903f6129-5af7-46b6-92f1-1f8ec2a3d805",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login",
+      "targets": [
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "352197c0-77bd-4bc5-bc4d-f10cafd5b19a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "87edeadb-8551-4869-a80b-05361f3e47bb",
+    "name": "종합정보시스템",
+    "commands": [{
+      "id": "7bdb38fb-a585-4354-bc49-e352d682e90b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e33bbc35-b1aa-4ef4-bc58-15f4d0e695e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419c3ade-2450-45d6-9310-742cade72a56",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=학생",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "24642ff0-7433-421c-861a-bb27f4bcb0a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=학생",
+      "targets": [
+        ["linkText=학생", "linkText"],
+        ["css=.q1 li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'학생')])[9]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/div[5]/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://tigersstd.daegu.ac.kr/')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2693",
+      "windowTimeout": 2000
+    }, {
+      "id": "396200dd-1569-4794-9a0f-53f2994b808c",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e850be43-ef53-41fa-9a5e-60985212b8da",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2693}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab8f3f35-2535-4951-b331-2936108f5c47",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=usr_id",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "28135b0b-4584-443c-bc00-1c35560d40e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=loginName", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4b373d7-c3d7-417b-bb61-5ab210c72c54",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=loginName", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a08ceb5c-348b-470c-8def-c7dce9d566cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pw",
+      "targets": [
+        ["id=usr_pw", "id"],
+        ["name=password", "name"],
+        ["css=#usr_pw", "css:finder"],
+        ["xpath=//input[@id='usr_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "27bc3f57-b7eb-48bc-9d27-f5dc5f568278",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login",
+      "targets": [
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c90ba29-dd1f-42a0-8192-7331bc124162",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75f287ee-6340-4f5f-8cec-cb95721a6bf3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c541e77b-04fd-489c-a1ae-bc6b8d13e7c8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aa60553a-146f-4892-8c6c-bf68869637af",
+    "name": "포탈시스템",
+    "commands": [{
+      "id": "281cf55c-e0e4-47bd-bc54-cdbb21efaeab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3a5627-d4c6-4773-a136-9e4df8efd845",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cca0bcc4-965f-4592-8694-55599a1b26d1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.q2 li:nth-child(1) > a",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "aa8a601c-4def-4586-a9d5-0ded32c580aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.q2 li:nth-child(1) > a",
+      "targets": [
+        ["css=.q2 li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'학생')])[10]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/div[5]/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://portal.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div[5]/div/div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7483",
+      "windowTimeout": 2000
+    }, {
+      "id": "280fdeee-b754-43b4-a789-668a31ce251b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15d1c879-4f92-4be7-b929-c7ea0b74b72d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7483}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65d20d80-a4d3-4dac-aac3-c3a71458b7a4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=usr_id",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.fl_left > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.daegu.ac.kr/dgusso/ext/www/login_form.do?Return_Url=https://www.daegu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": "true"
+    }, {
+      "id": "f3fbdf62-6b1e-420a-9a7a-7f441061b05c",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=loginName", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5865e833-e32d-42a8-8829-4be43e7dc5c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pw",
+      "targets": [
+        ["id=usr_pw", "id"],
+        ["name=password", "name"],
+        ["css=#usr_pw", "css:finder"],
+        ["xpath=//input[@id='usr_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "9cb4296f-b47a-44a5-9584-12da0b4b4f9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login",
+      "targets": [
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='idLoginForm']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89cf908a-907c-4317-af0f-5678fce59af6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0df6ac37-b1ec-4c28-80c1-21f82d46bb02",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6caba0b-30a1-4386-997b-19cbc02f5298",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15b6dc3a-49c6-4187-9225-d8d0b13ae0b9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dfaa5030-94c6-420d-957e-8843a0feb140", "87edeadb-8551-4869-a80b-05361f3e47bb", "aa60553a-146f-4892-8c6c-bf68869637af"]
+  }],
+  "urls": ["http://daegu.ac.kr/"],
+  "plugins": []
+}

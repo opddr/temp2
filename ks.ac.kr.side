@@ -1,0 +1,212 @@
+{
+  "id": "712ce6e8-9db2-439c-9536-d8b8ad3ef0a6",
+  "version": "2.0",
+  "name": "ks.ac.kr",
+  "url": "http://ks.ac.kr",
+  "tests": [{
+    "id": "175b9270-c882-45ab-8871-c1d7bf4bbd29",
+    "name": "일반로그인",
+    "commands": [{
+      "id": "93d195fe-d73a-466c-a95c-89ce6ef60416",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e441152-e0a3-4016-b8b6-e3f5b67ce21e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login > span",
+      "targets": [
+        ["css=.login > span", "css:finder"],
+        ["xpath=//div[@id='global']/div/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7004bce9-5294-4411-a2e0-456120958e7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=user_id", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5909ce6-922c-49da-9e65-23f5831a26fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=user_id", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "85fc4f0e-1bd4-4e3a-b1a5-b1db0844dd17",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user_password", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ab969ef0-6148-4eb3-9f3b-32ca87b5557b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ca35bf0-2edb-47c6-b13f-0b5594a721d2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b6e8a1b-8d6d-4ec8-9189-52e5dd1cdfc0",
+    "name": "학생포탈로그인",
+    "commands": [{
+      "id": "aec22e98-956f-4825-a09b-992549e6d505",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbd2559c-37b6-4142-be75-d4c0a3a443fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login > span",
+      "targets": [
+        ["css=.login > span", "css:finder"],
+        ["xpath=//div[@id='global']/div/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "272bb447-2103-4dd5-88f9-90572c5753d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.first-row:nth-child(2) span",
+      "targets": [
+        ["css=.first-row:nth-child(2) span", "css:finder"],
+        ["xpath=//form[@id='ssoForm']/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//form/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'학생포탈 로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fef13b0b-c96a-4d87-98a0-3035ed8c5801",
+      "comment": "",
+      "command": "click",
+      "target": "id=tabImg1",
+      "targets": [
+        ["id=tabImg1", "id"],
+        ["css=#tabImg1", "css:finder"],
+        ["xpath=//img[@id='tabImg1']", "xpath:attributes"],
+        ["xpath=//ul[@id='loginTab']/li/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "615691ca-d2dd-427c-a8ef-f7aca66dd115",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//ul[@id='tabForm1']/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7f85e92-06dd-4e4b-9399-352d0c5af83c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//ul[@id='tabForm1']/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "8cd77a81-54d2-4ac9-84d4-a89f5374e0b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=pw", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//ul[@id='tabForm1']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d70da60f-2ac3-4888-90a1-21bca1a67550",
+      "comment": "",
+      "command": "click",
+      "target": "id=tabArea1Img",
+      "targets": [
+        ["id=tabArea1Img", "id"],
+        ["css=#tabArea1Img", "css:finder"],
+        ["xpath=//input[@id='tabArea1Img']", "xpath:attributes"],
+        ["xpath=//div[@id='btn1Area']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b143e04d-f8ea-473c-b4e8-72a517b6c640",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07926be2-669c-4e31-91b8-83be2b9c1632",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["175b9270-c882-45ab-8871-c1d7bf4bbd29", "6b6e8a1b-8d6d-4ec8-9189-52e5dd1cdfc0"]
+  }],
+  "urls": ["http://ks.ac.kr/"],
+  "plugins": []
+}

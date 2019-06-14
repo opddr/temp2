@@ -1,0 +1,545 @@
+{
+  "id": "a87b6323-c728-4ef1-b26b-744997375e93",
+  "version": "2.0",
+  "name": "www.silla.ac.kr",
+  "url": "http://www.silla.ac.kr",
+  "tests": [{
+    "id": "af2d06a2-59c8-412c-8b66-f4b20c322fd9",
+    "name": "main",
+    "commands": [{
+      "id": "b33f94a0-a4d5-413f-81d1-c52107e76bf7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5159bcc3-8465-42fd-b630-2ea402b7541a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0a89320-3a60-4b88-a1a1-79f45955b790",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gbtn-login > .txt",
+      "targets": [
+        ["css=#gbtn-login > .txt", "css:finder"],
+        ["xpath=//a[@id='gbtn-login']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf64f697-c680-4bde-ab7f-1260a756264c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "429470ea-85be-43f5-bfda-dc88e31aa51e",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "854d3e4b-5b43-48ca-9289-d3a9bfc7bce2",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3034c2d2-3e06-4099-a837-2ae6a710c425",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1d5fde4-c230-42d9-823c-114ecb661fbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3343c50f-9d66-4cfd-81ec-c831e0166033",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe65f27d-2993-4232-8e97-dfbe92d72053",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "599af142-be74-4ceb-9824-84bb4394f8c2",
+    "name": "도서관",
+    "commands": [{
+      "id": "f3d0bb4b-171b-46e7-b4c0-9e82d52d2676",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f169a14b-3ee9-4685-961f-1eaad9445eb7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bf469f3-26c5-4d65-b8b1-6ad3e8f3eaba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gbtn-login > .txt",
+      "targets": [
+        ["css=#gbtn-login > .txt", "css:finder"],
+        ["xpath=//a[@id='gbtn-login']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f025cf9f-6bb7-4dfa-8755-d3d015ce3625",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c486f8-e4f3-4f74-9adf-c3030864ac4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8445e029-fd57-4eb3-bb92-4a43b82426c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "55e4d77f-9fda-4ebb-b6ac-93a116377da5",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64201207-959c-4837-8bc2-88993882ddeb",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f36bed83-0e8d-44d0-9f73-4df19cf9416a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login > span",
+      "targets": [
+        ["css=.btn-login > span", "css:finder"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26afe091-b171-4c50-8057-434a30b99de2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d5a69c2b-71f9-4051-8873-f17b54bd9b6d",
+    "name": "신라넷",
+    "commands": [{
+      "id": "12886807-82a4-4c73-a48e-7d4be5ae27c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb4680d7-f241-4455-b7fe-c04bfce3582b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2f2814d-e814-4a8c-9e88-d260238401da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.li0:nth-child(3) .txt",
+      "targets": [
+        ["css=.li0:nth-child(3) .txt", "css:finder"],
+        ["xpath=//div[@id='mcont4']/div/div[2]/div/ul/li[3]/a/span[2]/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6224",
+      "windowTimeout": 2000
+    }, {
+      "id": "fb0c1e9e-f345-47ae-a48f-0c3457ded22c",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42b9360d-8010-410e-987f-034c74381483",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6224}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8c84dff-7bba-4b4a-9a08-a2f8516bab5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8945fa3-1454-4e26-9af5-d784c462feac",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_id",
+      "targets": [
+        ["id=login_mb_id", "id"],
+        ["name=mb_id", "name"],
+        ["css=#login_mb_id", "css:finder"],
+        ["xpath=//input[@id='login_mb_id']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "TESTTEST"
+    }, {
+      "id": "95e379b9-432a-465e-a152-fa8b72451a63",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94760f2a-9c86-4c00-a871-9b23cfcedc04",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_mb_passwd",
+      "targets": [
+        ["id=login_mb_passwd", "id"],
+        ["name=mb_passwd", "name"],
+        ["css=#login_mb_passwd", "css:finder"],
+        ["xpath=//input[@id='login_mb_passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "7adc64e6-3a15-4270-ac6e-9a65bd4fe944",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login > span",
+      "targets": [
+        ["css=.btn-login > span", "css:finder"],
+        ["xpath=//form[@id='frm_login']/div[2]/div[2]/div[2]/p[3]/button/span", "xpath:idRelative"],
+        ["xpath=//p[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "616a1d11-686f-4118-aa88-e7b60f03dd3a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1e59d13-bcd4-4e1b-91ce-75c2f1034d10",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d231361a-b2a6-4f3e-bed8-6ca64e30e64c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0e16343e-a05c-4452-a171-534eb310a75b",
+    "name": "교직원 포탈",
+    "commands": [{
+      "id": "d0041bf6-8991-402c-afde-46bbd2701170",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3e2960b-7763-46e6-be31-49972d2542f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "716b3f72-17ae-455e-873e-1e54d574a526",
+      "comment": "",
+      "command": "click",
+      "target": "css=.li0:nth-child(2) .txt",
+      "targets": [
+        ["css=.li0:nth-child(2) .txt", "css:finder"],
+        ["xpath=//div[@id='mcont4']/div/div[2]/div/ul/li[2]/a/span[2]/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7286",
+      "windowTimeout": 2000
+    }, {
+      "id": "a993e1a0-0541-49ca-8427-a35db47b6ce0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ce7d354-6089-4b2c-8e25-624cb8354b51",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7286}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "866bce81-0d62-4f54-82c7-b319f8570757",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.loginIcon", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//header[@id='sponge-header']/nav/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Account/LogOn')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac82c9a-4852-45d3-8073-9aed7051843b",
+      "comment": "",
+      "command": "click",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fd9f216-6fa1-4080-85e5-e00427fc7ccf",
+      "comment": "",
+      "command": "click",
+      "target": "id=myForm",
+      "targets": [
+        ["id=myForm", "id"],
+        ["css=#myForm", "css:finder"],
+        ["xpath=//form[@id='myForm']", "xpath:attributes"],
+        ["xpath=//div[@id='mainWrap']/div/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f63fcb27-f453-45e8-b6ca-db6aa09e5a0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "b2b60cdd-bd98-4e7f-ae7b-83ddedfc61bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=l_pass_confirm",
+      "targets": [
+        ["id=l_pass_confirm", "id"],
+        ["name=l_pass_confirm", "name"],
+        ["css=#l_pass_confirm", "css:finder"],
+        ["xpath=//input[@id='l_pass_confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13443bc8-d3bb-4d50-bc4d-a8a65ad8c708",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_pass_confirm",
+      "targets": [
+        ["id=l_pass_confirm", "id"],
+        ["name=l_pass_confirm", "name"],
+        ["css=#l_pass_confirm", "css:finder"],
+        ["xpath=//input[@id='l_pass_confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d37a0f51-19cd-41d9-a752-9c79dd52520e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sponge-xlg",
+      "targets": [
+        ["css=.btn-sponge-xlg", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac4e185b-6967-40c8-9529-ef1fa56dee28",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa65a211-0179-480a-8265-f8164645e5f3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "006223e2-bbff-4f5a-b3aa-08637198124f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b304c339-609f-407a-97a0-254474753483",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["af2d06a2-59c8-412c-8b66-f4b20c322fd9", "0e16343e-a05c-4452-a171-534eb310a75b", "599af142-be74-4ceb-9824-84bb4394f8c2", "d5a69c2b-71f9-4051-8873-f17b54bd9b6d"]
+  }],
+  "urls": ["http://silla.ac.kr/", "http://silla.ac.kr/ko/", "http://www.silla.ac.kr/ko/", "http://www.silla.ac.kr/"],
+  "plugins": []
+}

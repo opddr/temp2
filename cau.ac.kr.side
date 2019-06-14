@@ -1,0 +1,512 @@
+{
+  "id": "c2b18a80-c671-44ae-a5ae-4997537627a1",
+  "version": "2.0",
+  "name": "cau.ac.kr",
+  "url": "http://cau.ac.kr",
+  "tests": [{
+    "id": "7a36a844-7d98-4294-86a8-ebf5e69a9c98",
+    "name": "포탈로그인",
+    "commands": [{
+      "id": "d0191774-334b-412a-950f-9c5afa9beaa9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8961584e-4510-4bb5-a915-efeaafb37d2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=중앙대학교 포탈",
+      "targets": [
+        ["linkText=중앙대학교 포탈", "linkText"],
+        ["css=.list:nth-child(1) .slick-current:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'중앙대학교 포탈')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[4]/div/div[3]/div/div/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://mportal.cau.ac.kr/main.do')])[4]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ca577c-b88f-43fe-8877-8261836596f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nb-h-search > a:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[2]", "xpath:link"],
+        ["xpath=//div[@id='nbHeaderContext']/div[2]/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:fncLogin();')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a267f38e-e22d-4be6-850f-d330212ffa4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=userID", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f88bd2de-5c8d-4b41-b8ef-099af85828ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c38d048-8405-4561-a1a0-13935a52f751",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e34632ef-845c-4102-9773-fb775e8c9aa2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick='OnLogon();']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33690d92-d460-4394-911a-00b3a3a62920",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "11568181-9fb0-4296-bd1a-a70e4608b031",
+    "name": "전자출결(학생)",
+    "commands": [{
+      "id": "a0292213-2aec-4d8d-a8d9-93556c64a513",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b967f19-8afc-4c07-a11d-1ac65a34b513",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=전자출결",
+      "targets": [
+        ["linkText=전자출결", "linkText"],
+        ["css=.btn_func02", "css:finder"],
+        ["xpath=(//a[contains(text(),'전자출결')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#none')])[6]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9d95602-7794-4336-a130-864b29a984d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > a:nth-child(1) > span",
+      "targets": [
+        ["css=.btn > a:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'학생')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6630",
+      "windowTimeout": 2000
+    }, {
+      "id": "045bb35f-b9bf-4446-8572-44054f94c1e0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02beaf22-2418-4f69-bf89-f7fa392c8b36",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6630}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31990018-e8a7-467b-8df0-6ba54315b59b",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "468ce001-14be-410a-8910-8b78b3c95f48",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c0b7b916-1f5b-4044-8bb2-ed670def7afe",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "928a999e-e2fd-4792-bbd9-0a5d22744ebc",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ca10a834-b874-4d1a-9ca4-02a839b26eba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='sLogin']/div/form/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"JavaScript:LoginInfoSend('LoginInfo');\")]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d060f4-767a-4f06-90b5-90ddfc92c769",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce941035-5d4d-4af5-a2d0-5f84ec03ab37",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "700c4aff-6fce-48c3-a499-3c6eab0343f5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6e12d2dc-3679-4a13-ab05-fecd495e21b3",
+    "name": "전자출결(교수)",
+    "commands": [{
+      "id": "afc116ad-55d2-47a5-9a4d-021003de562f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03aeb056-e09c-454a-9679-8072a3ec92fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=전자출결",
+      "targets": [
+        ["linkText=전자출결", "linkText"],
+        ["css=.btn_func02", "css:finder"],
+        ["xpath=(//a[contains(text(),'전자출결')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#none')])[6]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f59d9c-c6ec-4fc2-89ca-b0c905567ab8",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > span",
+      "targets": [
+        ["css=a:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='contents']/div[2]/div/div[3]/div/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'교수')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2198",
+      "windowTimeout": 2000
+    }, {
+      "id": "88af78fa-e6f5-4484-b718-b2bb9f109819",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "740b43f6-2b29-487f-a577-0ca674f53c6b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2198}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e62cb8cc-c3e1-4782-a4ef-f28ab0ed2d07",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userID", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ba17f2-5324-4a23-995b-1bc07345f730",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userID", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e0cd10e1-5d68-44c8-9887-83e8777cf404",
+      "comment": "",
+      "command": "click",
+      "target": "id=userPwd",
+      "targets": [
+        ["id=userPwd", "id"],
+        ["name=password", "name"],
+        ["css=#userPwd", "css:finder"],
+        ["xpath=//input[@id='userPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5b28a8d-2cef-4db0-9a40-d627201a65c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPwd",
+      "targets": [
+        ["id=userPwd", "id"],
+        ["name=password", "name"],
+        ["css=#userPwd", "css:finder"],
+        ["xpath=//input[@id='userPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b34dd14e-e495-4115-9474-bf3feda5591e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad16a38-fe91-47ca-994e-cf52d183544d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e2e1ed1-23de-41fc-9de8-f9e08997d8a2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6852de62-c382-483b-8e6c-e5c6db390c29",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bd3735c1-8c6e-4364-ad90-a6c211ce9bda",
+    "name": "중앙인커뮤니티",
+    "commands": [{
+      "id": "9fa0d231-5282-4bf7-bec7-be99e6b664e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40b7eb10-cb66-4f5e-adac-631b0fdbf280",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=중앙인커뮤니티",
+      "targets": [
+        ["linkText=중앙인커뮤니티", "linkText"],
+        ["css=.mIcoBnr .unit:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'중앙인커뮤니티')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[4]/div/div[3]/div/div/div/div[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://cauin.cau.ac.kr/cauin/')])[2]", "xpath:href"],
+        ["xpath=//div[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c482ded2-76f5-40ef-823e-6c9a94682437",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=userID", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogon']/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92335ece-b2fd-4ec7-9d59-88d8468ed25c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=userID", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogon']/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "1741436e-0081-4c9f-978f-ba45e93127bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogon']/div/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f73b01-e2ed-4740-b222-8c5113bcebe2",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPwd",
+      "targets": [
+        ["id=txtPwd", "id"],
+        ["name=password", "name"],
+        ["css=#txtPwd", "css:finder"],
+        ["xpath=//input[@id='txtPwd']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogon']/div/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "1b20957f-a791-4f25-ad31-a3eb00b9a6e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginbtn",
+      "targets": [
+        ["css=.loginbtn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogon']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40bd4667-8941-475c-b7ed-aade9cbf4457",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4901520b-f27f-4829-b3ba-a0b8ab785e14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7a36a844-7d98-4294-86a8-ebf5e69a9c98"]
+  }],
+  "urls": ["https://www.cau.ac.kr/", "http://www.cau.ac.kr/", "http://cau.ac.kr/"],
+  "plugins": []
+}

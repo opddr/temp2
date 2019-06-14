@@ -1,0 +1,528 @@
+{
+  "id": "55005f61-c700-4fd9-8cf2-08f9a98ad685",
+  "version": "2.0",
+  "name": "yonsei.ac.kr/wj",
+  "url": "http://yonsei.ac.kr/wj",
+  "tests": [{
+    "id": "f597c9b2-4b15-4d94-b6c6-aa9d47b6a60b",
+    "name": "메인페이지",
+    "commands": [{
+      "id": "6974f03a-4e4e-4755-b947-af7a0a57f2a0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0898132-45b8-496b-861f-942080adf1b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=원주캠퍼스",
+      "targets": [
+        ["linkText=원주캠퍼스", "linkText"],
+        ["css=.selCampus a", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wj')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'원주캠퍼스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "203e82ee-709a-4dc7-bb6a-d99faf2a1855",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='utilmenu']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sc/login.jsp')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbdbc84-ab6a-4c67-ae2f-6812280184b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=loginId", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4615e351-212d-4481-b3e4-8790cc581af6",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=loginId", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "fa04432c-b5ad-40ff-9565-e1a6145c08a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4da3a74-7c4b-4153-8bec-2c677f46d4be",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "49dd1935-44a0-452b-9f3a-801c8965c106",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인(Login)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "313d7a56-ba8f-4512-96ad-f943de5a1442",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e61d9508-b719-4a36-b5a4-d559da8a4c4a",
+    "name": "학술정보원",
+    "commands": [{
+      "id": "273b568b-43fe-47b6-be75-765c3c511e0e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fff13f59-d076-4df1-8af9-f07e83f75940",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=원주캠퍼스",
+      "targets": [
+        ["linkText=원주캠퍼스", "linkText"],
+        ["css=.selCampus a", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wj')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'원주캠퍼스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "110a3284-9c93-4202-bd42-452928463ce9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gnb > li:nth-child(4) span > span",
+      "targets": [
+        ["css=.gnb > li:nth-child(4) span > span", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/ul/li[4]/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94c2b1f1-8f32-4b78-85bc-19cbbf9bd9d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=도서관/IT센터",
+      "targets": [
+        ["linkText=도서관/IT센터", "linkText"],
+        ["css=.\\32 dep_1112 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'도서관/IT센터')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/div/ul/li[4]/div/div/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wj/campus/facility1.jsp')])[2]", "xpath:href"],
+        ["xpath=//li[4]/div/div/ul/li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'도서관/IT센터')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c97becf-c1d3-4727-ba44-3b1f15721947",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=중앙도서관 바로가기",
+      "targets": [
+        ["linkText=중앙도서관 바로가기", "linkText"],
+        ["css=.home", "css:finder"],
+        ["xpath=//a[contains(text(),'중앙도서관 바로가기')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/ul/li/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://wlib.yonsei.ac.kr\n']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'중앙도서관 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3554",
+      "windowTimeout": 2000
+    }, {
+      "id": "62e079a4-70e7-4903-8910-bd9d0b81e803",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f602e07-8b43-4c5e-919f-55be4e72be9d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3554}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fb6c96c-bdad-46aa-b793-495fef9ff2aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn span",
+      "targets": [
+        ["css=.loginBtn span", "css:finder"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul[2]/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a93541-6af8-4920-b493-0be65f602a79",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e653ced-b0a2-41e4-8372-15e53c74eec2",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "603f95e1-d3d1-447d-bc0b-741243e7f624",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd3d90b5-e9e1-4bc0-bad3-ff796fba52ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "af1a95c7-547d-4bf5-a1d9-fcb01aff727a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn > input",
+      "targets": [
+        ["css=.loginBtn > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb835292-9e41-4957-ae02-4a85d83706e0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b668e77a-51db-4243-9d30-12211ee5b8e8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3e8295f-62b3-41a0-80a1-30d0af8d4572",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2e504640-d5ef-4e93-a48a-b162c0aecd1c",
+    "name": "산학협력단",
+    "commands": [{
+      "id": "bef764b8-11b3-4606-b011-f4363e8a29fd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06bf7873-70a7-48a3-a845-303b157ddee2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=원주캠퍼스",
+      "targets": [
+        ["linkText=원주캠퍼스", "linkText"],
+        ["css=.selCampus a", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wj')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'원주캠퍼스')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdf72078-06b8-4268-9565-dd2f6d570b18",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=연구·산학",
+      "targets": [
+        ["linkText=연구·산학", "linkText"],
+        ["css=.gnb > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wj/research/research.jsp')]", "xpath:href"],
+        ["xpath=//body/div/div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'연구·산학')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "feefb97f-2523-4a4e-a8db-7201a0e61e91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=연구소소개",
+      "targets": [
+        ["linkText=연구소소개", "linkText"],
+        ["css=.on li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'연구소소개')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/div/ul/li[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wj/research/lab.jsp')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'연구소소개')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdce740-ea78-4bbe-895b-af42ae31f135",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=연구처/산학협력단 홈페이지 바로가기",
+      "targets": [
+        ["linkText=연구처/산학협력단 홈페이지 바로가기", "linkText"],
+        ["css=.btn_comm", "css:finder"],
+        ["xpath=//a[contains(text(),'연구처/산학협력단 홈페이지 바로가기')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://wresearch.yonsei.ac.kr/']", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'연구처/산학협력단 홈페이지 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4128",
+      "windowTimeout": 2000
+    }, {
+      "id": "c8b9746e-67f2-4937-a356-b11a4311341c",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "171fd91e-355b-4d97-b404-95b94f121ab5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4128}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e8db790-b801-44c0-ba4d-8ad9a2cd5541",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//ul[@id='snb']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?mp=member&cmd=login')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11215548-84ad-48c7-bd49-c4977606e57a",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_ID",
+      "targets": [
+        ["id=USER_ID", "id"],
+        ["name=USER_ID", "name"],
+        ["css=#USER_ID", "css:finder"],
+        ["xpath=//input[@id='USER_ID']", "xpath:attributes"],
+        ["xpath=//form[@id='mylogin']/fieldset/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c7cfb0f-5f16-47c8-94aa-6f993fb1feac",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_ID",
+      "targets": [
+        ["id=USER_ID", "id"],
+        ["name=USER_ID", "name"],
+        ["css=#USER_ID", "css:finder"],
+        ["xpath=//input[@id='USER_ID']", "xpath:attributes"],
+        ["xpath=//form[@id='mylogin']/fieldset/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f96dfffb-2eb7-44cf-a5a3-f42abfc904f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=PASS",
+      "targets": [
+        ["id=PASS", "id"],
+        ["name=PASS", "name"],
+        ["css=#PASS", "css:finder"],
+        ["xpath=//input[@id='PASS']", "xpath:attributes"],
+        ["xpath=//form[@id='mylogin']/fieldset/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e43ab8c1-9cad-4437-951f-e32f1ebb11be",
+      "comment": "",
+      "command": "type",
+      "target": "id=PASS",
+      "targets": [
+        ["id=PASS", "id"],
+        ["name=PASS", "name"],
+        ["css=#PASS", "css:finder"],
+        ["xpath=//input[@id='PASS']", "xpath:attributes"],
+        ["xpath=//form[@id='mylogin']/fieldset/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "51d5198a-2c70-4c3f-90e0-006d8df6140f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ok > input",
+      "targets": [
+        ["css=.ok > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='mylogin']/fieldset/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b003a3d-e5ce-40e8-baab-5054c58f543b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f0b4baf-a598-438c-a67a-8de515d6fc50",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d31b2648-fa01-47bd-909d-2453fb321c90",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "87a18b84-41a7-4640-99f4-81b498c3d653",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2e504640-d5ef-4e93-a48a-b162c0aecd1c", "e61d9508-b719-4a36-b5a4-d559da8a4c4a","f597c9b2-4b15-4d94-b6c6-aa9d47b6a60b"]
+  }],
+  "urls": ["http://yonsei.ac.kr/wj", "http://yonsei.ac.kr/"],
+  "plugins": []
+}

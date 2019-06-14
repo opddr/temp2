@@ -1,0 +1,244 @@
+{
+  "id": "e25c6b3d-5148-4654-ae77-8d6b709cd070",
+  "version": "2.0",
+  "name": "www.bdu.ac.kr",
+  "url": "http://www.bdu.ac.kr",
+  "tests": [{
+    "id": "73b3f00f-fff9-4882-95e1-a05879990c5b",
+    "name": "그룹웨어",
+    "commands": [{
+      "id": "f4c701ec-6d98-49ab-b3ed-2a20d0a96b21",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5118fbf-2f3b-460d-a4b2-2e1a2e6e7bde",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ftop-link li:nth-child(2) span",
+      "targets": [
+        ["css=#ftop-link li:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='ftop-link']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div[2]/div/div[3]/div/div/div[2]/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'그룹웨어')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8831",
+      "windowTimeout": 2000
+    }, {
+      "id": "8ce0db94-bf42-4ea8-97c3-d6127e03451f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "825667f8-c788-4595-8728-1d6773983ae4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8831}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f8513cf-6b54-42d8-ba88-0a1ad99cbd54",
+      "comment": "",
+      "command": "click",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.inputbox:nth-child(1) > .input", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//div[@id='DOMINO_LOGIN']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de5d8c17-d3d9-42da-bc0b-4d20c03ee913",
+      "comment": "",
+      "command": "type",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.inputbox:nth-child(1) > .input", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//div[@id='DOMINO_LOGIN']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "06b397b9-a3e4-4eb6-8132-380e73b05c2d",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.inputbox:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='DOMINO_LOGIN']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cab1f3c-d3d4-461f-a175-9c0e7342b9b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.inputbox:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='DOMINO_LOGIN']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "769997c4-b5b6-4873-abd1-a29e39aff093",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//img[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='DOMINO_LOGIN']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39e09331-a192-4641-8d31-70150caccaf8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b12414d0-2dfa-4719-9fae-76b5bb673f37",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "059c7a2b-efcb-4698-83b7-e53bfec95ee0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "80b2c8df-5c45-4938-9492-f715a5db5c70",
+    "name": "총학생회",
+    "commands": [{
+      "id": "34f40955-60cc-4e00-a10e-ed006c1b4e57",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.bdu.ac.kr/council/Main.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5745ab5-8505-4498-9061-d9945b81f26a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//ul[@id='gnb_mem']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/council/Member/Member.do?mCode=MN0066&mode=login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6525cd-4d39-416e-8ccc-e5c90b0767eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=user_id", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "999e8ee6-fe4e-4c95-9c6f-65b58649ceeb",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=user_id", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a3a8ab65-8319-4a3b-8653-d9767bbab662",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbb70fcc-9b00-44b3-a5d1-5793ee85969b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "93e097fb-76a4-4204-97a2-90947758291b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-login",
+      "targets": [
+        ["css=.btn-login", "css:finder"],
+        ["xpath=//input[@value='LOGIN']", "xpath:attributes"],
+        ["xpath=//div[@id='member-box']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7975868-7d97-4cc0-b70d-a989f1eeefeb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e6953f7c-fe8f-4d49-a009-4f15a435d127",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["73b3f00f-fff9-4882-95e1-a05879990c5b"]
+  }],
+  "urls": ["http://www.bdu.ac.kr/"],
+  "plugins": []
+}

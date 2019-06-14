@@ -1,0 +1,506 @@
+{
+  "id": "b15c834d-2bb9-46d3-ad93-17e04588c1d1",
+  "version": "2.0",
+  "name": "pcu.ac.kr",
+  "url": "http://www.pcu.ac.kr",
+  "tests": [{
+    "id": "e7d5a608-8981-467e-a12e-85692b9500ca",
+    "name": "메인",
+    "commands": [{
+      "id": "88ddcaa1-d1f9-4c2a-b1c7-0e9a225d7930",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc255427-2a1e-4012-ace9-59031254ce71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=메인 웹사이트 바로가기",
+      "targets": [
+        ["linkText=메인 웹사이트 바로가기", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'메인 웹사이트 바로가기')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.pcu.ac.kr/www/index/']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'메인 웹사이트 바로가기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5de71df-bb4e-4d8c-a489-02572dee7004",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=login",
+      "targets": [
+        ["linkText=login", "linkText"],
+        ["css=.top > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/board/login-main.php?url=/www/index/index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e2e905-c576-4a91-99aa-6dade8be134c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#tab1 #id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/div/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec15ad04-a755-43a0-b908-36119e17f311",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#tab1 #id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/div/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "bc27aef3-b357-41b8-8f5e-36e554ecf352",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=pw", "name"],
+        ["css=#tab1 #pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/div/div/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e8954eed-465f-4f92-904b-b160db9619d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=log",
+      "targets": [
+        ["id=log", "id"],
+        ["css=#tab1 #log", "css:finder"],
+        ["xpath=//input[@id='log']", "xpath:attributes"],
+        ["xpath=//div[@id='tab1']/div/div/form/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "350fe403-efb4-4180-9872-7fe1b5ec4742",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "45ce5bdc-6822-499b-8f5b-dfe6243e3ae4",
+    "name": "통합정보시스템",
+    "commands": [{
+      "id": "f1cfc1fd-47c6-4d2c-8557-bee2e1d9b342",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b85ac03-de77-4975-b8b1-8a9dc4935a9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=메인 웹사이트 바로가기",
+      "targets": [
+        ["linkText=메인 웹사이트 바로가기", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'메인 웹사이트 바로가기')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.pcu.ac.kr/www/index/']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'메인 웹사이트 바로가기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "220506ce-ff3c-4777-ab18-b3e48ceb2ba3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=통합정보시스템",
+      "targets": [
+        ["linkText=통합정보시스템", "linkText"],
+        ["css=.quick li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'통합정보시스템')])[2]", "xpath:link"],
+        ["xpath=//a[@href='http://tis.pcu.ac.kr']", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4220",
+      "windowTimeout": 2000
+    }, {
+      "id": "5298869b-99e2-4557-b5b6-f2404b8d6b2b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d7ee4c6-b88f-4b88-b487-3c48ff6979d5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4220}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfe02ebc-8a80-4d65-9bad-00f03b67a4bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form_inner:nth-child(3) > .edit_outer:nth-child(4) .edit_input",
+      "targets": [
+        ["css=.form_inner:nth-child(3) > .edit_outer:nth-child(4) .edit_input", "css:finder"],
+        ["xpath=//div[@id='page_inner']/div/div[3]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a216e080-2536-44e4-beb6-d9b54dbdadef",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form_inner:nth-child(3) > .edit_outer:nth-child(4) .edit_input",
+      "targets": [
+        ["css=.form_inner:nth-child(3) > .edit_outer:nth-child(4) .edit_input", "css:finder"],
+        ["xpath=//div[@id='page_inner']/div/div[3]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f1d755ee-4a34-4e8a-890e-b97fc480df46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_inner:nth-child(1) tr > .cell_nowrap",
+      "targets": [
+        ["css=.button_inner:nth-child(1) tr > .cell_nowrap", "css:finder"],
+        ["xpath=//div[@id='page_inner']/div/div[3]/div[2]/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//div[2]/div/table/tbody/tr/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86140d01-c42c-42bd-9c98-41c1b447cdac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9325b41-ee6c-46ec-9150-a958d962436c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29fb630e-5970-47e2-a285-e7f43faf4693",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2f7dc4a4-527a-46d2-849c-d08e449c4e33",
+    "name": "도서관",
+    "commands": [{
+      "id": "6446bfce-b719-47b2-9ee0-450190187862",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5080075e-77df-4fb6-ae7d-a82f6df21a6d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=메인 웹사이트 바로가기",
+      "targets": [
+        ["linkText=메인 웹사이트 바로가기", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'메인 웹사이트 바로가기')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.pcu.ac.kr/www/index/']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'메인 웹사이트 바로가기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "062d7a7e-55a2-42bf-87fa-cc6e3052772b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=도서관",
+      "targets": [
+        ["linkText=도서관", "linkText"],
+        ["css=.quick li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'도서관')]", "xpath:link"],
+        ["xpath=//a[@href='http://library.pcu.ac.kr']", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'도서관')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7225",
+      "windowTimeout": 2000
+    }, {
+      "id": "6d3ae1e7-b44d-471e-af65-b94a370980bf",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b58f3894-070f-4913-bc16-1d1a4b35dfe3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7225}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13ac772d-9553-4497-9edb-f33eb49d028b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.loginIcon", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//ul[@id='infoBox']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Account/LogOn?proxyurl=http://library.pcu.ac.kr')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce0e3de9-b025-4fa3-bb66-c243f857b1ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b433d27b-5d03-4a18-bd8f-2475c0bcc1e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e83dc4b9-4512-49c2-8f9d-7baf1bd430fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_pass_confirm",
+      "targets": [
+        ["id=l_pass_confirm", "id"],
+        ["name=l_pass_confirm", "name"],
+        ["css=#l_pass_confirm", "css:finder"],
+        ["xpath=//input[@id='l_pass_confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "9b104866-0234-4160-b9e4-9e2e95f26737",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sponge-xlg",
+      "targets": [
+        ["css=.btn-sponge-xlg", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "666eed67-08ab-4ccc-9f97-6bf117e9cf25",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be439ee4-34ce-4ec3-8a78-e8f2af6e7767",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a217b421-d6c7-4842-be83-82e6ca4df0b6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "511d8b4a-68b1-4f84-8dcc-c85789bc621d",
+    "name": "LMS",
+    "commands": [{
+      "id": "b71701cf-90e8-4260-863f-abf9effc0f8f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32e4a2e-f9c3-4db0-a1dc-c779559f6c27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=메인 웹사이트 바로가기",
+      "targets": [
+        ["linkText=메인 웹사이트 바로가기", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'메인 웹사이트 바로가기')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.pcu.ac.kr/www/index/']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'메인 웹사이트 바로가기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f01040e-0e88-48ab-b374-980262e8d0aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LMS",
+      "targets": [
+        ["linkText=LMS", "linkText"],
+        ["css=.quick li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'LMS')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://course.pcu.ac.kr')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LMS')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9990",
+      "windowTimeout": 2000
+    }, {
+      "id": "e5e6e0ec-b63c-4117-86ab-f458f4e0f426",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccc367e3-22a6-4b84-aa82-413d4e3b51da",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9990}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c657909-ea73-43c7-bb04-4bca7d3bc2ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-username",
+      "targets": [
+        ["id=input-username", "id"],
+        ["name=username", "name"],
+        ["css=#input-username", "css:finder"],
+        ["xpath=//input[@id='input-username']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d89135c3-a2d6-4c10-b9e2-2206a7e2d522",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-username",
+      "targets": [
+        ["id=input-username", "id"],
+        ["name=username", "name"],
+        ["css=#input-username", "css:finder"],
+        ["xpath=//input[@id='input-username']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "24b3b764-623e-4a00-a6ad-46aef33a2320",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div[2]/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "a15b6018-127e-4f77-be1f-bbb858d1f07b",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginbutton",
+      "targets": [
+        ["name=loginbutton", "name"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@name='loginbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "583108e2-6946-496c-a805-ea9804671ab5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e067b80-467f-4841-aaaa-59e64ebd0dc1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1661eee4-08cf-4d95-914d-697f732c9e43",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80a78050-1cd5-4d03-8131-af1febcb9403",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e7d5a608-8981-467e-a12e-85692b9500ca", "511d8b4a-68b1-4f84-8dcc-c85789bc621d", "2f7dc4a4-527a-46d2-849c-d08e449c4e33", "45ce5bdc-6822-499b-8f5b-dfe6243e3ae4"]
+  }],
+  "urls": ["http://www.pcu.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,125 @@
+{
+  "id": "1027e90a-ce84-4650-a921-3b6bda435e41",
+  "version": "2.0",
+  "name": "www.hongik.ac.kr",
+  "url": "http://www.hongik.ac.kr",
+  "tests": [{
+    "id": "b6e722e5-224d-4c08-bd8a-c31815b9da1d",
+    "name": "통합로그인",
+    "commands": [{
+      "id": "dd14af5c-0974-44c2-aadb-fcceb8e88299",
+      "comment": "",
+      "command": "open",
+      "target": "/index.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b4b658d-c228-4c0e-b247-c10d5cff98b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5833b467-4fa0-4346-be64-18e9e632f7bf",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe998d7-8c68-4cab-928d-1db8b949d824",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.q2 .q1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick='goLoginPage();return false;']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a5e15df-59fe-40dd-baad-8e190cd82e7c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f9050f5-045d-4d02-bd98-0d9a673945b9",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_ID",
+      "targets": [
+        ["name=USER_ID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='USER_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "8bb09c41-4a0b-42a8-9ac9-5e52e607b146",
+      "comment": "",
+      "command": "click",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0d4192-325f-4145-a578-1f59361dba26",
+      "comment": "",
+      "command": "type",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "56a09e9d-22d1-4038-9333-44c7f996a4c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lbl",
+      "targets": [
+        ["css=.lbl", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92b76e91-c989-4858-87be-13a11da93daf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "02c85155-214c-4bfa-ac77-d303a9f5c934",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://www.hongik.ac.kr/"],
+  "plugins": []
+}

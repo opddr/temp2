@@ -1,0 +1,283 @@
+{
+  "id": "db102e17-8e92-482c-a941-568ddf542166",
+  "version": "2.0",
+  "name": "www.dcatholic.ac.kr",
+  "url": "http://www.dcatholic.ac.kr",
+  "tests": [{
+    "id": "bf3a930f-9439-492f-80a4-f72dce155e86",
+    "name": "로그인",
+    "commands": [{
+      "id": "f7c9afbd-7cc0-4fbf-adbe-7caea9b8c9fb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "127ef72f-6288-4e98-b8b1-b5a24f452086",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ba7ffa7-2ec5-4227-85ea-b723ca92fa2a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.top_btn > li:nth-child(2) img",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "a84e8c73-1220-4700-aa37-0e6612f884a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top_btn > li:nth-child(2) img",
+      "targets": [
+        ["css=.top_btn > li:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a65d111-7552-4264-8e2a-f1377f59d5d2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=login_id",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "13d51927-c5e4-46b8-beb1-1f29b14584b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//form[@id='theForm']/div/div[2]/ul/li/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c5b563a-ed4b-4ac9-8121-5cc7cbc8a720",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//form[@id='theForm']/div/div[2]/ul/li/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3729ea19-c654-4a4f-8fa1-4819f65f4570",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_pwd",
+      "targets": [
+        ["id=login_pwd", "id"],
+        ["css=#login_pwd", "css:finder"],
+        ["xpath=//input[@id='login_pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='theForm']/div/div[2]/ul/li[2]/span[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6b0e18ba-5557-409a-b319-843515d5556d",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb0c5f68-8424-4dca-a8c1-ea908826986f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_big",
+      "targets": [
+        ["css=.btn_big", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='theForm']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b690c4ba-a738-4c3e-b1a3-7cf42d52d99c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2806fb77-84bc-4d09-8088-c7c1fc09c11a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c27d65a0-40a2-4dd7-9a5f-4daf2fa9aea6",
+    "name": "중앙도서관",
+    "commands": [{
+      "id": "2559cfe7-9df9-4da2-b479-4bce9622c132",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "512a42cb-66cd-483e-b6c5-d88cf39967e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85e8dacc-2eb8-404b-a55b-1ff98a5b06c8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.m_cnt_tab_btn > li:nth-child(1) img",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "c72db13b-cb41-47e0-913b-ac55956387de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m_cnt_tab_btn > li:nth-child(1) img",
+      "targets": [
+        ["css=.m_cnt_tab_btn > li:nth-child(1) img", "css:finder"],
+        ["xpath=(//img[@alt='중앙도서관'])[2]", "xpath:img"],
+        ["xpath=//div[2]/div/div[2]/ul/li/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3021",
+      "windowTimeout": 2000
+    }, {
+      "id": "af332e8f-164c-4117-94cc-ff067bf4c6f4",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b92dd6-5aac-4b3a-8150-83143395040e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3021}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e65711fb-46eb-45a5-81c0-fe1366f0fac3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "a9f72523-2997-4cb9-aaf6-7719a1e21996",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.loginIcon", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//header[@id='sponge-header']/nav/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Account/LogOn')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a49596f-e893-4be1-944d-bacdaf147273",
+      "comment": "",
+      "command": "click",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abcdf7ae-6195-49eb-8ebe-90519794731b",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_id2",
+      "targets": [
+        ["id=l_id2", "id"],
+        ["name=l_id2", "name"],
+        ["css=#l_id2", "css:finder"],
+        ["xpath=//input[@id='l_id2']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "7f5dde07-bab9-42bb-bc7f-2145a6283de6",
+      "comment": "",
+      "command": "type",
+      "target": "id=l_pass_confirm",
+      "targets": [
+        ["id=l_pass_confirm", "id"],
+        ["name=l_pass_confirm", "name"],
+        ["css=#l_pass_confirm", "css:finder"],
+        ["xpath=//input[@id='l_pass_confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "457c2a06-ac57-4ec4-b6f8-f6a920ee4c94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-sponge-xlg",
+      "targets": [
+        ["css=.btn-sponge-xlg", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='myForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f39d06-de03-400e-8343-f6fcf5360563",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89eb474c-d59c-44af-ab60-d3a537af0c49",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1ad29d3-0411-4720-a70f-8c786aeee261",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "464081be-eba6-4091-bd27-80407245c42a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bf3a930f-9439-492f-80a4-f72dce155e86", "c27d65a0-40a2-4dd7-9a5f-4daf2fa9aea6"]
+  }],
+  "urls": ["http://www.dcatholic.ac.kr/"],
+  "plugins": []
+}

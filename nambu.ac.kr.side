@@ -1,0 +1,195 @@
+{
+  "id": "98b989cb-0552-4f86-9ce5-6bb356aa2d96",
+  "version": "2.0",
+  "name": "nambu.ac.kr",
+  "url": "http://nambu.ac.kr",
+  "tests": [{
+    "id": "7fa3af21-71c4-4650-ad1b-a86654ecc064",
+    "name": "메인",
+    "commands": [{
+      "id": "e138bf4e-a026-4930-ad86-97d48d21c920",
+      "comment": "",
+      "command": "open",
+      "target": "/default.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5db2bb06-0c4d-46d5-9a3b-761f9f20b008",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1370x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d354368-c478-4505-86cb-e121fbc40d1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gnb > li:nth-child(1) img",
+      "targets": [
+        ["css=.gnb > li:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Login']", "xpath:img"],
+        ["xpath=//div[@id='mainWrap']/div/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5877",
+      "windowTimeout": 2000
+    }, {
+      "id": "5305f067-8ae3-474c-bcc3-7b7765ead96e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20e8e633-ae12-4aaf-9f2f-5af0c615c200",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5877}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0391f4cc-6b46-44ea-a468-5dffb66a321f",
+      "comment": "",
+      "command": "click",
+      "target": "name=LOGINID",
+      "targets": [
+        ["name=LOGINID", "name"],
+        ["css=.inputID > input", "css:finder"],
+        ["xpath=//input[@name='LOGINID']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03ee6621-fef9-49f7-9b92-bc8e6abb262f",
+      "comment": "",
+      "command": "type",
+      "target": "name=LOGINID",
+      "targets": [
+        ["name=LOGINID", "name"],
+        ["css=.inputID > input", "css:finder"],
+        ["xpath=//input[@name='LOGINID']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "1feb2380-3088-47df-9f68-b6989fa1c78e",
+      "comment": "",
+      "command": "type",
+      "target": "name=LOGINPWD",
+      "targets": [
+        ["name=LOGINPWD", "name"],
+        ["css=.inputPW > input", "css:finder"],
+        ["xpath=//input[@name='LOGINPWD']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e1eae531-c7d0-42f1-9aa1-4a46e685d302",
+      "comment": "",
+      "command": "click",
+      "target": "id=LOGINBTN",
+      "targets": [
+        ["id=LOGINBTN", "id"],
+        ["css=#LOGINBTN", "css:finder"],
+        ["xpath=//input[@id='LOGINBTN']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "912a6040-bf2c-4e91-87c0-07beefb33ddd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deb370d9-a8b4-456b-a2e2-0405e19e2dcb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21e96300-a8b8-4c31-9df5-8c6e5d414db6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "56a588f8-efbc-4e1a-b0d6-dd8d4e783de1",
+    "name": "웹메일",
+    "commands": [{
+      "id": "cb62f3fe-9367-4f1d-a6f7-4d178bd0a672",
+      "comment": "",
+      "command": "open",
+      "target": "http://mail.nambu.ac.kr/index.ds",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d45046e-b33e-4838-9dc2-3938263a34f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "41bd760e-25e5-4667-b399-81d0db3b0023",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e5dca54a-6653-47c1-902b-de726c5eec63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login > input",
+      "targets": [
+        ["css=.btn_login > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd91cd90-bbb2-4c4f-9b81-d1be30b99b5b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ebc2c67d-cff3-4316-a105-c256b6307da3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7fa3af21-71c4-4650-ad1b-a86654ecc064", "56a588f8-efbc-4e1a-b0d6-dd8d4e783de1"]
+  }],
+  "urls": ["http://nambu.ac.kr/"],
+  "plugins": []
+}

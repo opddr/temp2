@@ -1,0 +1,722 @@
+{
+  "id": "7212cc6f-e481-4cad-a1d7-58f64ece28d8",
+  "version": "2.0",
+  "name": "yonsei.ac.kr",
+  "url": "http://yonsei.ac.kr",
+  "tests": [{
+    "id": "bee7a27f-749f-48fe-9977-401eb9d05c65",
+    "name": "포탈로그인",
+    "commands": [{
+      "id": "bd09ec43-5b59-437b-bf58-71991f42157c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24d50bca-dc99-4273-8a4b-c19da8de2b1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggleUtil > .fc > .ir",
+      "targets": [
+        ["css=.toggleUtil > .fc > .ir", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'유틸메뉴 열기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9a8ee3a-1ff1-4197-a409-fdefac34f82e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='utilmenu']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sc/login.jsp')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6818f792-c64b-4aa6-8eaf-ce37052b86d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=loginId", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac256706-c60e-43a3-b009-4ac16d077ba4",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=loginId", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "25eed404-9c11-464b-b6d9-cf85a4980504",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "325e0757-e59b-47ef-b82f-d2ef7fbb4ff1",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPasswd",
+      "targets": [
+        ["id=loginPasswd", "id"],
+        ["name=loginPasswd", "name"],
+        ["css=#loginPasswd", "css:finder"],
+        ["xpath=//input[@id='loginPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ff0127bd-a5cd-4c44-925b-4fbb0452f204",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인(Login)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f0b479-9bff-4087-a9d5-c720e1cb4a5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9b4ad6e6-4302-4ad1-8dc7-5228e871f558",
+    "name": "도서관",
+    "commands": [{
+      "id": "ec6ffdeb-a2b1-4798-a36a-5b5d369e4fc2",
+      "comment": "",
+      "command": "open",
+      "target": "http://library.yonsei.ac.kr/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72ac1407-2980-4651-8d17-f9e91400b6df",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f39fa3b3-4ee2-4919-aba8-c7c61a330510",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "459afa5d-3deb-4693-b707-5f367871094e",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d161e3b7-af66-4f27-8645-0824af9af7eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d0928a32-6c09-46c9-901d-c71b4b81f269",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn > input",
+      "targets": [
+        ["css=.loginBtn > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5237396b-684b-461b-8ca5-9126c5a31744",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1bd54679-5bd7-404d-a1f7-c63ac0c233ff",
+    "name": "웹메일",
+    "commands": [{
+      "id": "aa397214-fb64-4251-b34e-35548386c6bf",
+      "comment": "",
+      "command": "open",
+      "target": "http://mail.yonsei.ac.kr",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33f41464-c7ee-40af-bdef-1d06061fb3c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=primaryId",
+      "targets": [
+        ["id=primaryId", "id"],
+        ["name=primaryId", "name"],
+        ["css=#primaryId", "css:finder"],
+        ["xpath=//input[@id='primaryId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d507ced6-0b86-455d-aabc-260409baffed",
+      "comment": "",
+      "command": "type",
+      "target": "id=primaryId",
+      "targets": [
+        ["id=primaryId", "id"],
+        ["name=primaryId", "name"],
+        ["css=#primaryId", "css:finder"],
+        ["xpath=//input[@id='primaryId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "9add772e-3f8c-49e5-803f-181a8286af43",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bda1ccf4-f9ec-4816-bd9a-0d646a9102c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "a6c44d60-ef88-4e97-bc02-29bf7d1ba338",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fc5a260-3f53-49b4-937f-74f189e14a5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8fcb378a-8367-4d91-a202-275fc477b7af",
+    "name": "IGEE 로그인",
+    "commands": [{
+      "id": "f63d5977-adad-4d52-a1e5-95b571a7fd31",
+      "comment": "",
+      "command": "open",
+      "target": "http://igee.yonsei.ac.kr/igee_en/login.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "177ebe4f-c5df-49bc-ad89-2742f5f95e1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48811d53-24d9-4567-a3a1-3d80ae71e538",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5878b609-98c4-4a70-b101-5c05c41652a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54342635-72f0-4388-8b5c-dd714d2f5115",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e1ad80dc-10e3-4433-9ab3-7ba1f129689f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c-login-btn",
+      "targets": [
+        ["css=.c-login-btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ae3e59-11e3-4100-a600-1a91afa8ad54",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "55dea2cc-02f6-4018-8eec-2f6865da222e",
+    "name": "공간대관시스템",
+    "commands": [{
+      "id": "2c089d65-1edf-46e7-92d7-48eae68cc4b5",
+      "comment": "",
+      "command": "open",
+      "target": "http://space.yonsei.ac.kr/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3781da5c-182a-4f3d-8969-b850c878fb92",
+      "comment": "",
+      "command": "click",
+      "target": "id=ysid",
+      "targets": [
+        ["id=ysid", "id"],
+        ["name=ysid", "name"],
+        ["css=#ysid", "css:finder"],
+        ["xpath=//input[@id='ysid']", "xpath:attributes"],
+        ["xpath=//div[@id='ys_loginboxk']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab97fea2-a9f9-4e06-82b0-9813e6f2119e",
+      "comment": "",
+      "command": "type",
+      "target": "id=ysid",
+      "targets": [
+        ["id=ysid", "id"],
+        ["name=ysid", "name"],
+        ["css=#ysid", "css:finder"],
+        ["xpath=//input[@id='ysid']", "xpath:attributes"],
+        ["xpath=//div[@id='ys_loginboxk']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ac6961bd-3c73-4faa-817a-15fffc4c8934",
+      "comment": "",
+      "command": "click",
+      "target": "id=yspwd",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c856b68-14ae-4fd0-9282-40c2a6d013d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=yspwd",
+      "targets": [
+        ["id=yspwd", "id"],
+        ["name=yspwd", "name"],
+        ["css=#yspwd", "css:finder"],
+        ["xpath=//input[@id='yspwd']", "xpath:attributes"],
+        ["xpath=//div[@id='ys_loginboxk']/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "9e39286a-685b-40b5-b721-54eed3c41bbd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1dfb4789-d8df-4493-815b-ba5a6d7be444",
+    "name": "여름학교",
+    "commands": [{
+      "id": "cd137883-71af-491e-86a9-40d79f1cba8e",
+      "comment": "",
+      "command": "open",
+      "target": "http://summer.yonsei.ac.kr/home/login/login.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d557fa9-019e-4f6b-84f6-ecf50abb2870",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=label:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/ul/li/form/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ad123a-53a8-4690-bb97-a019e9466d28",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=label:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/ul/li/form/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "573b2ce3-e975-4ddb-8e6c-0ed9281fb81f",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=label:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/ul/li/form/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c193dd20-335a-493a-8c06-fd7275669d46",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=label:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/ul/li/form/div/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0b0dabc3-9a70-420e-adfe-c4e1ac9f1a88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login_box']/ul/li/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b993f2a-ebae-4604-922f-b4c409eb1d3c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c4a432fb-44e7-4d4a-8e1f-de71165a747e",
+    "name": "윤리인권위원회",
+    "commands": [{
+      "id": "1566e39f-8e7d-4b07-80b7-2020aae72f76",
+      "comment": "",
+      "command": "open",
+      "target": "http://clean.yonsei.ac.kr/guide/login.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2fea2b5-96a4-4f3e-abd4-8728e9eae81f",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=p:nth-child(6) > .wid95", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_con']/div/div/div[2]/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28bc9dce-d480-46c5-bec9-87324b385d06",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=p:nth-child(6) > .wid95", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_con']/div/div/div[2]/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "be317ee4-12ab-45ad-8dc3-2541af9d5442",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=p:nth-child(7) > .wid95", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_con']/div/div/div[2]/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37b04bbb-0963-41a3-bf27-0c3377aed826",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=p:nth-child(7) > .wid95", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_con']/div/div/div[2]/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "76154544-8631-40cf-8017-e9d84eb1b628",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wid100",
+      "targets": [
+        ["css=.wid100", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_con']/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b338fccc-8e60-4551-b442-8f9a0f79c9d0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7e57dc19-a2db-4f88-9602-3ac3ab378eda",
+    "name": "물리학과",
+    "commands": [{
+      "id": "4b0d9cb4-789c-43ed-84d3-9f5b21432609",
+      "comment": "",
+      "command": "open",
+      "target": "http://web.yonsei.ac.kr/physics/login.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "772c3432-5ee9-4604-a85d-5df8b203ac00",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "f600ad1c-fe7b-4ea5-b093-6ce9b74de3bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userId", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5622be7-893e-42aa-8e53-06578b72a5f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userId", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e5337917-b735-4cf4-8a78-48ecce6b4ed1",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td",
+      "targets": [
+        ["css=tr:nth-child(3) > td", "css:finder"],
+        ["xpath=//tr[3]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55ce8306-e4da-42bd-b033-594ccf26cac7",
+      "comment": "",
+      "command": "click",
+      "target": "name=passwd",
+      "targets": [
+        ["name=passwd", "name"],
+        ["css=.focus", "css:finder"],
+        ["xpath=//input[@name='passwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1410de3-e23a-45de-98fc-296a5568c6ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=passwd",
+      "targets": [
+        ["name=passwd", "name"],
+        ["css=.focus", "css:finder"],
+        ["xpath=//input[@name='passwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "126e37c8-2e0c-4218-8ef3-3f3f030f56db",
+      "comment": "",
+      "command": "click",
+      "target": "css=img:nth-child(1)",
+      "targets": [
+        ["css=img:nth-child(1)", "css:finder"],
+        ["xpath=//img[@title='로그인']", "xpath:img"],
+        ["xpath=//img[@onclick='javascript:login();']", "xpath:attributes"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5689c882-d3b0-42a9-a21b-65096c99a8fb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6e98c0d-2075-4b32-b9ce-ad8acea9e724",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bee7a27f-749f-48fe-9977-401eb9d05c65"]
+  }],
+  "urls": ["http://yonsei.ac.kr/sc/index.jsp", "http://yonsei.ac.kr/"],
+  "plugins": []
+}

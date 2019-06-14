@@ -1,0 +1,699 @@
+{
+  "id": "4d001544-94b5-4fcc-910b-4951590a3758",
+  "version": "2.0",
+  "name": "skku.edu",
+  "url": "http://skku.edu",
+  "tests": [{
+    "id": "167bf647-241e-48f4-ae83-33739d74fded",
+    "name": "수강신청",
+    "commands": [{
+      "id": "7e2020a1-8659-4bdd-8004-213fc2a82a2b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5ff515a-a7dc-4004-ac20-287da3bd1d62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main_gnbIcon01 > img",
+      "targets": [
+        ["css=.main_gnbIcon01 > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fa607e-9e06-4bba-83a0-318522989876",
+      "comment": "",
+      "command": "click",
+      "target": "css=.GnbCategoryList > li:nth-child(1) li:nth-child(1) > a",
+      "targets": [
+        ["css=.GnbCategoryList > li:nth-child(1) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div/ul/li/div/ul/li/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sugang.skku.edu/skku/')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3842",
+      "windowTimeout": 2000
+    }, {
+      "id": "41869884-9926-47b1-9264-bdaf1b2027ad",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d89da9f8-fdc8-42c6-a9a0-2825493fa17c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3842}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21f1e7e0-0b95-408a-93cc-cb474e6e62df",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "accc0f46-8b8b-4c5c-908a-ea87378bd177",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f79763b-277c-4cc1-ab8f-fbd455c1d592",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "919c7b47-f2a3-40ab-8544-06b286177e80",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fe7c3d0-3424-4301-b465-08c984842f87",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0530e918-0527-4e08-85af-4b5a12fdbcc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//button[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56468c28-b63c-4e43-8dd7-7ad9814307de",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f088739-980f-453c-844d-3becaaa50121",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e8846aa-9d6f-428a-b273-83ecf8afc24a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d9ac906e-fb74-47b1-b775-1e1e0fc77c27",
+    "name": "인터넷증명",
+    "commands": [{
+      "id": "98fb9a1b-0971-42e7-96ea-ed5c53126b79",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15b6a1e5-83b8-4c7a-ae92-513ff455ec4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main_gnbIcon01 > img",
+      "targets": [
+        ["css=.main_gnbIcon01 > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c3a0ab-4697-44b1-9a4e-eab3ac1723ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.GnbCategoryList > li:nth-child(1) li:nth-child(3) > a",
+      "targets": [
+        ["css=.GnbCategoryList > li:nth-child(1) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div/ul/li/div/ul/li/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/skku/campus/IT_service/it_service10.do')]", "xpath:href"],
+        ["xpath=//li/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6baf4ef-64d3-42c2-a7ca-ff0d26461312",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=인터넷증명 바로가기",
+      "targets": [
+        ["linkText=인터넷증명 바로가기", "linkText"],
+        ["css=.btn_list:nth-child(4) .blue", "css:finder"],
+        ["xpath=//a[contains(text(),'인터넷증명 바로가기')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://icert.skku.edu/member/doSsoLogin')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'인터넷증명 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3700",
+      "windowTimeout": 2000
+    }, {
+      "id": "d6815bd1-b0f4-42dc-bdd9-c41971af425a",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dc95326-b882-48b0-aa5b-45dc58c5dddf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3700}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b68367c-ca55-4c94-ab87-203cc67e2764",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72b5c57d-7f15-49c0-8d56-6fa5ae41c3a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "850f6aa7-ca75-478c-a7c1-c7bc8378756a",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c0d2b9-2c28-4b08-89b3-b81392269b97",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pass",
+      "targets": [
+        ["id=user_pass", "id"],
+        ["css=#user_pass", "css:finder"],
+        ["xpath=//input[@id='user_pass']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/p/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "beb0082a-b3f8-4447-86b1-a03afb67531d",
+      "comment": "",
+      "command": "click",
+      "target": "id=directSsoLogin",
+      "targets": [
+        ["id=directSsoLogin", "id"],
+        ["css=#directSsoLogin", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//a[@id='directSsoLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[5]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a77169d-c013-4771-967e-95ff6a9620d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fd7b23a-c10e-45ea-b74b-2fff1f2a4ee1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2d2eb74-9361-44d4-8a39-019d5e6f658a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cb749dda-f8c0-4f03-92fd-c8bb2f8e7489",
+    "name": "e-러닝",
+    "commands": [{
+      "id": "28b4e043-f387-44aa-9be1-447d5083ad01",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba2eb49f-ef09-410f-9a54-1a052fa5ceb7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=교육",
+      "targets": [
+        ["linkText=교육", "linkText"],
+        ["css=li > .active", "css:finder"],
+        ["xpath=(//a[contains(text(),'교육')])[4]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div[2]/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/skku/edu/education.do')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89ed3a42-29cf-4106-a8fc-f0cbc3f75697",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=부설교육",
+      "targets": [
+        ["linkText=부설교육", "linkText"],
+        ["css=li:nth-child(3) > h4 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'부설교육')])[2]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/div[3]/div/ul/li[3]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#linkNone')])[2]", "xpath:href"],
+        ["xpath=//li[3]/h4/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "751f047d-8a22-4ec7-bc6d-29e8bd18ff73",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=e-러닝",
+      "targets": [
+        ["linkText=e-러닝", "linkText"],
+        ["css=li:nth-child(3) > .lnb_2depth > li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'e-러닝')])[2]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/div[3]/div/ul/li[3]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/skku/edu/international/schooling_03.do')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[3]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f125027-3db6-4343-8298-20dafb8d5dbd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=홈페이지바로가기",
+      "targets": [
+        ["linkText=홈페이지바로가기", "linkText"],
+        ["css=.link_btn", "css:finder"],
+        ["xpath=//a[contains(text(),'홈페이지바로가기')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://www.icampus.ac.kr/front/login/login.do']", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'홈페이지바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win92",
+      "windowTimeout": 2000
+    }, {
+      "id": "887f0ab2-8e33-472f-9ad0-a8b3eb29a948",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9a9c758-c9bd-49ce-aee2-e2189c6d4353",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win92}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c6b1f3e-72d1-403c-89cf-bac8dfc7dc4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn1 img",
+      "targets": [
+        ["css=.btn1 img", "css:finder"],
+        ["xpath=//img[@alt='한국어']", "xpath:img"],
+        ["xpath=//div[@id='btn']/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "554f1d59-fd43-4fa3-86d6-ea83bfd757cc",
+      "comment": "",
+      "command": "click",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=dd:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//div[@id='mlogin01']/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "649ff9df-652c-4755-bd0d-af5d427575ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [],
+      "value": "testtest"
+    }, {
+      "id": "bb98f9a4-d4dd-4799-ac62-e0fe6ff27155",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2877491-7e32-45cf-b099-a30d8a89ad48",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=dd:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='mlogin01']/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b7f0ea70-0dc7-42f4-8821-6a03b13c194b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login img",
+      "targets": [
+        ["css=.btn_login img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='mlogin01']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f98bb6-0959-499e-9cd0-02bc4833a36c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf563057-4015-486c-9d9f-b92dfb8b20f3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "154c1d3d-38f9-4814-8014-75f17df7c84b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8fef3700-b891-4310-9548-f575f8504d76",
+    "name": "인권센터",
+    "commands": [{
+      "id": "cd8e3105-494f-4c7d-bca5-1258cd1ac7ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c454ccb-af0c-4e78-b477-ccca711437ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=대학생활",
+      "targets": [
+        ["linkText=대학생활", "linkText"],
+        ["css=li > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'대학생활')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/div[2]/div[2]/div[2]/div/div[2]/div/ul[2]/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/skku/campus/support/employment.do')]", "xpath:href"],
+        ["xpath=//ul[2]/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'대학생활')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a907d0b4-6a40-4e1d-a45c-8b0371354136",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=인권센터",
+      "targets": [
+        ["linkText=인권센터", "linkText"],
+        ["css=.on li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'인권센터')])[2]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/div[3]/div/ul/li/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/skku/campus/support/welfare_13.do')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c1fc74b-7671-44ec-9c4c-0447e1a98d96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=홈페이지바로가기",
+      "targets": [
+        ["linkText=홈페이지바로가기", "linkText"],
+        ["css=.link_btn", "css:finder"],
+        ["xpath=//a[contains(text(),'홈페이지바로가기')]", "xpath:link"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://helper.skku.edu']", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'홈페이지바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7144",
+      "windowTimeout": 2000
+    }, {
+      "id": "678e518c-4aeb-42fe-8e62-4e7fa39e6913",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b282d7b0-daa5-42a7-93f4-342d41e6e48c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7144}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02dd0857-b419-4486-818a-fc2f34178ca0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.header-link-box .login-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div[2]/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/helper/login.do')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0657c5d-3a23-4731-ada7-44d9fb7da732",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e5fd64d-037d-49dd-be53-2d76d4cf5f2a",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_id",
+      "targets": [
+        ["id=member_id", "id"],
+        ["name=member_id", "name"],
+        ["css=#member_id", "css:finder"],
+        ["xpath=//input[@id='member_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c38797b1-f1cd-4402-a044-4827b5381d99",
+      "comment": "",
+      "command": "click",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d42b8351-fb7b-4344-b71f-75c12b7c8657",
+      "comment": "",
+      "command": "type",
+      "target": "id=member_pw",
+      "targets": [
+        ["id=member_pw", "id"],
+        ["name=member_pw", "name"],
+        ["css=#member_pw", "css:finder"],
+        ["xpath=//input[@id='member_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d0b7059b-cc09-41b1-a713-4fcf9cd803a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_submit",
+      "targets": [
+        ["css=.btn_submit", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ec381ff-6f8e-4810-b826-411032dd2bf0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79fc180e-f6bf-4ee3-902f-10a600c642ac",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b6f2140-94d1-46e9-b401-f62097720c0f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ba296705-a594-4f4b-992f-d7a718f81d31",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["167bf647-241e-48f4-ae83-33739d74fded","cb749dda-f8c0-4f03-92fd-c8bb2f8e7489","8fef3700-b891-4310-9548-f575f8504d76","d9ac906e-fb74-47b1-b775-1e1e0fc77c27"]
+  }],
+  "urls": ["https://www.skku.edu/", "http://www.skku.edu/", "http://skku.edu/"],
+  "plugins": []
+}

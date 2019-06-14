@@ -1,0 +1,349 @@
+{
+  "id": "d6523bea-e9d1-4bd2-9747-dee4f46c74a3",
+  "version": "2.0",
+  "name": "hanyang.ac.kr",
+  "url": "http://hanyang.ac.kr",
+  "tests": [{
+    "id": "9b33bf82-3311-4da4-b9a7-cd627c3fb465",
+    "name": "메인포털",
+    "commands": [{
+      "id": "7c4bd42b-0722-4b8e-927d-41c9290e98ab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61893571-5274-4823-ac7a-983af8251d5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30cff710-fd95-451c-b04b-649240cbb5df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HY-in",
+      "targets": [
+        ["linkText=HY-in", "linkText"],
+        ["css=#utilGlobal > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HY-in')]", "xpath:link"],
+        ["xpath=//ul[@id='utilGlobal']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://portal.hanyang.ac.kr')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HY-in')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9432",
+      "windowTimeout": 2000
+    }, {
+      "id": "ae7b4353-5327-4f19-9afd-b8bd19b2d808",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da6c95ea-65ca-4f63-a3be-f2c1f7c4cfdf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9432}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d15c0cbc-437a-464b-96a4-d9092d9c3401",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//div[@id='hyinContents']/div/form/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "694b22e9-4090-4164-8f18-4a01860d2406",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//div[@id='hyinContents']/div/form/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "bf84c109-f812-443d-88b2-71763980e711",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='hyinContents']/div/form/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd9c3cf5-436f-40dd-b8a7-d29adeb53baf",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='hyinContents']/div/form/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d76c69e1-cae2-49a3-872e-43525f66b7ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn_login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='hyinContents']/div/form/div/fieldset/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bead53cc-fdd5-48cd-8e39-e6e6e9170fc7",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a83a3658-b73a-448c-8a50-1dc8d328a3f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-button-text",
+      "targets": [
+        ["css=.ui-button-text", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'확인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6029e4ed-ecac-4360-8afa-9b91d3109aad",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fac03e33-80fd-41fd-b364-cdabfa5bf0a6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adbf33f0-94bb-4a76-b344-3156f68e2969",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7248113c-d2c1-47fb-8757-8202ce9fa75c",
+    "name": "웹메일",
+    "commands": [{
+      "id": "991f468f-282a-4532-8ffb-7598f5be617c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71126532-a440-46a3-8d47-50e9dffea150",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13f24f15-b0d5-4202-b5a9-d134e1c154f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=H hub",
+      "targets": [
+        ["linkText=H hub", "linkText"],
+        ["css=#utilGlobal > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'H hub')]", "xpath:link"],
+        ["xpath=//ul[@id='utilGlobal']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.hanyang.ac.kr/web/www/hub')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'H hub')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6351aa9c-18a4-451b-9050-bca82e25a388",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab01 .span3:nth-child(8) img",
+      "targets": [
+        ["css=#tab01 .span3:nth-child(8) img", "css:finder"],
+        ["xpath=//img[@alt='이메일']", "xpath:img"],
+        ["xpath=//div[@id='tab01']/div/div[8]/a/img", "xpath:idRelative"],
+        ["xpath=//div[8]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2422",
+      "windowTimeout": 2000
+    }, {
+      "id": "ed038311-de0c-4ecd-8e7f-8672ddee02c6",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee539d90-118f-4476-9721-040a39a681b5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2422}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffb9f05b-64b5-4daa-8423-2ddc99e4f685",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div[2]/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58dd9dc6-5c63-4986-933e-a86c7318fba9",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div[2]/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "d81c1502-6889-49f2-b8de-a4ff499ffa5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.id_language",
+      "targets": [
+        ["css=.id_language", "css:finder"],
+        ["xpath=//div[@id='wrap']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abc1ed4e-60d3-4988-98c0-501752f4e786",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div[2]/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c82421f-652c-41a9-b4e8-09a496b039c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div[2]/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "1111111"
+    }, {
+      "id": "b438cec5-2b96-4656-8939-53a8ad9389ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Map > area",
+      "targets": [
+        ["css=#Map > area", "css:finder"],
+        ["xpath=//map[@id='Map']/area", "xpath:idRelative"],
+        ["xpath=//p[2]/map/area", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c15522c6-0b85-4132-a1a3-c56b0d260766",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer",
+      "targets": [
+        ["css=.footer", "css:finder"],
+        ["xpath=//div[@id='wrap']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "520bfe50-5e8d-49f9-9ba2-2d5b48cec14e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c09b522-0633-44ae-bfb3-7519390aedf9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e69c5bb7-24fb-432c-8750-31585b8c2cdc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0fe53ff9-ecc1-44c9-a1ba-4715847a19bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://www.hanyang.ac.kr/", "http://hanyang.ac.kr/"],
+  "plugins": []
+}

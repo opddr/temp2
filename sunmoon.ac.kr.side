@@ -1,0 +1,702 @@
+{
+  "id": "689a9bf7-84df-42ad-b63c-36ae086b1371",
+  "version": "2.0",
+  "name": "sunmoon.ac.kr",
+  "url": "http://sunmoon.ac.kr",
+  "tests": [{
+    "id": "71d0d54e-77c2-4355-a364-729ebae13289",
+    "name": "메인홈페이지",
+    "commands": [{
+      "id": "514bcbed-02b8-40fc-b3ae-e5429c658db4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18239109-c4d1-4f59-aea5-d6666e53bdaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=map:nth-child(13) > area:nth-child(2)",
+      "targets": [
+        ["css=map:nth-child(13) > area:nth-child(2)", "css:finder"],
+        ["xpath=//area[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31b77559-f4ab-4014-9488-3ed20552ae5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.rightMenu > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/header/div/div/ul[4]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Page/Etc/Login.aspx')]", "xpath:href"],
+        ["xpath=//ul[4]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d9e827-66df-4ec3-86c3-c7c6bdfdaad0",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtID",
+      "targets": [
+        ["id=txtID", "id"],
+        ["name=ctl00$ContentPlaceHolder_Main$txtID", "name"],
+        ["css=#txtID", "css:finder"],
+        ["xpath=//input[@id='txtID']", "xpath:attributes"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_Panel1']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "166bf54c-cbed-4c1b-a4e7-2f7ff0b53b22",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtID",
+      "targets": [
+        ["id=txtID", "id"],
+        ["name=ctl00$ContentPlaceHolder_Main$txtID", "name"],
+        ["css=#txtID", "css:finder"],
+        ["xpath=//input[@id='txtID']", "xpath:attributes"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_Panel1']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div/input[2]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "34527e1d-268b-4ef3-b410-05e5607f46cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPasswd",
+      "targets": [
+        ["id=txtPasswd", "id"],
+        ["name=ctl00$ContentPlaceHolder_Main$txtPasswd", "name"],
+        ["css=#txtPasswd", "css:finder"],
+        ["xpath=//input[@id='txtPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_Panel1']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dad5160-71cd-4cb0-859a-a4b058d44b9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPasswd",
+      "targets": [
+        ["id=txtPasswd", "id"],
+        ["name=ctl00$ContentPlaceHolder_Main$txtPasswd", "name"],
+        ["css=#txtPasswd", "css:finder"],
+        ["xpath=//input[@id='txtPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_Panel1']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "61d84460-9bac-4aca-a301-055441f67cba",
+      "comment": "",
+      "command": "click",
+      "target": "id=ContentPlaceHolder_Main_btnLogin",
+      "targets": [
+        ["id=ContentPlaceHolder_Main_btnLogin", "id"],
+        ["css=#ContentPlaceHolder_Main_btnLogin", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//a[@id='ContentPlaceHolder_Main_btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_Panel1']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:__doPostBack('ctl00$ContentPlaceHolder_Main$btnLogin','')\")]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0550089-ac9b-4888-9847-edec618c55d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "81c25945-985b-4c86-a29f-c63e2dd5471c",
+    "name": "학생경력개발센터",
+    "commands": [{
+      "id": "379156b1-ea95-4864-920e-ceb6ef1d0741",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12f0893d-762f-4e26-b3eb-c527846c4443",
+      "comment": "",
+      "command": "click",
+      "target": "css=map:nth-child(13) > area:nth-child(2)",
+      "targets": [
+        ["css=map:nth-child(13) > area:nth-child(2)", "css:finder"],
+        ["xpath=//area[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37793a38-fb85-4538-b6de-056d1a72ab53",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=교내웹사이트",
+      "targets": [
+        ["linkText=교내웹사이트", "linkText"],
+        ["css=.footer_inner li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'교내웹사이트')])[2]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/footer/div/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Page/UnivLife/Website.aspx')])[3]", "xpath:href"],
+        ["xpath=//footer/div/div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1088a45-44f9-4529-8a6c-fcbb442f0b8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leftArea li:nth-child(44) .btn_enroll > a",
+      "targets": [
+        ["css=.leftArea li:nth-child(44) .btn_enroll > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'홈페이지 바로가기')])[44]", "xpath:link"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_panResult']/div/div/ul/li[44]/div/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://job.sunmoon.ac.kr/'])[2]", "xpath:href"],
+        ["xpath=//li[44]/div/div[2]/p/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9601",
+      "windowTimeout": 2000
+    }, {
+      "id": "86e20f80-64dd-468c-962b-13d2dd4bc2bd",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ec0ad5a-d8a4-465d-a5b2-fb1e686a6fd4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9601}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ff71dd5-703c-4c1c-8daa-0323442ddf17",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginBtn",
+      "targets": [
+        ["id=loginBtn", "id"],
+        ["linkText=로그인", "linkText"],
+        ["css=#loginBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@id='loginBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='gnb-sunmoon']/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efcff3dd-53c3-4001-9baa-41d77074d58e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='login-layer']/div/form/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "074aa9b4-d328-4759-af2c-dd4f910e5725",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='login-layer']/div/form/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "696e7773-881f-4ad4-a4e7-25998f8526a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=pw", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='login-layer']/div/form/div/div[2]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff8d9a9e-18d0-4346-a664-d20fb559b458",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=pw", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='login-layer']/div/form/div/div[2]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "513439ed-7611-440b-8ce1-5cdc135b186c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//div[@id='login-layer']/div/form/div/div[2]/div/span[3]/input", "xpath:idRelative"],
+        ["xpath=//span[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b4920b7-84b4-4091-8ef5-92616fe6f637",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1594b1-e23b-4acd-8756-4cf67b69f48c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b57c9cc6-56c7-4d55-ae54-6683b286cc31",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "08422bbc-ac31-46ee-a01e-c170e6ade97a",
+    "name": "팝업제거",
+    "commands": [{
+      "id": "c174e8ee-1c2e-492f-b35b-4d14d81e4128",
+      "comment": "",
+      "command": "open",
+      "target": "https://job.sunmoon.ac.kr:449/admin/popup/popup_view.asp?rid=11",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de3b2672-ce8c-484d-84d0-9ae360d8cf6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Checkbox1",
+      "targets": [
+        ["id=Checkbox1", "id"],
+        ["name=Checkbox1", "name"],
+        ["css=#Checkbox1", "css:finder"],
+        ["xpath=//input[@id='Checkbox1']", "xpath:attributes"],
+        ["xpath=//table[@id='Table6']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58303da9-cab5-4407-bef4-e7b4f3a7880e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d23a4f76-aad7-46c8-bfa4-51992d9e59d0",
+    "name": "현장실습지원센터",
+    "commands": [{
+      "id": "3c12f1f3-ec19-49a7-81e1-7e3aba40f9cc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "818f04e2-03f5-4220-a02c-cc8f707e3400",
+      "comment": "",
+      "command": "click",
+      "target": "css=map:nth-child(13) > area:nth-child(2)",
+      "targets": [
+        ["css=map:nth-child(13) > area:nth-child(2)", "css:finder"],
+        ["xpath=//area[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0adfe13e-118f-402d-a15f-79283443c179",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=교내웹사이트",
+      "targets": [
+        ["linkText=교내웹사이트", "linkText"],
+        ["css=.footer_inner li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'교내웹사이트')])[2]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/footer/div/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Page/UnivLife/Website.aspx')])[3]", "xpath:href"],
+        ["xpath=//footer/div/div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed1922a-03b1-4b66-969f-f4997a894226",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rightArea li:nth-child(49) .btn_enroll > a",
+      "targets": [
+        ["css=.rightArea li:nth-child(49) .btn_enroll > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'홈페이지 바로가기')])[103]", "xpath:link"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_panResult']/div/div[2]/ul/li[49]/div/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://coop.sunmoon.ac.kr'])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[49]/div/div[2]/p/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win168",
+      "windowTimeout": 2000
+    }, {
+      "id": "db4ab2e2-f33d-4380-b6f6-fd655837496d",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2c9f29b-5726-46dc-9e99-ce7c994b8a4a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win168}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "814b27be-91ff-4608-8f76-d0427e2f8523",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='실습기관']",
+      "targets": [
+        ["css=.on > img", "css:finder"],
+        ["xpath=//img[@alt='실습기관']", "xpath:img"],
+        ["xpath=//form[@id='loginForm']/div/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f38319ff-f5f3-404c-9148-a2be648179ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e26078-15f0-4255-b8de-34a76231d1aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "9fa5d122-7cc8-4540-884a-37fbc9f9cd3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ce8b0de-ebb5-49b3-8dc3-9d53f13d3206",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d11d7fab-bbea-44e8-90bf-a0abeb16c191",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginBtn",
+      "targets": [
+        ["id=loginBtn", "id"],
+        ["css=#loginBtn", "css:finder"],
+        ["xpath=//input[@id='loginBtn']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28f9d07a-f709-4327-8657-6d791e6790e4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2572fc4-a290-4718-8f36-cfb7dd8e2f08",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1969ca0a-3534-4bed-b220-7999171e901d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc02b85d-2111-4310-a606-c03fb8ced1b6",
+    "name": "중앙도서관",
+    "commands": [{
+      "id": "30d77ce2-ea2d-4ab5-bd7a-1a69a0e74648",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77024f96-448e-4057-8f9f-c71905468185",
+      "comment": "",
+      "command": "click",
+      "target": "css=map:nth-child(13) > area:nth-child(2)",
+      "targets": [
+        ["css=map:nth-child(13) > area:nth-child(2)", "css:finder"],
+        ["xpath=//area[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93e1a34c-78fe-4fd7-8714-186dcee4fbc2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=교내웹사이트",
+      "targets": [
+        ["linkText=교내웹사이트", "linkText"],
+        ["css=.depth2_03 li:nth-child(8) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'교내웹사이트')]", "xpath:link"],
+        ["xpath=//div[@id='wrap']/header/div[2]/div/nav/ul/li[5]/div/div/div/ul/li[8]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Page/UnivLife/Website.aspx')]", "xpath:href"],
+        ["xpath=//li[5]/div/div/div/ul/li[8]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'교내웹사이트')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92076c13-a0a0-4d16-b02c-430dba3353f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leftArea li:nth-child(41) .btn_enroll > a",
+      "targets": [
+        ["css=.leftArea li:nth-child(41) .btn_enroll > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'홈페이지 바로가기')])[41]", "xpath:link"],
+        ["xpath=//div[@id='ContentPlaceHolder_Main_panResult']/div/div/ul/li[41]/div/div[2]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://lib.sunmoon.ac.kr/'])[2]", "xpath:href"],
+        ["xpath=//li[41]/div/div[2]/p/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4421",
+      "windowTimeout": 2000
+    }, {
+      "id": "62a833c7-0733-42b8-aa1b-21290e3aff67",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bec8e28-9342-4031-894f-e9dfce4829e8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4421}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f6c6b9c-0620-40aa-b709-52ca980e2e3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ccfa7d2-58d0-4ce5-9574-55405d5f96ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cd86247-4edc-4016-9183-007f83a45710",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "b0fcff09-c379-4702-95ba-c3caaf2e93d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4237ada-7ba1-41f4-8efd-84a46b9783db",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d8e57dfd-6a0d-4289-98a6-21617c4cfe03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn > input",
+      "targets": [
+        ["css=.loginBtn > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "133e86b1-f14b-4c56-a95f-0b8399ad2357",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2925ad50-acfb-4d9a-aeac-0fb9734d4868",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bdcb704-7b0b-4b52-8223-8aad500ea4bf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "36f6cafd-a61e-4f06-94f1-4196ea379904",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71d0d54e-77c2-4355-a364-729ebae13289", "81c25945-985b-4c86-a29f-c63e2dd5471c", "08422bbc-ac31-46ee-a01e-c170e6ade97a", "cc02b85d-2111-4310-a606-c03fb8ced1b6", "d23a4f76-aad7-46c8-bfa4-51992d9e59d0"]
+  }],
+  "urls": ["http://sunmoon.ac.kr/"],
+  "plugins": []
+}

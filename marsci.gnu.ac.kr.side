@@ -1,0 +1,266 @@
+{
+  "id": "980b56d8-719f-469e-ba8b-920a95d1c778",
+  "version": "2.0",
+  "name": "marsci.gnu.ac.kr",
+  "url": "http://marsci.gnu.ac.kr",
+  "tests": [{
+    "id": "e18a3cb7-2d2b-4bfa-b27d-dd8778bfd9c7",
+    "name": "메인",
+    "commands": [{
+      "id": "62cb6d15-a17a-4c02-af2f-168a6cdb6397",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12f96ab7-7821-4a62-be56-9bab3c5de650",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login > span",
+      "targets": [
+        ["css=.login > span", "css:finder"],
+        ["xpath=//div[@id='global']/div/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af769ba-b784-4d68-b746-35e497d00b4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid_inn_tx",
+      "targets": [
+        ["id=userid_inn_tx", "id"],
+        ["css=#userid_inn_tx", "css:finder"],
+        ["xpath=//input[@id='userid_inn_tx']", "xpath:attributes"],
+        ["xpath=//div[@id='tab2']/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acf750b0-354c-49f8-85e4-d4423b9bae96",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid_inn_tx",
+      "targets": [
+        ["id=userid_inn_tx", "id"],
+        ["css=#userid_inn_tx", "css:finder"],
+        ["xpath=//input[@id='userid_inn_tx']", "xpath:attributes"],
+        ["xpath=//div[@id='tab2']/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "4419c6d3-e8ea-431a-8e58-1507d3f474aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=password_inn_tx",
+      "targets": [
+        ["id=password_inn_tx", "id"],
+        ["css=#password_inn_tx", "css:finder"],
+        ["xpath=//input[@id='password_inn_tx']", "xpath:attributes"],
+        ["xpath=//div[@id='tab2']/div/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f48e7f7f-d8cd-4777-9607-23a3d6be823c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(5) > .image",
+      "targets": [
+        ["css=.button:nth-child(5) > .image", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='tab2']/div/fieldset/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f59096-9486-4ad5-a1c9-d94da7bfbef9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b0636c2e-b270-457d-aebb-71e2cb6847ce",
+    "name": "도서관",
+    "commands": [{
+      "id": "10a1792f-10bd-4196-8ce3-12a2e14b55d3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3848106-9dba-458c-ba1e-c13e5136cb06",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .kor",
+      "targets": [
+        ["css=li:nth-child(1) .kor", "css:finder"],
+        ["xpath=//div[@id='mcontainer']/div[4]/div/div/ul/li/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//li/a/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'도서관')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1de6bf41-d179-4961-8e73-0df9012506da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.arr",
+      "targets": [
+        ["css=.arr", "css:finder"],
+        ["xpath=//div[@id='cont']/div[3]/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'해양과학도서관 홈페이지')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8679",
+      "windowTimeout": 2000
+    }, {
+      "id": "ebba650c-68bc-45ef-a5e0-b1a1aa86f33b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd0b4d42-35e5-4de1-88a7-696e5c40e1b5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8679}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37a974eb-92a9-45b5-9f81-364691ba139b",
+      "comment": "",
+      "command": "click",
+      "target": "id=goto-login",
+      "targets": [
+        ["id=goto-login", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=#goto-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='goto-login']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#/login')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eca9abd-49b0-42fa-84b9-33ff167256d7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=외국학술지지원센터(FRIC)",
+      "targets": [
+        ["linkText=외국학술지지원센터(FRIC)", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'외국학술지지원센터(FRIC)')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.fric.kr/user/centerMainView.do?centerId=gnu']", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'외국학술지지원센터(FRIC)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ddb5226-b4af-4f0d-b6d9-760a8f11ec29",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=외국학술지지원센터(FRIC)",
+      "targets": [
+        ["linkText=외국학술지지원센터(FRIC)", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'외국학술지지원센터(FRIC)')]", "xpath:link"],
+        ["xpath=//a[@href='http://www.fric.kr/user/centerMainView.do?centerId=gnu']", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'외국학술지지원센터(FRIC)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0ee149e-4099-458b-afe1-887694bb9264",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "befec4a7-3696-4d3d-9255-816e31fe053f",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "851e35dd-efef-4f38-a496-196678056afc",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f8c1432e-0143-4cd4-a3a8-df6eed4c15fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-block:nth-child(1)",
+      "targets": [
+        ["css=.btn-block:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebcc72d1-f8b0-4414-b594-d4921ee4a162",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "219d40af-04bc-4f6b-b0ba-43d89816173f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7edce335-e29d-4ff9-b382-226ca11f77ce",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "abf262a6-e96f-4aec-8392-353c422e2bd2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e18a3cb7-2d2b-4bfa-b27d-dd8778bfd9c7", "b0636c2e-b270-457d-aebb-71e2cb6847ce"]
+  }],
+  "urls": ["http://marsci.gnu.ac.kr/"],
+  "plugins": []
+}

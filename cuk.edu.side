@@ -1,0 +1,106 @@
+{
+  "id": "60ee61dd-bb65-4e05-a360-b99e69d4785d",
+  "version": "2.0",
+  "name": "cuk.edu",
+  "url": "http://cuk.edu",
+  "tests": [{
+    "id": "f614db48-f164-49d0-a310-757705a8a84d",
+    "name": "main",
+    "commands": [{
+      "id": "a6ad4aeb-fffa-4609-998d-422cf4571ece",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8149aa2-b707-45d3-9935-6aeeba28533b",
+      "comment": "",
+      "command": "open",
+      "target": "https://sso.cuk.edu/LoginServlet?method=idpwForm&ssid=27",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bf7f737-2ea4-43b2-b732-c01e6eb43fb5",
+      "comment": "",
+      "command": "click",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=.logArea02 input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginbox']/div/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2200d856-ca57-4286-a2bc-e7b4b1a7cf98",
+      "comment": "",
+      "command": "type",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=.logArea02 input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginbox']/div/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ac797bf8-5e77-430f-a025-b9ec554e293e",
+      "comment": "",
+      "command": "click",
+      "target": "name=pw",
+      "targets": [
+        ["name=pw", "name"],
+        ["css=.logArea02 input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='loginbox']/div/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aeca170-3c25-4e87-821a-8ee86867a13c",
+      "comment": "",
+      "command": "type",
+      "target": "name=pw",
+      "targets": [
+        ["name=pw", "name"],
+        ["css=.logArea02 input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='loginbox']/div/div[2]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4b357285-06ca-403e-84b1-78bf9def42cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn",
+      "targets": [
+        ["css=.loginBtn", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='loginbox']/div/div[2]/div/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dc4fe20-7e9b-4b7b-a789-34f05dd052a7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d2b8536f-6fdf-41ed-8b70-8e04d7afb7a8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f614db48-f164-49d0-a310-757705a8a84d"]
+  }],
+  "urls": ["http://www.cuk.edu/", "http://cuk.edu/"],
+  "plugins": []
+}

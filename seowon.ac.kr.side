@@ -1,0 +1,122 @@
+{
+  "id": "e1831dab-fa5a-40ea-a6e6-3d71c745dff2",
+  "version": "2.0",
+  "name": "seowon.ac.kr",
+  "url": "http://www.seowon.ac.kr",
+  "tests": [{
+    "id": "aa9657ca-9a26-4c1d-9f54-bfb9419ed7b1",
+    "name": "메인",
+    "commands": [{
+      "id": "074fda0c-9f29-4993-9a6c-ef643c2a0ac5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "708063e6-8497-4030-8e06-5da24431603a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "973x734",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd920bca-b4be-449c-b567-947ce5045ab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.n_01 > li:nth-child(2) > a",
+      "targets": [
+        ["css=.n_01 > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='header']/div/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/kor/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b407b97-2ccd-4a8f-90e1-9d6791f000bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=_58_login", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='portlet-wrapper-58']/div[2]/div/div/form/div/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfd60fc1-5564-4fce-ab23-aa0ecd1de464",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=_58_login", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='portlet-wrapper-58']/div[2]/div/div/form/div/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "21931ea0-ac4d-423c-94b6-4014543f16eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_pw",
+      "targets": [
+        ["id=user_pw", "id"],
+        ["name=_58_password", "name"],
+        ["css=#user_pw", "css:finder"],
+        ["xpath=//input[@id='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='portlet-wrapper-58']/div[2]/div/div/form/div/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfcc0692-b380-472f-9cd4-c38cdb60be87",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_pw",
+      "targets": [
+        ["id=user_pw", "id"],
+        ["name=_58_password", "name"],
+        ["css=#user_pw", "css:finder"],
+        ["xpath=//input[@id='user_pw']", "xpath:attributes"],
+        ["xpath=//div[@id='portlet-wrapper-58']/div[2]/div/div/form/div/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "069247f3-745b-43b4-9e84-1dc7a7f0a1c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='portlet-wrapper-58']/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63f93aa1-b054-4799-aa88-3f372ee517c7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b23e2916-929a-43b1-9a96-9bd20892fcd2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["aa9657ca-9a26-4c1d-9f54-bfb9419ed7b1"]
+  }],
+  "urls": ["http://www.seowon.ac.kr/"],
+  "plugins": []
+}

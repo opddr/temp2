@@ -1,0 +1,165 @@
+{
+  "id": "d67edb4a-637b-42a2-87e7-4978fe06cce0",
+  "version": "2.0",
+  "name": "kafna.ac.kr",
+  "url": "http://kafna.ac.kr",
+  "tests": [{
+    "id": "6e41c832-2537-4bcd-a9a6-9872ba192690",
+    "name": "도서관",
+    "commands": [{
+      "id": "b97e945c-095d-4ce7-b22e-dbe999394ef3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e1c8e6e-257b-4f1c-98cb-4c246592bdb3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff7842ca-a212-4b0b-9876-b4d5d466480c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_01",
+      "targets": [
+        ["css=.btn_01", "css:finder"],
+        ["xpath=//div[@id='wrap']/p/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://www.kafna.ac.kr/user/afna']", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b439f13-db64-4bc0-bcbf-706a7c4f6f91",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .pngFix",
+      "targets": [
+        ["css=li:nth-child(2) .pngFix", "css:finder"],
+        ["xpath=//img[@alt='KAFNA도서관']", "xpath:img"],
+        ["xpath=//div[@id='contC']/div/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9677",
+      "windowTimeout": 2000
+    }, {
+      "id": "c8e8598c-6d7c-4e91-be33-ad0ab390fc2b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc54ad2a-70f5-4e1f-ba13-7f5f12f4ce75",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9677}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94803771-d1bc-4bcf-bd7a-9cdb28553b3f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17e4c7ac-06b7-4bb3-9e57-acf9ede27141",
+      "comment": "",
+      "command": "click",
+      "target": "id=divContent",
+      "targets": [
+        ["id=divContent", "id"],
+        ["css=#divContent", "css:finder"],
+        ["xpath=//div[@id='divContent']", "xpath:attributes"],
+        ["xpath=//div[@id='divContents']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24215ccb-1350-4a13-bf7e-64eb73a87a28",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "abfd8a37-40d7-40eb-814d-7ddb296f201e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4287b22b-fb67-40a5-ab37-e12183faa9bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnLogin",
+      "targets": [
+        ["css=.btnLogin", "css:finder"],
+        ["xpath=//input[@value='LOGIN']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d597470b-85ef-46af-8cb8-03051672bca6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dc95ad9-5c12-4bab-b042-8e6908c0e225",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f6ae1a-b7ba-455a-9c35-e2f193bc76c0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dde06e2b-1753-44c1-b03b-b25ce1a60e3f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e41c832-2537-4bcd-a9a6-9872ba192690"]
+  }],
+  "urls": ["http://kafna.ac.kr/"],
+  "plugins": []
+}

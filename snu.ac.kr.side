@@ -1,0 +1,587 @@
+{
+  "id": "9457edbc-e173-4a69-bd7c-0251067e6ca6",
+  "version": "2.0",
+  "name": "snu.ac.kr",
+  "url": "http://snu.ac.kr",
+  "tests": [{
+    "id": "fcce464f-f0c2-40a0-b6d8-50518a530ebe",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "c1b5d7a1-5c0e-4478-a068-2f37a850b5cb",
+      "comment": "",
+      "command": "open",
+      "target": "http://my.snu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9da081b2-122c-457a-aabd-8fed3e27b5ae",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "2241fe21-23bc-4827-ad20-17a969959ba2",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2b94c17-37ab-4252-be96-540b44ca7bd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "12535441-de53-49ae-a2ea-d2add048ccf6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "7c35537f-a16c-4b8c-8b1b-1f65694e7826",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//a[@onclick='javascript:enviewLogin()']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[5]", "xpath:href"],
+        ["xpath=//div/fieldset/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f2b9d6f-c915-4c55-901c-67f38342ea28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//a[@onclick='javascript:enviewLogin()']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/div/fieldset/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[5]", "xpath:href"],
+        ["xpath=//div/fieldset/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "615528d7-c8ba-4afe-8991-d1e0d46b72fd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "537c6722-9670-4114-ae54-d6425a33f5da",
+    "name": "sea",
+    "commands": [{
+      "id": "74a4ae37-3963-4d92-a742-07e571ca1546",
+      "comment": "",
+      "command": "open",
+      "target": "http://mail.snu.ac.kr/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29606152-75cb-42fe-b4c1-3b98e3df2d5a",
+      "comment": "",
+      "command": "type",
+      "target": "id=ipt-id",
+      "targets": [
+        ["id=ipt-id", "id"],
+        ["name=id", "name"],
+        ["css=#ipt-id", "css:finder"],
+        ["xpath=//input[@id='ipt-id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e6c39126-ec58-4510-8b16-946e856aaa33",
+      "comment": "",
+      "command": "type",
+      "target": "id=ipt-pw",
+      "targets": [
+        ["id=ipt-pw", "id"],
+        ["name=pw", "name"],
+        ["css=#ipt-pw", "css:finder"],
+        ["xpath=//input[@id='ipt-pw']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6d9071d5-2e4d-403a-8915-47d5a2521b78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//div[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a711061-e98b-49a3-9500-d31b20bec1d6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "808ed9f1-7f6f-4c3a-ad22-fe0f625bbbd3",
+    "name": "ETL",
+    "commands": [{
+      "id": "7ebab8dd-c6d3-4f14-8fec-50705e338d13",
+      "comment": "",
+      "command": "open",
+      "target": "http://etl.snu.ac.kr/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5128923-5e38-4504-8946-904f823e2f0f",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-username",
+      "targets": [
+        ["id=input-username", "id"],
+        ["name=si_id", "name"],
+        ["css=#input-username", "css:finder"],
+        ["xpath=//input[@id='input-username']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "60f7cb8e-d545-4235-8e04-0fdae14af1d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=si_pwd", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "a19cc074-a833-437d-a144-1eb21f7e027a",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginbutton",
+      "targets": [
+        ["name=loginbutton", "name"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@name='loginbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='region-main']/div/div/div/div/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34b14463-38eb-4549-9580-b21fe37adc59",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "595d2eb5-f15d-4e0d-88cc-48ae1f786366",
+    "name": "SSO_LOGIN",
+    "commands": [{
+      "id": "8523753c-5c34-466e-9a67-54c421a36e35",
+      "comment": "",
+      "command": "open",
+      "target": "http://dorm.snu.ac.kr/sso_login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5252b39-32ee-464c-80c7-101565ac65eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=si_id",
+      "targets": [
+        ["id=si_id", "id"],
+        ["name=userid", "name"],
+        ["css=#si_id", "css:finder"],
+        ["xpath=//input[@id='si_id']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3cf6d007-39e7-4447-b13a-9c8fe699ae77",
+      "comment": "",
+      "command": "type",
+      "target": "id=si_pwd",
+      "targets": [
+        ["id=si_pwd", "id"],
+        ["name=password", "name"],
+        ["css=#si_pwd", "css:finder"],
+        ["xpath=//input[@id='si_pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bfc70484-3891-4e0c-9451-3746270ac5d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_login",
+      "targets": [
+        ["id=btn_login", "id"],
+        ["name=btn_login", "name"],
+        ["css=#btn_login", "css:finder"],
+        ["xpath=//input[@id='btn_login']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/fieldset/p[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "421a6fe2-1301-49ea-9ca0-90cb9f000835",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "da790d58-7c5f-4ef8-8c05-6e31f22f6505",
+    "name": "SCARD",
+    "commands": [{
+      "id": "7ee68062-6abb-48a7-8fcb-a8f24f10830a",
+      "comment": "",
+      "command": "open",
+      "target": "http://scard1.snu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "caae1375-2dcf-4532-a8a7-7fff36ebf8d7",
+      "comment": "",
+      "command": "type",
+      "target": "name=si_id",
+      "targets": [
+        ["name=si_id", "name"],
+        ["css=.login_ip_id", "css:finder"],
+        ["xpath=//input[@name='si_id']", "xpath:attributes"],
+        ["xpath=//form[@id='ssoForm']/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "TESTTEST"
+    }, {
+      "id": "185b6045-6ffb-494e-8a59-30ae73a8ee75",
+      "comment": "",
+      "command": "type",
+      "target": "name=si_pwd",
+      "targets": [
+        ["name=si_pwd", "name"],
+        ["css=.login_ip_pw", "css:finder"],
+        ["xpath=//input[@name='si_pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='ssoForm']/fieldset/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5d3d55ec-69a3-420b-a53a-b2630f235771",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_btn",
+      "targets": [
+        ["css=.login_btn", "css:finder"],
+        ["xpath=//body[@id='item_body']/div/div/div[3]/div[3]/div[4]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "819a3a39-defb-42bb-8418-6251a86bf421",
+      "comment": "",
+      "command": "click",
+      "target": "css=div",
+      "targets": [
+        ["css=div", "css:finder"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a40be786-8e1d-4f3b-b5d4-61319191a722",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9cd483ed-2b24-46c3-824c-70ce5329d576",
+    "name": "수강신청",
+    "commands": [{
+      "id": "08d51e1d-ca69-4714-afa9-1dc6097ffeca",
+      "comment": "",
+      "command": "open",
+      "target": "http://sugang.snu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43b790c4-c73e-4248-b59d-5293e0f5fda3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f86436-9d8e-46ce-bbad-402aaf4113e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fieldset",
+      "targets": [
+        ["css=.fieldset", "css:finder"],
+        ["xpath=//form[@id='CO010']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "803a0e79-0b5f-4f47-aa6b-5ad79d05e61f",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='CO010']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6584fdf0-421d-49db-9e88-8d5be3715c7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//form[@id='CO010']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "b3609a82-38e1-4a97-8540-5b6b06e1124b",
+      "comment": "",
+      "command": "type",
+      "target": "id=v_password",
+      "targets": [
+        ["id=v_password", "id"],
+        ["name=v_password", "name"],
+        ["css=#v_password", "css:finder"],
+        ["xpath=//input[@id='v_password']", "xpath:attributes"],
+        ["xpath=//form[@id='CO010']/div/div/p[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "26ea1843-866c-49db-b9fa-2668830dc733",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_log > a",
+      "targets": [
+        ["css=.btn_log > a", "css:finder"],
+        ["xpath=//form[@id='CO010']/div/div/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:fnLogin();')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02f1d7a3-7c21-43df-ab70-19b0490e24f4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a4b9e89d-c1e9-4427-a62f-e2343c2ca64a",
+    "name": "서울대회원",
+    "commands": [{
+      "id": "72e1a577-d36b-489d-8acd-d3434b081b35",
+      "comment": "",
+      "command": "open",
+      "target": "/research/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f09dafc-5e25-4e2a-a944-01a4b679c1bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=lb01",
+      "targets": [
+        ["id=lb01", "id"],
+        ["name=userid", "name"],
+        ["css=#lb01", "css:finder"],
+        ["xpath=//input[@id='lb01']", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/form/fieldset/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa05fdea-c728-490d-8808-b642b0d43795",
+      "comment": "",
+      "command": "type",
+      "target": "id=lb01",
+      "targets": [
+        ["id=lb01", "id"],
+        ["name=userid", "name"],
+        ["css=#lb01", "css:finder"],
+        ["xpath=//input[@id='lb01']", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/form/fieldset/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a1ab8eac-ba71-481b-b717-d3aeaeb82986",
+      "comment": "",
+      "command": "type",
+      "target": "id=lb02",
+      "targets": [
+        ["id=lb02", "id"],
+        ["name=passwd", "name"],
+        ["css=#lb02", "css:finder"],
+        ["xpath=//input[@id='lb02']", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/form/fieldset/div/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "af250bc5-e47b-4a49-aeac-88c8716422c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn01_mem > input",
+      "targets": [
+        ["css=.btn01_mem > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/form/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "270ff17a-c5bc-4277-9e58-8821977ffe23",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "13c3f454-ddf2-48d5-9774-2b259d21dffe",
+    "name": "평생교육원",
+    "commands": [{
+      "id": "926ffa7a-360d-4a20-9a39-343b64d22115",
+      "comment": "",
+      "command": "open",
+      "target": "http://snui.snu.ac.kr/main/user/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b8949ab-25c7-49db-a1b9-e6837b76c25b",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_login",
+      "targets": [
+        ["id=id_login", "id"],
+        ["css=#id_login", "css:finder"],
+        ["xpath=//input[@id='id_login']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "747c03d5-6f68-42c9-a3d8-0f8fc086fb7a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_login",
+      "targets": [
+        ["id=id_login", "id"],
+        ["css=#id_login", "css:finder"],
+        ["xpath=//input[@id='id_login']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "7558c34c-b0c0-400f-ac92-502fc31544ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=password_login",
+      "targets": [
+        ["id=password_login", "id"],
+        ["css=#password_login", "css:finder"],
+        ["xpath=//input[@id='password_login']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "cc0fb2de-fe51-4067-9af1-f35903e463fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_right > input",
+      "targets": [
+        ["css=.login_right > input", "css:finder"],
+        ["xpath=(//input[@value='로그인'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4f6d9e9-1cb8-4b8b-bad0-62f2327f1c01",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce665137-c754-4785-aa02-fddada0f0872",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fcce464f-f0c2-40a0-b6d8-50518a530ebe"]
+  }],
+  "urls": ["http://snu.ac.kr/"],
+  "plugins": []
+}

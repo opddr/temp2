@@ -1,0 +1,380 @@
+{
+  "id": "af6b6d12-e6d0-495c-8a5a-93a29edc723e",
+  "version": "2.0",
+  "name": "www.dankook.ac.kr",
+  "url": "http://www.dankook.ac.kr",
+  "tests": [{
+    "id": "f27847df-7390-4c20-9c96-98b1dbd856df",
+    "name": "메인",
+    "commands": [{
+      "id": "33e138c9-0461-4e31-9aa2-3618a0356a4f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7af1cb6a-f148-4d24-bfb6-45a2d8492f27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sso/login_redirect.jsp?referer=http%3A%2F%2Fwww.dankook.ac.kr%3A80%2Fweb%2Fkor')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96efce3a-a29e-4ebb-bb86-79eac1db2e1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=.dku_login_area:nth-child(2) #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "797abe6e-2c1c-4190-8bbd-ea4680d1ec40",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=.dku_login_area:nth-child(2) #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "91f21fef-23a4-4dca-9cd0-9107a96102c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.dku_login_area:nth-child(2) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f757798-0c04-40f7-a640-b9491eef6a7b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.dku_login_area:nth-child(2) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "afe3b01d-1ffb-4936-8f00-b787c9c48795",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_area:nth-child(4) > .btn",
+      "targets": [
+        ["css=.btn_area:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99698362-09fb-4a88-b85c-be1fbc42fcc9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b984d48b-c8d5-4ad4-9724-9ec3cc9012fe",
+    "name": "웹메일",
+    "commands": [{
+      "id": "56b18125-e3d3-4b30-9480-3e48b1ff8a6d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19d8b864-c9f1-4676-a4af-38e2ed09c7e9",
+      "comment": "",
+      "command": "open",
+      "target": "https://gw.dankook.ac.kr/sso/login.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "412bdbec-50bf-4a2a-9cf8-e7da58ce0a08",
+      "comment": "",
+      "command": "click",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=uid", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "932a339d-a062-4575-8d36-06af43d9a0b3",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=uid", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "85f02c7a-d306-4e1e-91d6-92a17ae2e6f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3d633534-2b25-4300-87d8-e53fb3bb44d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=LoginButton",
+      "targets": [
+        ["id=LoginButton", "id"],
+        ["name=LoginButton", "name"],
+        ["css=#LoginButton", "css:finder"],
+        ["xpath=//input[@id='LoginButton']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/fieldset/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c0e976-ddde-40d4-b46d-38ea63fc744b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4a66fd47-e679-4219-a0eb-36e311df33a2",
+    "name": "포탈",
+    "commands": [{
+      "id": "4938bcca-3ae6-41a1-8b54-19a6a0cd3594",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0d053fd-9d3c-4e89-a47b-d57f0a9819af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97dbb2d7-218e-470b-beaa-b3c243423f3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://portal.dankook.ac.kr/web/portal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f3c34fb-b4dc-4d7c-b77f-c4f32d01c1d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a34db352-2864-414a-8ac3-23aafa42c0ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c693fd9b-429c-4023-8de0-bdcef981b1fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c7bb8b25-c61e-4417-aa93-35c6a10e4cd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6923ebb7-dfa1-46a6-8fb2-2295cdc11d18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login",
+      "targets": [
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0c1e2f-1aad-4143-ad8d-180214cc19a2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a765d26d-3f3f-4cce-922f-f5228630f8a1",
+    "name": "이러닝",
+    "commands": [{
+      "id": "55f54fae-32a9-4dfd-b6ad-cac73935f627",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42da6acf-26b1-4321-9d54-44c0632a688c",
+      "comment": "",
+      "command": "open",
+      "target": "https://webinfo.dankook.ac.kr/member/logon.do?returnurl=http://lms.dankook.ac.kr&sso=ok",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05a64743-f2b5-4f43-b8db-515157b9901e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=.dku_login_area:nth-child(2) #username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "925d2b08-ee44-4982-a267-a6c26d42b69d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.dku_login_area:nth-child(2) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62e015c2-7cf8-4439-a5c8-4c78cb5d7b40",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=.dku_login_area:nth-child(2) #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/ul/li[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b98a5d3f-5865-414a-8fb9-d965df5a2418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_area:nth-child(4) > .btn",
+      "targets": [
+        ["css=.btn_area:nth-child(4) > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d696de7-57f4-4882-b791-0288de204c30",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "575741fa-64e6-45a0-9b6f-eab8a63366a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f27847df-7390-4c20-9c96-98b1dbd856df", "b984d48b-c8d5-4ad4-9724-9ec3cc9012fe", "a765d26d-3f3f-4cce-922f-f5228630f8a1", "4a66fd47-e679-4219-a0eb-36e311df33a2"]
+  }],
+  "urls": ["http://www.dankook.ac.kr/", "http://dankook.ac.kr/"],
+  "plugins": []
+}

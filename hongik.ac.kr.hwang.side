@@ -1,0 +1,578 @@
+{
+  "id": "5f33bc66-2a5c-4ab9-84e8-ce019fcd4695",
+  "version": "2.0",
+  "name": "hongik.ac.kr",
+  "url": "http:/hongik.ac.kr",
+  "tests": [{
+    "id": "10e08032-7ad0-460b-93ed-7170ab0a71a9",
+    "name": "메인",
+    "commands": [{
+      "id": "5242da03-02cd-4eb1-a084-2283cc844a32",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cdcf679-681a-4ca8-bc28-d5af038c90f0",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a39c978c-282c-44ae-801f-35d80f9fa424",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e670516-f179-4c82-b6e8-ed4c56ff9b72",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.q2 .q1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick='goLoginPage();return false;']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b948725-8931-4981-8694-0a54027fd985",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "7de24b49-e021-4cf7-8d4f-581aa279c48f",
+      "comment": "",
+      "command": "click",
+      "target": "name=USER_ID",
+      "targets": [
+        ["name=USER_ID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='USER_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8cb30f0-00a9-4e5d-8967-bea4b982591c",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_ID",
+      "targets": [
+        ["name=USER_ID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='USER_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "555bcba9-6ac0-41a0-91f2-f58df0e7828c",
+      "comment": "",
+      "command": "click",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b901e087-214c-4e7c-aa9d-edb09eae107a",
+      "comment": "",
+      "command": "type",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "21d0cc33-44be-4d99-8d47-b8f413bd5fb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c0afe0-55d9-4346-9235-2b2efe89b6d8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac3b9cb6-0a11-4494-8770-757e04533e1c",
+    "name": "그룹웨어",
+    "commands": [{
+      "id": "d9ebd3f5-9294-45fe-b5d3-2bb3ba3cc59c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da67ca7-abd2-46d0-a786-b4276310c3d0",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc1d2896-9248-44a4-bb4a-cdd4ec64d7bd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4408c30-834b-4d4e-b81c-05e964065d9e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=그룹웨어",
+      "targets": [
+        ["linkText=그룹웨어", "linkText"],
+        ["css=.q2 .q3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'그룹웨어')]", "xpath:link"],
+        ["xpath=//a[@href='http://gw.hongik.ac.kr/index.php']", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'그룹웨어')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3179",
+      "windowTimeout": 2000
+    }, {
+      "id": "e05641b9-391e-4583-93d5-e1fffd5ef897",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e70d4e44-4cf2-41bc-b2e0-5a468a5dfcf8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3179}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9c0dddd-7d8d-45d5-a357-9f8bb90ac8ac",
+      "comment": "",
+      "command": "type",
+      "target": "name=USER_ID",
+      "targets": [
+        ["name=USER_ID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='USER_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "075624b8-7349-460b-9878-b173d5a22565",
+      "comment": "",
+      "command": "click",
+      "target": "css=form .q1",
+      "targets": [
+        ["css=form .q1", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "577813c7-f723-4824-80d7-772822211d06",
+      "comment": "",
+      "command": "click",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7ade1e6-31d0-445f-bd47-18c8b039cc97",
+      "comment": "",
+      "command": "type",
+      "target": "name=PASSWD",
+      "targets": [
+        ["name=PASSWD", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PASSWD']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "2ad7dabf-9bb8-477b-b805-242a664489a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lbl",
+      "targets": [
+        ["css=.lbl", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div/div[2]/div/table/tbody/tr/td[2]/div/form/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbbec8a5-54c0-4d0b-93cf-c31c325aef47",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9db1d1cb-8478-4197-9541-4ac81534743c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c71dfb7e-710b-4b08-84a9-e7eccbb002da",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d280c45f-f05d-4d2d-8e97-e3594413f146",
+    "name": "웹메일",
+    "commands": [{
+      "id": "e75207b2-ebf1-4b01-95e3-4747f6218e24",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d539f705-09a9-474e-adef-15b62a31d623",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "477761c5-b856-493f-bb72-520e71ac450b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6ff15d-e4d9-4fa9-951f-c3ca7cd370ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=메일",
+      "targets": [
+        ["linkText=메일", "linkText"],
+        ["css=.q4 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'메일')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://hmail.hongik.ac.kr/owa')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'메일')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6829",
+      "windowTimeout": 2000
+    }, {
+      "id": "e4efd874-25cd-498e-aa7f-0724e64bd78b",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da45fb55-d3ff-43ca-9ff6-7f1b45f278ed",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6829}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2b1542c-6dbd-4042-8b39-964920117a23",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='lgnDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8231fa13-ee1e-48f2-afd4-c88d8575cc6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='lgnDiv']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f865e580-e979-48bc-9547-76413c9ee91e",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='lgnDiv']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36eca553-3ca0-44ce-b9d8-9e58d8043d0f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='lgnDiv']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e9ab8ccc-8ada-4346-bbff-5a19de6d2b8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.signinbutton > .signinTxt",
+      "targets": [
+        ["css=.signinbutton > .signinTxt", "css:finder"],
+        ["xpath=//div[@id='lgnDiv']/div[9]/div/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dad1db28-8305-4261-a230-a0441798da8c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4ff3875-98a4-4a45-b0e9-2aa8e63abee5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "422a0567-adcd-4268-9c46-36eb44cac2b6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cd29ed4a-4d17-4772-b063-4e8e25d2d01c",
+    "name": "도서관",
+    "commands": [{
+      "id": "ba13226f-4997-4af6-b41d-8500f600eca0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44daa4f9-d61e-4a44-9ad8-046d2d188390",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99cf9148-eb20-4037-a403-5a36b1e3b7ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.q12 > .label",
+      "targets": [
+        ["css=.q12 > .label", "css:finder"],
+        ["xpath=//div[@id='related_links']/div[2]/div/div/a[13]/span[2]", "xpath:idRelative"],
+        ["xpath=//a[13]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'중앙도서관')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win325",
+      "windowTimeout": 2000
+    }, {
+      "id": "f32bd401-cc41-4d46-a61b-23110cdce537",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "013c5625-7551-44f4-9ec7-a0336c7fbaa2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win325}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "079dade3-12c5-4815-aaa6-5f8583b0299e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.logBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/ul/li/span/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6f79b9c-73aa-469d-981b-42e87027606f",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17ed6c0e-0eb2-4155-8093-0b849f0eb394",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "1d981ca2-34ba-435d-b728-1d61497e99b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b35014ae-db70-4ae5-aaab-81838c928862",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3950d5f5-fe67-4738-a9bb-c545bd88b9ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn > input",
+      "targets": [
+        ["css=.loginBtn > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb52f509-f803-40a2-b578-b1e5978ef2b8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96cd9676-eca4-4741-94b8-94a6d5d8658f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ee124b6-56fa-4149-9b80-8a0b82c98aa8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4a0882a2-1022-4eb3-881a-9f9df0e2afcd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["10e08032-7ad0-460b-93ed-7170ab0a71a9"]
+  }],
+  "urls": ["http://hongik.ac.kr/"],
+  "plugins": []
+}

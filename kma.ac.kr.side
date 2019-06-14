@@ -1,0 +1,159 @@
+{
+  "id": "c6d0f323-195e-4c57-9fb0-4e35b2a7b06a",
+  "version": "2.0",
+  "name": "kma.ac.kr",
+  "url": "http://kma.ac.kr/",
+  "tests": [{
+    "id": "9566d9d3-26be-4eac-9c8c-8bf00edb117b",
+    "name": "도서관",
+    "commands": [{
+      "id": "af97fd8f-cbd9-4cd9-87d3-e272f535edab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbfd8b54-6579-4bc7-be52-d7faa460db03",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,804)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2491119-608e-44f4-85f5-7914d4b09726",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"box_17\"]/a/img",
+      "targets": [
+        ["id=hidden_17", "id"],
+        ["css=#hidden_17", "css:finder"],
+        ["xpath=//div[@id='hidden_17']", "xpath:attributes"],
+        ["xpath=//div[@id='box_17']/a/div", "xpath:idRelative"],
+        ["xpath=//div[11]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "132db305-61a5-41a2-aa1d-00d95da9100a",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bd2bbc9-d216-40cc-a330-20ee4d92692e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea4958d-90aa-467e-8bcf-8a4f2beccdc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "42fa26f5-28a6-49f8-a883-ea62951f63e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "8cc0ae30-fa8a-4a8d-95b8-1350be3e8ad4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnLogin",
+      "targets": [
+        ["css=.btnLogin", "css:finder"],
+        ["xpath=//input[@value='LOGIN']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d27ab411-55d6-4bb8-aa50-adebacb3f6c0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "253638cc-1877-4d0a-9700-c2809a2c2503",
+    "name": "팝업제거",
+    "commands": [{
+      "id": "b4198594-5438-4e70-b7c6-aaca5fc1880e",
+      "comment": "",
+      "command": "open",
+      "target": "http://lib.kma.ac.kr//main/individualPopup?content_id=6325",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6721fdab-171a-4b0e-88e0-9dc9881e6066",
+      "comment": "",
+      "command": "click",
+      "target": "id=individualNotice",
+      "targets": [
+        ["id=individualNotice", "id"],
+        ["name=individualNotice", "name"],
+        ["css=#individualNotice", "css:finder"],
+        ["xpath=//input[@id='individualNotice']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ce52583-8a36-425c-b80f-70ba87473757",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[2]/form/a/img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[@alt='닫기']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcdd82ce-a63e-4fc0-9674-e37f44c02172",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "352f1a18-2387-4447-9ffd-ce0583c1446d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9566d9d3-26be-4eac-9c8c-8bf00edb117b"]
+  }],
+  "urls": ["https://kma.ac.kr/", "http://lib.kma.ac.kr/main/individualPopup?content_id=6325", "http://lib.kma.ac.kr/", "http://kma.ac.kr/"],
+  "plugins": []
+}

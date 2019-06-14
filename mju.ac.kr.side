@@ -1,0 +1,90 @@
+{
+  "id": "70581307-59c0-4cd6-931d-421cda87b9d4",
+  "version": "2.0",
+  "name": "mju.ac.kr",
+  "url": "http://mju.ac.kr",
+  "tests": [{
+    "id": "cfbf6247-8fbb-4e4b-8895-b3eeefac8df1",
+    "name": "메인",
+    "commands": [{
+      "id": "f93e6685-9fc5-4299-89c5-3436840ae8be",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ff787fb-3d7d-4022-99be-c962989891c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.txt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='totwrap']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sso.mju.ac.kr/swift/login/login_home.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edf458d0-5996-414a-bb13-bf166a802373",
+      "comment": "",
+      "command": "type",
+      "target": "id=userID",
+      "targets": [
+        ["id=userID", "id"],
+        ["name=userID", "name"],
+        ["css=#userID", "css:finder"],
+        ["xpath=//input[@id='userID']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5e7b52f9-fae7-48e4-8fec-09475bfdc4d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPW",
+      "targets": [
+        ["id=userPW", "id"],
+        ["name=userPW", "name"],
+        ["css=#userPW", "css:finder"],
+        ["xpath=//input[@id='userPW']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/div/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "74e3daec-07d2-474e-8a12-2eb0b0f1b4f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > input",
+      "targets": [
+        ["css=.btn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='per']/div/div/div[2]/div[3]/div/div/div[2]/div/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35f01ca6-2f0d-4dbc-b9ec-d31ee905c047",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bd7a8ace-5445-4420-b042-42fb72786432",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfbf6247-8fbb-4e4b-8895-b3eeefac8df1"]
+  }],
+  "urls": ["http://mju.ac.kr/"],
+  "plugins": []
+}

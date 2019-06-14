@@ -1,0 +1,360 @@
+{
+  "id": "12f08772-30ca-4d13-b9c3-132c56adc5fd",
+  "version": "2.0",
+  "name": "dhu.ac.kr",
+  "url": "http://dhu.ac.kr",
+  "tests": [{
+    "id": "c4278945-e8cc-48dc-b274-4ae3a8b582ca",
+    "name": "로그인",
+    "commands": [{
+      "id": "bd2fd713-6c59-4f11-9a38-70db44b0a7a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd46423c-8dde-4f03-abaa-bca4b9e4e068",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f50ebe9-7ca0-4681-ad13-0754a7d3d0e8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "ceb6ea8e-2ee7-462a-a5d7-e520ac7b8664",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=#topmn .fst > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='topmn']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://portal.dhu.ac.kr/user/login.face?returnURL=http://www.dhu.ac.kr/korean/index.htm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98fe6278-103b-4562-9c47-82afbbb1ec3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "92e3ba2d-5dea-4696-8706-abe7b22144f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=password", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b7e2b269-6d57-4bb5-b95c-1bf54108307f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginbtn > span",
+      "targets": [
+        ["css=.loginbtn > span", "css:finder"],
+        ["xpath=//form[@id='LoginForm']/fieldset/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "787460b2-b1c5-4e11-a397-c149dfe40b24",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "46f63880-4db8-4981-944e-9577772ee9f3",
+    "name": "DHU포털",
+    "commands": [{
+      "id": "378afc37-facb-44d8-9fcf-7d2ed89ae879",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "218fc201-14ca-4e6e-a397-67cf0a676dad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4c661e1-17e0-438f-b19f-061dddfda1e0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=DHU포털",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "275cbbf0-3b5e-4b50-a7b4-8fe9084ebe9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=DHU포털",
+      "targets": [
+        ["linkText=DHU포털", "linkText"],
+        ["css=.mq > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='mquick']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://portal.dhu.ac.kr/']", "xpath:href"],
+        ["xpath=//div[9]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6774",
+      "windowTimeout": 2000
+    }, {
+      "id": "5bc11b07-5c7e-463b-95e6-7da546a8ebb2",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "082dc005-c15e-4765-8262-9ed5723b8863",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6774}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93f8f2ea-d89f-4424-aa38-9bc313059600",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e8bcd7b3-dcb1-4476-809c-9d1624ccf671",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=password", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b75e8c8c-5b58-419f-8611-07f9a1a065cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginbtn > span",
+      "targets": [
+        ["css=.loginbtn > span", "css:finder"],
+        ["xpath=//form[@id='LoginForm']/fieldset/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6334f15e-7f3f-453d-b731-372367fc88c7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e3ec747-6a57-4189-bc6d-4cbcd17eb8a9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7818bd4-b635-48c0-bb53-06950676e3a7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f0020ca0-8cd3-458d-99af-a703d0ff449f",
+    "name": "학술정보원(도서관)",
+    "commands": [{
+      "id": "119324b4-f9e9-4969-bda7-d98059d3126f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12ad5c35-a313-4178-ac9d-b6bcbccd483f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a883abe-4a3f-44cb-b674-ea9020e5948a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=li:nth-child(3) .tt",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "285ee102-aa71-430d-99ba-919a8419d7a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .tt",
+      "targets": [
+        ["css=li:nth-child(3) .tt", "css:finder"],
+        ["xpath=//div[@id='mquick']/ul/li[3]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'학술정보원(도서관)')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9039",
+      "windowTimeout": 2000
+    }, {
+      "id": "50fa7970-c40e-47ff-8539-186e3fdb6655",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64c924f4-003e-4ad2-bc65-6af7eda1cb82",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9039}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd9dafc2-48e7-4596-9f70-eba6e640236c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "a8b8bd56-ff25-4c48-93b9-cb6492391f99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da84c87-f5de-4553-af3b-ddd9e62046b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "7933e7d5-6874-4805-859d-33a8299cbf4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPw",
+      "targets": [
+        ["id=userPw", "id"],
+        ["name=password", "name"],
+        ["css=#userPw", "css:finder"],
+        ["xpath=//input[@id='userPw']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0f0f29e2-edae-4333-893e-c88664df1c59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=.loginbtn", "css:finder"],
+        ["xpath=//a[@onclick='enviewLogin();']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#none')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "563161d5-e9d5-4ddc-a49c-48fe5a79560d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd3f0aff-897c-4c52-85bb-41f5fd35d5f4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab10054c-c089-467e-99e5-d450cc2cafdf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d69e0a6-302b-4cbd-bc26-33b392ce862c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4278945-e8cc-48dc-b274-4ae3a8b582ca", "46f63880-4db8-4981-944e-9577772ee9f3", "f0020ca0-8cd3-458d-99af-a703d0ff449f"]
+  }],
+  "urls": ["http://dhu.ac.kr/"],
+  "plugins": []
+}

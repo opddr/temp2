@@ -1,0 +1,217 @@
+{
+  "id": "dfacde13-a2c6-4a7e-9913-a7b192f82641",
+  "version": "2.0",
+  "name": "medical.gachon.ac.kr",
+  "url": "http://medical.gachon.ac.kr",
+  "tests": [{
+    "id": "7eb222ca-353b-4d32-9795-6c99ac2f6999",
+    "name": "메인",
+    "commands": [{
+      "id": "07b65380-9b8e-4cbe-a163-282d7d93919c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af394e29-e9f6-49eb-9d79-b7ee7fc6873a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lnb li:nth-child(3) .png24",
+      "targets": [
+        ["css=.lnb li:nth-child(3) .png24", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c9a601c-1e28-47f7-8180-ae54080fca7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=uid", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/form/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba6334b9-7089-4c70-9863-4e7ad78bd176",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=uid", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/form/div/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "bbbeb0ca-d3a9-4379-83e6-a24047f1ecc9",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=password", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/form/div/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "edaea18c-a52a-4940-942d-c0aace77bdde",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login:nth-child(3)",
+      "targets": [
+        ["css=.login:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='image'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6354b365-6ab9-49ba-be95-22a4b02ddbc8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5a0cd926-c50c-416c-a9d0-a7f0326fe069",
+    "name": "도서관",
+    "commands": [{
+      "id": "66406b01-290e-4f08-9018-db72c35e9a45",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a16edace-8d15-4961-9e80-d3b9e831da38",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainQuickList > li:nth-child(5) .png24",
+      "targets": [
+        ["css=#mainQuickList > li:nth-child(5) .png24", "css:finder"],
+        ["xpath=//img[@alt='중앙도서관']", "xpath:img"],
+        ["xpath=//ul[@id='mainQuickList']/li[5]/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/ul/li[5]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9112",
+      "windowTimeout": 2000
+    }, {
+      "id": "2fa40fb3-24d0-415c-af9f-31f221d1fb3f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da5e1f06-7cb6-4741-8e9e-7d939c34b5e5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9112}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb35e824-4c75-4b4f-afa7-de507cbec11a",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4efc6d9e-9622-4bb7-9b6f-544d3f974ab8",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "0d4c071e-ed1f-4433-9675-aa167e544ae8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b412a91b-80d7-4881-a26f-0d0c9c119d48",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitbutton",
+      "targets": [
+        ["id=submitbutton", "id"],
+        ["css=#submitbutton", "css:finder"],
+        ["xpath=//input[@id='submitbutton']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66d9ddc-bc34-4f5b-ba7d-c25a365bad11",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd4b7ba3-e716-4a18-9489-f9e10ac51cfe",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a55e3cfb-6035-43d9-9dc1-bc444c9dc8c8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce1af80f-2fba-4e15-b2ca-1c11b8819d6e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7eb222ca-353b-4d32-9795-6c99ac2f6999", "5a0cd926-c50c-416c-a9d0-a7f0326fe069"]
+  }],
+  "urls": ["http://medical.gachon.ac.kr/"],
+  "plugins": []
+}

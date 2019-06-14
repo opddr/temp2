@@ -1,0 +1,294 @@
+{
+  "id": "eb196863-9589-4ead-a63b-d906ffe9e569",
+  "version": "2.0",
+  "name": "sangha.ac.kr",
+  "url": "http://sangha.ac.kr",
+  "tests": [{
+    "id": "6c090100-13a4-464d-9689-f2ce57fcf6fb",
+    "name": "메인",
+    "commands": [{
+      "id": "87c6061c-0697-42a1-910f-bbe737e87b05",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7d947a5-358f-490f-bc74-8ad141910c08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0b8b10b-210f-4abb-a80b-83fe9669f479",
+      "comment": "",
+      "command": "click",
+      "target": "css=#t1 > area:nth-child(2)",
+      "targets": [
+        ["css=#t1 > area:nth-child(2)", "css:finder"],
+        ["xpath=//map[@id='t1']/area[2]", "xpath:idRelative"],
+        ["xpath=//area[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e32cf2f2-fd77-40a3-8d20-9cec6ee9a1b1",
+      "comment": "",
+      "command": "click",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c9a2d50-d9a4-4af1-b78d-0520e847881d",
+      "comment": "",
+      "command": "type",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=tr:nth-child(1) > td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "fc62ad17-193a-4395-9d0b-e72e5cabc87d",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "816f237a-8649-494f-a512-183a5d698649",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b8cb204d-77d1-49b9-9bff-f37b186e4ba5",
+      "comment": "",
+      "command": "click",
+      "target": "name=imageField",
+      "targets": [
+        ["name=imageField", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='imageField']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5ae0ee-7ba1-46a4-930a-02676bc1277f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "da550391-1bba-4d85-a5da-2ba0151bb386",
+    "name": "도서관",
+    "commands": [{
+      "id": "c3bd63a4-69c9-4bb3-8d4c-c15ef859742b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "616d0b3d-5a52-468f-af9a-1bdce2b37fc3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c2feaae-ca17-40c9-9a7f-236ea120b9ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td > a > img",
+      "targets": [
+        ["css=tr:nth-child(3) > td > a > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.sangha.ac.kr:8000/2006/images/right_ed.gif')]", "xpath:img"],
+        ["xpath=//tr[3]/td/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5456",
+      "windowTimeout": 2000
+    }, {
+      "id": "9131e37e-3543-461c-9080-b3464524a5f9",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9517afc-0d84-4b1d-8be4-a5969cefa6e1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5456}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16acaedd-6077-48db-91e2-ec61c99281fd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f18cee-9ee9-4d60-8e3e-3c9b0b84e5d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=top_menu",
+      "targets": [
+        ["id=top_menu", "id"],
+        ["css=#top_menu", "css:finder"],
+        ["xpath=//ul[@id='top_menu']", "xpath:attributes"],
+        ["xpath=//div[@id='header_top']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b0f4980-4a81-44ee-8a90-c8ddde7b23bf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//ul[@id='top_menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/SANGHA/Login/Login.csp')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9a636ae-4a9a-4a1e-8956-7e7f539a2550",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pw",
+      "targets": [
+        ["css=.pw", "css:finder"],
+        ["xpath=//ul[@id='login_id_textbox']/li[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]/ul/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ae50ae2-2612-46c7-bb33-7e17f8dcf7ee",
+      "comment": "",
+      "command": "click",
+      "target": "name=UsrID",
+      "targets": [
+        ["name=UsrID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='UsrID']", "xpath:attributes"],
+        ["xpath=//ul[@id='login_id_textbox']/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bed4d6b-515b-43a8-a517-aa4151edec96",
+      "comment": "",
+      "command": "type",
+      "target": "name=UsrID",
+      "targets": [
+        ["name=UsrID", "name"],
+        ["css=.id > input", "css:finder"],
+        ["xpath=//input[@name='UsrID']", "xpath:attributes"],
+        ["xpath=//ul[@id='login_id_textbox']/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "d5267e2c-1aff-49cf-b21f-ba9f1eb83230",
+      "comment": "",
+      "command": "click",
+      "target": "name=PWord",
+      "targets": [
+        ["name=PWord", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PWord']", "xpath:attributes"],
+        ["xpath=//ul[@id='login_id_textbox']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b223cb9-f504-46bb-b6e3-82a9272b47e0",
+      "comment": "",
+      "command": "type",
+      "target": "name=PWord",
+      "targets": [
+        ["name=PWord", "name"],
+        ["css=.pw > input", "css:finder"],
+        ["xpath=//input[@name='PWord']", "xpath:attributes"],
+        ["xpath=//ul[@id='login_id_textbox']/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d2c7e378-5791-4bf2-b9dc-c73bb7f549d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > a > img",
+      "targets": [
+        ["css=li:nth-child(1) > a > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//ul[@id='button_login']/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adb46d4f-7ab5-4d67-9c5b-3d87079727a0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b55bfaa-f499-4698-b279-3edb4e64fb15",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aef74fa0-dbd9-4198-8ddc-9286159538e8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cecf78df-7166-4998-8ed3-8956be8ba189",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6c090100-13a4-464d-9689-f2ce57fcf6fb", "da550391-1bba-4d85-a5da-2ba0151bb386"]
+  }],
+  "urls": ["http://www.sangha.ac.kr/", "http://sangha.ac.kr/"],
+  "plugins": []
+}

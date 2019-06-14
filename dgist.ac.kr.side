@@ -1,0 +1,443 @@
+{
+  "id": "f0506fe3-a662-40b5-bed7-a1b7fccbd67d",
+  "version": "2.0",
+  "name": "dgist.ac.kr",
+  "url": "http://dgist.ac.kr",
+  "tests": [{
+    "id": "8d5908be-1a26-4b66-b664-124de0176907",
+    "name": "Easy IT",
+    "commands": [{
+      "id": "aeb954fc-5c28-4495-a5f8-cab99b6fd570",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb4e5483-cc11-45c2-8fa5-91ea2a972411",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f07ecb34-b271-4f56-83db-b51db270a023",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=li:nth-child(4) > .fnb_wrap li:nth-child(3) span",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "f33dcd19-19e7-472b-bc5f-f8d420fefd27",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > .fnb_wrap li:nth-child(3) span",
+      "targets": [
+        ["css=li:nth-child(4) > .fnb_wrap li:nth-child(3) span", "css:finder"],
+        ["xpath=//div[@id='fnb']/ul/li[4]/div/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/div/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Easy IT')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win637",
+      "windowTimeout": 2000
+    }, {
+      "id": "c4f36896-9432-4c7b-9d27-c6c4674661f6",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f73e2d-58d6-414d-ad89-f6b115f2f703",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win637}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c11d88b4-7de0-4093-84da-9da6ce093361",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=li:nth-child(3) > input",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "c813bd2f-8a0e-4d75-8f40-43b0665e6b5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > input",
+      "targets": [
+        ["css=li:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//div[@id='siteAdminControlArea']/ul[2]/li[3]/input", "xpath:idRelative"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "841e5451-8e08-4029-aa1c-60428dbc11a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='keyCryptForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3e463df2-2ed0-4d0b-b37f-dee72c6549e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordTest",
+      "targets": [
+        ["id=passwordTest", "id"],
+        ["name=passwordTest", "name"],
+        ["css=#passwordTest", "css:finder"],
+        ["xpath=//input[@id='passwordTest']", "xpath:attributes"],
+        ["xpath=//form[@id='keyCryptForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "29d00eb3-99d2-42e1-9a2f-775b40c34f24",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=btnLogin", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "578eb947-12d8-4785-9822-c2b699e6fff3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6f83205-17e5-49e8-a63e-c462dd0a15f8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "448d3987-e2d3-4345-8793-e85942a20c47",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "43f68539-0cdc-4d4d-9213-6ef144f21fc7",
+    "name": "학생포털",
+    "commands": [{
+      "id": "54ac6970-cbe4-40a5-b7a1-4b4a126e00e4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1117090-7a7f-4a6c-9ecc-a8a39fa86356",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b743b808-8417-459b-94cd-a5b592f892db",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=li:nth-child(4) > .fnb_wrap li:nth-child(2) span",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "ca40d68a-afba-4903-a0bd-67f76628b4dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > .fnb_wrap li:nth-child(2) span",
+      "targets": [
+        ["css=li:nth-child(4) > .fnb_wrap li:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='fnb']/ul/li[4]/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'학생포털')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3893",
+      "windowTimeout": 2000
+    }, {
+      "id": "dfa26366-a291-4c0e-8821-c6a1e1bd605d",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf774650-d0e2-4b8d-a0e4-02e838e50bb0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13cbb14a-a468-42fb-8447-61630de5af8f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3687a10-0ab7-4add-b501-37b2c4f83ea4",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae692d81-8ec2-427f-8183-9dfd55ade995",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3893}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0998b6c-71be-4d78-bf2c-b59565e032e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='keyCryptForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ed2afa8-e64e-4ed8-9f41-e98f3a513daa",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='keyCryptForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "dcf7cfd0-79dd-46e9-9554-a38c9ac9de43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.log_btn > img",
+      "targets": [
+        ["css=.log_btn > img", "css:finder"],
+        ["xpath=//img[@alt='Login']", "xpath:img"],
+        ["xpath=//form[@id='keyCryptForm']/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9dcc3c7-5f25-4efd-894f-b1cde72ebb21",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordTest",
+      "targets": [
+        ["id=passwordTest", "id"],
+        ["name=passwordTest", "name"],
+        ["css=#passwordTest", "css:finder"],
+        ["xpath=//input[@id='passwordTest']", "xpath:attributes"],
+        ["xpath=//form[@id='keyCryptForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "2c7e01f2-678c-44ff-a7a2-6953587e8806",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btnLogin > img",
+      "targets": [
+        ["css=#btnLogin > img", "css:finder"],
+        ["xpath=//img[@alt='pw']", "xpath:img"],
+        ["xpath=//a[@id='btnLogin']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aae3db2-ef76-4a07-b9e1-d53921b70bb3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3893}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9acbadb0-393a-4eed-afb8-feafcc8e869c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7711c7ac-9f4b-46b2-bd3f-ea66caf58119",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6ff4979-4aef-417e-943d-dd0312347c08",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d736faed-4c75-4a1c-83cc-64bb463c780d",
+    "name": "DGIST 도서관",
+    "commands": [{
+      "id": "d01d347c-6ae5-4f70-9550-c0b8675e99ca",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4bddb34-e391-43d4-b900-407ea572c9f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43feb4a1-cf56-4b90-98c0-40f43ddf60da",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=li:nth-child(2) > .fnb_wrap li:nth-child(2) span",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "d8b21152-bcf9-4d70-a86b-3895a76a40eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .fnb_wrap li:nth-child(2) span",
+      "targets": [
+        ["css=li:nth-child(2) > .fnb_wrap li:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='fnb']/ul/li[2]/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DGIST 도서관')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6409",
+      "windowTimeout": 2000
+    }, {
+      "id": "02ab8b2a-3d15-4a25-873a-5573450cf794",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa2708d4-0b90-4cce-af08-1b889169dabe",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6409}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33c0f709-8427-4708-8a89-cdf0c017b31f",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputId",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f9a9f17-d703-478a-840d-62868e2a3ba7",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputId",
+      "targets": [
+        ["id=inputId", "id"],
+        ["css=#inputId", "css:finder"],
+        ["xpath=//input[@id='inputId']", "xpath:attributes"],
+        ["xpath=//div[@id='dgstLogin']/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c3f25e59-7ce4-414f-9c4d-7067989fe070",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='dgstLogin']/form/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f1f89f63-7833-4554-a106-d828d209fcf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=pt-login-btn",
+      "targets": [
+        ["id=pt-login-btn", "id"],
+        ["css=#pt-login-btn", "css:finder"],
+        ["xpath=//button[@id='pt-login-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dgstLogin']/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "498b663a-1a64-498b-9f9c-42e6600578c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4227c9ee-382b-4a18-913b-d0def610847e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b4d325-a643-4ba8-a505-39d20a547a87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c1fb0762-aa1c-41f6-b80c-ac7383020480",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8d5908be-1a26-4b66-b664-124de0176907", "d736faed-4c75-4a1c-83cc-64bb463c780d", "43f68539-0cdc-4d4d-9213-6ef144f21fc7"]
+  }],
+  "urls": ["http://dgist.ac.kr/"],
+  "plugins": []
+}

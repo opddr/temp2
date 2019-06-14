@@ -1,0 +1,153 @@
+{
+  "id": "c633befb-281d-4f7f-9362-3482d87891c3",
+  "version": "2.0",
+  "name": "ipsi.joongbu.ac.kr",
+  "url": "http://ipsi.joongbu.ac.kr",
+  "tests": [{
+    "id": "d346a244-b91e-49a7-8947-49cdbf52ec7c",
+    "name": "메인",
+    "commands": [{
+      "id": "5d6e436d-99ca-4e25-a2c8-0ebbf8cd90b6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bbaaf28-3305-4ab3-bf97-7d019f35636f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='gnb']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.joongbu.ac.kr/member/ipsi/sitemap_02_02/loginForm.do')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b0751e-06fb-499e-9621-838611805a5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNum",
+      "targets": [
+        ["id=userNum", "id"],
+        ["name=userId", "name"],
+        ["css=#userNum", "css:finder"],
+        ["xpath=//input[@id='userNum']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div/form/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a72269-cf04-4e11-a9fb-19c272d316f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rLogin1 dt:nth-child(3) img",
+      "targets": [
+        ["css=.rLogin1 dt:nth-child(3) img", "css:finder"],
+        ["xpath=(//img[@alt='비밀번호'])[2]", "xpath:img"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dt[2]/label/img", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dt[2]/label/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706bef40-f46e-4f6a-8003-1e7b5e089f29",
+      "comment": "",
+      "command": "click",
+      "target": "id=memNam",
+      "targets": [
+        ["id=memNam", "id"],
+        ["css=#memNam", "css:finder"],
+        ["xpath=//input[@id='memNam']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "770d0b36-9051-4dc6-a28b-d87c74c17bbc",
+      "comment": "",
+      "command": "type",
+      "target": "id=memNam",
+      "targets": [
+        ["id=memNam", "id"],
+        ["css=#memNam", "css:finder"],
+        ["xpath=//input[@id='memNam']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "76c976b0-f605-4e5b-aafb-6ef24344c8cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=hLogin",
+      "targets": [
+        ["id=hLogin", "id"],
+        ["css=#hLogin", "css:finder"],
+        ["xpath=//div[@id='hLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='txt']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069cecb9-31ea-4855-a5d8-9145eba28a09",
+      "comment": "",
+      "command": "click",
+      "target": "id=userPass2",
+      "targets": [
+        ["id=userPass2", "id"],
+        ["css=#userPass2", "css:finder"],
+        ["xpath=//input[@id='userPass2']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5581d98f-9337-413e-8a97-62d15e24e5e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=userPass2",
+      "targets": [
+        ["id=userPass2", "id"],
+        ["css=#userPass2", "css:finder"],
+        ["xpath=//input[@id='userPass2']", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/dl/dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b000536d-5015-4055-a599-54a46576f40d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rLogin1 .bt_login > input",
+      "targets": [
+        ["css=.rLogin1 .bt_login > input", "css:finder"],
+        ["xpath=(//input[@type='image'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='hLogin']/div[2]/form/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3deaa0a0-7383-45c8-926e-0bb96cf9ad81",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2032422f-f5c6-4d6b-b6cf-b76166d81bc3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d346a244-b91e-49a7-8947-49cdbf52ec7c"]
+  }],
+  "urls": ["http://ipsi.joongbu.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,408 @@
+{
+  "id": "55427e24-eabc-4012-85bf-114530f3e23d",
+  "version": "2.0",
+  "name": "jeju.ac.kr",
+  "url": "http://jeju.ac.kr",
+  "tests": [{
+    "id": "caa3e1e3-770c-4c46-bca3-8fdab83cd02d",
+    "name": "main",
+    "commands": [{
+      "id": "be205be0-e992-44c3-ae50-8dd615d46661",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d966c2c3-e8a5-4eb8-9ea0-a00b339137a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1240x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4eb4c84-a3ed-44ad-b497-cc09c2d81150",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.util1 > dd:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.jeju.ac.kr/members/login.htm')]", "xpath:href"],
+        ["xpath=//dd/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1de0c1f-a796-4a7e-82cd-54490e3c6de4",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "TESTTEST"
+    }, {
+      "id": "9874a054-b22d-4062-9b36-41e2b116fea6",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "aefe4476-42fb-4072-acd3-4595e0b60381",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(12)",
+      "targets": [
+        ["css=input:nth-child(12)", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0050bc85-ae86-45fe-a3bb-c8ce60a060b0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "87288cef-cdad-4eca-80ed-5f37eba6a562",
+    "name": "웹메일",
+    "commands": [{
+      "id": "d1c87590-0df9-4352-8495-f14c6f4ae863",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aba2228b-c0c7-45af-b292-281b18b03464",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1240x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e57a08ef-8278-4273-bd69-c8c2660e7f99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=자주찾는메뉴",
+      "targets": [
+        ["linkText=자주찾는메뉴", "linkText"],
+        ["css=.more", "css:finder"],
+        ["xpath=//a[contains(text(),'자주찾는메뉴')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#bookmark')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'자주찾는메뉴')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeca224b-a4db-4d3d-bcd0-633ce6d3086e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=웹메일",
+      "targets": [
+        ["linkText=웹메일", "linkText"],
+        ["css=dl:nth-child(2) > dd:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'웹메일')]", "xpath:link"],
+        ["xpath=//div[@id='bookmark']/dl[2]/dd[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://webmail.jeju.ac.kr  ')]", "xpath:href"],
+        ["xpath=//dl[2]/dd[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'웹메일')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6334",
+      "windowTimeout": 2000
+    }, {
+      "id": "a355f632-aab8-44f3-845b-ccf2e73a7337",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e248f224-a3d3-493a-9003-c2405dacbc20",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6334}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "813adac0-f4e4-4699-af2a-d463a9a0c7ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=userNameInput",
+      "targets": [
+        ["id=userNameInput", "id"],
+        ["name=UserName", "name"],
+        ["css=#userNameInput", "css:finder"],
+        ["xpath=//input[@id='userNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='userNameArea']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest@jeju.ac.kr"
+    }, {
+      "id": "6a1de23a-500e-4730-a1ec-3f62110538a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["name=Password", "name"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//div[@id='passwordArea']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "9e7189a2-39e9-44e2-a96a-1b4173e1b3c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//span[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='submissionArea']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ec3f94-1631-40e6-af13-6f6e69a28f04",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f838e91-5cb8-4b84-82be-2cf9728006c7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49ca9f63-aa8c-4828-941f-606436bf3ba4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=증명발급",
+      "targets": [
+        ["linkText=증명발급", "linkText"],
+        ["css=.links li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'증명발급')]", "xpath:link"],
+        ["xpath=//section[@id='mainContent']/div/div[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:window.open('/index/popup.htm','증명발급','location=no, status=no, scrollbars=no, toolbar=no, menubar=no,resizable=no,width=515,height=615').focus();\")]", "xpath:href"],
+        ["xpath=//section/div/div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'증명발급')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd8950b-52c5-4865-b8c0-91e5f1cc8dbf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bdaeba1a-5722-49ec-b904-d1fa7024df34",
+    "name": "포털시스템",
+    "commands": [{
+      "id": "cd786f03-cbf9-41c6-a0da-ecb5a61c31a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00e41d4e-f1cc-425e-8b9a-fc007c9b0801",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1240x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6c84e7e-c353-493f-8c38-5d5f32eccf24",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4eefcee-3c06-4cc6-a839-50ac5297e227",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ec0cdca-5897-49ed-97cc-d9b94b8dd648",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(4) img",
+      "targets": [
+        ["css=li:nth-child(4) img", "css:finder"],
+        ["xpath=//section[@id='mainContent']/div/div/div/div/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb3825f-45e6-445a-894f-a595ff7dc178",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=li:nth-child(4) img",
+      "targets": [
+        ["css=li:nth-child(4) img", "css:finder"],
+        ["xpath=//section[@id='mainContent']/div/div/div/div/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "085d5bf1-790d-4d07-b167-60aa30ab3880",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=학생역량관리 포털시스템",
+      "targets": [
+        ["linkText=학생역량관리 포털시스템", "linkText"],
+        ["css=.service li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'학생역량관리 포털시스템')]", "xpath:link"],
+        ["xpath=//section[@id='mainContent']/div/div[5]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://job.jeju.ac.kr/']", "xpath:href"],
+        ["xpath=//section/div/div[5]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'학생역량관리 포털시스템')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1076",
+      "windowTimeout": 2000
+    }, {
+      "id": "9f17c9dc-bb11-4d32-a6ad-e9d6986e6ef5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1076}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43a45b42-a42f-4d9d-b525-88a9190c995a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='main_header']/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/_user/login/do.asp?type=login%5Fchk&')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78ddda06-5c05-4cd7-b267-52c0f29014c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginFrm']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47180d12-fd2d-4719-b6c3-7e75d7510499",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginFrm']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "040fb0a2-5cad-4a0f-b697-85e1fff5f912",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_pwd",
+      "targets": [
+        ["id=login_pwd", "id"],
+        ["name=login_pwd", "name"],
+        ["css=#login_pwd", "css:finder"],
+        ["xpath=//input[@id='login_pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='loginFrm']/fieldset/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3ced8cf9-be58-4e11-8287-3c167e4bad2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_btn",
+      "targets": [
+        ["css=.login_btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='loginFrm']/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8598e405-8801-4dae-bde2-600182c6769b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f76aefa-41e1-45f5-a733-32aec2adb0ae",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1361e38-21c3-4daf-80b9-4a00bd245057",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "24316343-d9d7-45c0-a5f4-741cc0e5dcd0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["caa3e1e3-770c-4c46-bca3-8fdab83cd02d", "87288cef-cdad-4eca-80ed-5f37eba6a562", "bdaeba1a-5722-49ec-b904-d1fa7024df34"]
+  }],
+  "urls": ["http://jeju.ac.kr/"],
+  "plugins": []
+}

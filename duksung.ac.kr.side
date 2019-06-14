@@ -1,0 +1,196 @@
+{
+  "id": "b61fc916-08bc-45d2-990f-567dd93a4ab2",
+  "version": "2.0",
+  "name": "duksung.ac.kr",
+  "url": "http://duksung.ac.kr",
+  "tests": [{
+    "id": "177c4b40-ae2c-4ee9-a521-857c0b6642c1",
+    "name": "메인페이지",
+    "commands": [{
+      "id": "cf6c352f-5da1-4165-83ed-ed8ebbe7c9b3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d44ebdd-9e0b-400d-b186-179937ffa41e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_id",
+      "targets": [
+        ["id=user_id", "id"],
+        ["name=user_id", "name"],
+        ["css=#user_id", "css:finder"],
+        ["xpath=//input[@id='user_id']", "xpath:attributes"],
+        ["xpath=//div[@id='firAuth']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a25047e9-56aa-4221-839b-f56dff5bf037",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user_password", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//div[@id='firAuth']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "27ec4513-4266-4e15-8ec3-e8ab88e4659a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .btn_login",
+      "targets": [
+        ["css=li:nth-child(1) > .btn_login", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='firAuth']/fieldset/ul/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b9f5307-6442-4e0e-84f6-d745b54d1528",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "48e1af22-d6d2-4355-8938-2f57036e89a6",
+    "name": "웹메일",
+    "commands": [{
+      "id": "fd71d1cc-e06a-47d0-8373-5a5eb2d81689",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "637d265d-88c0-42d3-9e77-776be7f88988",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnRediMail",
+      "targets": [
+        ["id=btnRediMail", "id"],
+        ["linkText=웹메일 바로가기", "linkText"],
+        ["css=#btnRediMail", "css:finder"],
+        ["xpath=//a[contains(text(),'웹메일 바로가기')]", "xpath:link"],
+        ["xpath=//a[@id='btnRediMail']", "xpath:attributes"],
+        ["xpath=//div[@id='firAuth']/fieldset/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' 웹메일 바로가기')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3991",
+      "windowTimeout": 2000
+    }, {
+      "id": "0d23bed5-c942-454b-a4e5-e80591f8fcd8",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27bb9112-b920-4361-8702-026cde663304",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3991}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c3d8d03-b766-4bc6-a0e5-db90611284bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div[2]/div[2]/div/ul/li/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7be1746-368d-4380-910b-3f157e857642",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div[2]/div[2]/div/ul/li/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "4c11884e-c354-4dc8-b568-f1248bc862ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div[2]/div[2]/div/ul/li[2]/label/input", "xpath:idRelative"],
+        ["xpath=//li[2]/label/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "8e7f85d6-9522-44be-b71c-7a3d4824f51a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/div[2]/div[2]/div/ul/li[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18bf1241-5a6f-4eea-bbe3-7bb93574ce23",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69a75ebb-22a8-45bf-82d3-a6c30daee61c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4c98a9c-bd5e-4b44-b7ed-d552dbe6d563",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2f1d36f3-b870-4bee-bc68-a1d3c1579949",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["177c4b40-ae2c-4ee9-a521-857c0b6642c1"]
+  }],
+  "urls": ["http://duksung.ac.kr/"],
+  "plugins": []
+}

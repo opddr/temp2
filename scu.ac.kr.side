@@ -1,0 +1,407 @@
+{
+  "id": "43e92639-f86d-450c-af7d-f180ced05753",
+  "version": "2.0",
+  "name": "scu.ac.kr",
+  "url": "http://scu.ac.kr/",
+  "tests": [{
+    "id": "2e86c33e-a6cb-4c12-a244-294a0cfec3e3",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "46600ee4-b080-4417-afa7-5066df7817f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70fbaa8e-041e-4ac2-ad59-9065d232ace9",
+      "comment": "",
+      "command": "click",
+      "target": "css=table:nth-child(2) td:nth-child(10)",
+      "targets": [
+        ["css=table:nth-child(2) td:nth-child(10)", "css:finder"],
+        ["xpath=//td[@onclick=\"location.href='http://www.scu.ac.kr/member/login_2018.php'\"]", "xpath:attributes"],
+        ["xpath=//td[10]", "xpath:position"],
+        ["xpath=//td[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "039afc68-5d97-4885-946b-a1469d797bb0",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=tr:nth-child(1) > td > .b_ipt", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6609225-eb55-4f34-a03a-3d0545da458b",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=tr:nth-child(1) > td > .b_ipt", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a1a5af2f-5302-4a59-b81b-e49aa077a018",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=tr:nth-child(3) .b_ipt", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "fdc67146-cb86-46fa-800d-4a045364d212",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > table > tbody > tr > td > input",
+      "targets": [
+        ["css=td:nth-child(2) > table > tbody > tr > td > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//td[2]/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5ed204-37bb-46d3-86b5-24a28ebdfe00",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "528df5c2-bba1-4bfa-9a67-e3e3c07cc02a",
+    "name": "webmail",
+    "commands": [{
+      "id": "b51a9c5f-bedc-458a-a00f-d8b3fae08866",
+      "comment": "",
+      "command": "open",
+      "target": "http://scu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9172d527-d81a-4cd4-a3fe-4308b74ee956",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06c1d472-6e29-4404-89e5-74e87b938f61",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(4) > a > img",
+      "targets": [
+        ["css=td:nth-child(4) > a > img", "css:finder"],
+        ["xpath=//td[4]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4558",
+      "windowTimeout": 2000
+    }, {
+      "id": "67f4155c-f4d0-466e-b8b4-24d96fd5d24c",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3ce725e-e9e9-422e-abf9-60c695b11990",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4558}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e548586-1d05-4bf1-af8b-5650f3d5e89f",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//div[@id='receivemail']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c0f556b-18a0-4f37-a093-66d40f561845",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_id",
+      "targets": [
+        ["id=login_id", "id"],
+        ["name=login_id", "name"],
+        ["css=#login_id", "css:finder"],
+        ["xpath=//input[@id='login_id']", "xpath:attributes"],
+        ["xpath=//div[@id='receivemail']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "aeedfa5b-1e09-471e-82ef-b6f89685f55e",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_passwd",
+      "targets": [
+        ["id=login_passwd", "id"],
+        ["name=login_passwd", "name"],
+        ["css=#login_passwd", "css:finder"],
+        ["xpath=//input[@id='login_passwd']", "xpath:attributes"],
+        ["xpath=//div[@id='receivemail']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bd9aa4c9-7c47-410d-beed-c6d40c47cab9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=login_passwd",
+      "targets": [
+        ["id=login_passwd", "id"],
+        ["name=login_passwd", "name"],
+        ["css=#login_passwd", "css:finder"],
+        ["xpath=//input[@id='login_passwd']", "xpath:attributes"],
+        ["xpath=//div[@id='receivemail']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f9dc2666-8d20-4f9d-9338-90c4893d57a2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7147d55-ed62-42bd-a142-01d902593333",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a896957b-46ab-445b-acb6-a4db4419ee3b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e5cf2c62-bb28-4d5f-a6bf-387c67d531c4",
+    "name": "EDU",
+    "commands": [{
+      "id": "2aaf6a8e-854e-41a9-828d-201e59a79090",
+      "comment": "",
+      "command": "open",
+      "target": "http://edu.scu.ac.kr/dg/mb_login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "628daec2-fb35-47b9-9e03-18c374ec94c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_top li:nth-child(2) img",
+      "targets": [
+        ["css=#btn_top li:nth-child(2) img", "css:finder"],
+        ["xpath=//div[@id='btn_top']/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf7aabe-8e18-4b5a-b378-ac5f4ef0f211",
+      "comment": "",
+      "command": "type",
+      "target": "name=mb_id",
+      "targets": [
+        ["name=mb_id", "name"],
+        ["css=tr:nth-child(1) > td > .input_mb_login", "css:finder"],
+        ["xpath=//input[@name='mb_id']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_wrap']/div[2]/div[2]/div[2]/div/form/table[2]/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f1db7113-195f-40ba-9274-4595d3d218e8",
+      "comment": "",
+      "command": "type",
+      "target": "name=mb_password",
+      "targets": [
+        ["name=mb_password", "name"],
+        ["css=tr:nth-child(2) > td > .input_mb_login", "css:finder"],
+        ["xpath=//input[@name='mb_password']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_wrap']/div[2]/div[2]/div[2]/div/form/table[2]/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "82fe213f-607d-4ede-a627-7325de92dc40",
+      "comment": "",
+      "command": "click",
+      "target": "name=image",
+      "targets": [
+        ["name=image", "name"],
+        ["css=.button_mb_login", "css:finder"],
+        ["xpath=//input[@name='image']", "xpath:attributes"],
+        ["xpath=//div[@id='sub_wrap']/div[2]/div[2]/div[2]/div/form/table[2]/tbody/tr[2]/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "084e37ab-ca54-4d34-b741-f16043ef8734",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a96772fc-acd9-4cb0-bc0f-70457125db12",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4e7d599f-292d-48f0-9fff-bb31d8310a48",
+    "name": "도서관",
+    "commands": [{
+      "id": "841a2adf-c116-423a-9f0b-e927ef61c442",
+      "comment": "",
+      "command": "open",
+      "target": "http://lib.scu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df67b963-5c16-4b98-8cbd-cd8a7bdf6672",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd0b1db7-6500-414b-b127-289262e7fcac",
+      "comment": "",
+      "command": "click",
+      "target": "id=hlkLogin",
+      "targets": [
+        ["id=hlkLogin", "id"],
+        ["linkText=로그인", "linkText"],
+        ["css=#hlkLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@id='hlkLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lib.scu.ac.kr/WebSCTUK/aspx/login/login.aspx')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a14d2010-a519-47a9-aca0-c7492a99c57f",
+      "comment": "",
+      "command": "open",
+      "target": "http://lib.scu.ac.kr/WebSCTUK/aspx/login/login.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cac78547-89f4-4643-9721-995cdeeac758",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e2310c5-40e3-44ff-837e-1d585302f987",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Submaster_logid",
+      "targets": [
+        ["id=ctl00_Submaster_logid", "id"],
+        ["name=ctl00$Submaster$logid", "name"],
+        ["css=#ctl00_Submaster_logid", "css:finder"],
+        ["xpath=//input[@id='ctl00_Submaster_logid']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[3]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb84783-7236-41e4-8de1-31a07873d72b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ctl00_Submaster_logid",
+      "targets": [
+        ["id=ctl00_Submaster_logid", "id"],
+        ["name=ctl00$Submaster$logid", "name"],
+        ["css=#ctl00_Submaster_logid", "css:finder"],
+        ["xpath=//input[@id='ctl00_Submaster_logid']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[3]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "b26d30b6-e3aa-4ff7-ba3f-f96a87cd011a",
+      "comment": "",
+      "command": "type",
+      "target": "id=ctl00_Submaster_logpw",
+      "targets": [
+        ["id=ctl00_Submaster_logpw", "id"],
+        ["name=ctl00$Submaster$logpw", "name"],
+        ["css=#ctl00_Submaster_logpw", "css:finder"],
+        ["xpath=//input[@id='ctl00_Submaster_logpw']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[3]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b74c94fc-4f7d-4641-8232-12d25a77d996",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Submaster_LogOkBtn",
+      "targets": [
+        ["id=ctl00_Submaster_LogOkBtn", "id"],
+        ["name=ctl00$Submaster$LogOkBtn", "name"],
+        ["css=#ctl00_Submaster_LogOkBtn", "css:finder"],
+        ["xpath=//input[@id='ctl00_Submaster_LogOkBtn']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/div[3]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d668a1f1-67fd-42e8-8e88-821acb9525c6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3e52e054-d589-477b-9cd3-16df90e9b3b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2e86c33e-a6cb-4c12-a244-294a0cfec3e3", "e5cf2c62-bb28-4d5f-a6bf-387c67d531c4", "528df5c2-bba1-4bfa-9a67-e3e3c07cc02a", "4e7d599f-292d-48f0-9fff-bb31d8310a48"]
+  }],
+  "urls": ["http://scu.ac.kr/"],
+  "plugins": []
+}

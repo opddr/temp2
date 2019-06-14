@@ -1,0 +1,220 @@
+{
+  "id": "79c26c74-7989-4ec5-9a50-e04ee20ed6ed",
+  "version": "2.0",
+  "name": "dongduk.ac.kr",
+  "url": "http://dongduk.ac.kr",
+  "tests": [{
+    "id": "243f52b6-5097-4cd9-aab1-eaedb6a6f0ef",
+    "name": "메인",
+    "commands": [{
+      "id": "1f5c85ed-1f46-4d91-92d8-9b383ca84e71",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e088ff8f-d558-4401-ac37-97b4e88cc604",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e1bc727-6fc3-4eec-84a5-709d3772d2de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.seq-02 img",
+      "targets": [
+        ["css=.seq-02 img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN']", "xpath:img"],
+        ["xpath=//li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3849604a-c3d8-4ab8-a17e-fdca29c65c26",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "6597798a-fabb-44b1-a136-2c6f4fe8868d",
+      "comment": "",
+      "command": "click",
+      "target": "id=str_user",
+      "targets": [
+        ["id=str_user", "id"],
+        ["css=#str_user", "css:finder"],
+        ["xpath=//input[@id='str_user']", "xpath:attributes"],
+        ["xpath=//div[@id='mid_container']/div[2]/div/div/div/div[2]/div[2]/div/ul/li[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9f59ad3-f19d-4615-9560-0b99f8a5cdc0",
+      "comment": "",
+      "command": "type",
+      "target": "id=str_user",
+      "targets": [
+        ["id=str_user", "id"],
+        ["css=#str_user", "css:finder"],
+        ["xpath=//input[@id='str_user']", "xpath:attributes"],
+        ["xpath=//div[@id='mid_container']/div[2]/div/div/div/div[2]/div[2]/div/ul/li[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ef24dbbe-5e65-4ebc-9d99-961b184d0d90",
+      "comment": "",
+      "command": "type",
+      "target": "id=str_password",
+      "targets": [
+        ["id=str_password", "id"],
+        ["css=#str_password", "css:finder"],
+        ["xpath=//input[@id='str_password']", "xpath:attributes"],
+        ["xpath=//div[@id='mid_container']/div[2]/div/div/div/div[2]/div[2]/div/ul/li[2]/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5e1c00ee-2f43-41bc-8bcc-c7daa503ae23",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4379889a-f447-4c40-8a05-7763421d86c5",
+    "name": "포탈",
+    "commands": [{
+      "id": "0c5add29-a712-419e-8533-74bfedd69f6c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39119c33-23f3-4cc3-8db1-7e41712f33b4",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca6c621-e002-4935-8c9c-8c349eca47d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.seq-04 img",
+      "targets": [
+        ["css=.seq-04 img", "css:finder"],
+        ["xpath=//img[@alt='PORTAL']", "xpath:img"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8177",
+      "windowTimeout": 2000
+    }, {
+      "id": "5c40f477-9e7e-40da-a989-e74bdf4deb99",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e81460c7-6d39-4f27-9d72-3f73303246ed",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8177}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dab2553-4393-4242-b280-b09cd8519758",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "56ef5e2b-7e5a-4a8e-84b6-b3c6e84b7dcb",
+      "comment": "",
+      "command": "type",
+      "target": "id=ssousername1",
+      "targets": [
+        ["id=ssousername1", "id"],
+        ["name=ssousername1", "name"],
+        ["css=#ssousername1", "css:finder"],
+        ["xpath=//input[@id='ssousername1']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a12d6bb4-8a86-4570-8809-814b188f2cb1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "d208624f-8315-4548-b57c-bd2b85c54e15",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=#logintab_1 img", "css:finder"],
+        ["xpath=//img[@name='login']", "xpath:attributes"],
+        ["xpath=//td[@id='logintab_1']/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "016f34b5-e474-4e7f-aebb-aef540748a27",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48ed498a-d958-44c7-b56f-023b3de90a92",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5b607e0-a875-416f-baae-4bc5c548edbf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ca7f45f2-405e-4801-993c-a3004e49e815",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["243f52b6-5097-4cd9-aab1-eaedb6a6f0ef"]
+  }],
+  "urls": ["https://dongduk.ac.kr/", "http://dongduk.ac.kr/"],
+  "plugins": []
+}

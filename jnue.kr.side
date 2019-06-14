@@ -1,0 +1,253 @@
+{
+  "id": "c5c79c32-fd48-43fc-945a-9b23a219d954",
+  "version": "2.0",
+  "name": "jnue.kr",
+  "url": "http://jnue.kr",
+  "tests": [{
+    "id": "e39f8aaf-ea0c-4f9e-b4b7-40e670d9ca52",
+    "name": "PORTAL",
+    "commands": [{
+      "id": "1f701804-a70c-40b8-bd76-ff01264f0502",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d31b957-9c51-4332-ae5a-f1ec6711d3a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f807264a-f65a-4281-a691-e62a18ce9256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m2 .t1",
+      "targets": [
+        ["css=.m2 .t1", "css:finder"],
+        ["xpath=//div[@id='gn1']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'통합포털')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22c997ba-e29c-4f26-9b45-677a00a1c6c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=id", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "346ddac1-663b-48ed-bd47-401d06989148",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginId",
+      "targets": [
+        ["id=loginId", "id"],
+        ["name=id", "name"],
+        ["css=#loginId", "css:finder"],
+        ["xpath=//input[@id='loginId']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a1eb714f-3ea9-412f-8a70-6617d37bb06e",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["name=pw", "name"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e86be675-a831-471c-b457-3f88c703cf70",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["name=pw", "name"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fb9920cd-ab10-4a77-a8d8-dba6a8397717",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1084828d-4989-411f-9513-0f344ae2c987",
+    "name": "학술정보시스템",
+    "commands": [{
+      "id": "2e9bfa22-adab-4fb5-a918-924e0ca4d228",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d98687a-c605-48be-9762-2dd7a70ba35e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ed6480e-6f1f-4e9e-bf8b-91c46603fd01",
+      "comment": "",
+      "command": "click",
+      "target": "css=#familysite1g2 .t1",
+      "targets": [
+        ["css=#familysite1g2 .t1", "css:finder"],
+        ["xpath=//div[@id='familysite1g2']/strong/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/strong/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'IT 서비스 바로가기')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53cba99f-2ab7-4108-b1f3-7c5702432032",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=학술정보시스템",
+      "targets": [
+        ["linkText=학술정보시스템", "linkText"],
+        ["css=#familysite1g2c li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'학술정보시스템')])[2]", "xpath:link"],
+        ["xpath=//div[@id='familysite1g2c']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://lib.jnue.kr'])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3027",
+      "windowTimeout": 2000
+    }, {
+      "id": "5770fb70-0d72-45e2-af69-6def97f38607",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63aa76bc-49bd-4911-92af-22d79685ac31",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3027}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74390dbb-4a36-4355-9dd2-a03c53f13262",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "abcb4a2a-9954-4a10-b801-f3a2876069ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=UsrID",
+      "targets": [
+        ["name=UsrID", "name"],
+        ["css=li:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='UsrID']", "xpath:attributes"],
+        ["xpath=//div[@id='login_input']/ul/li/lable/input", "xpath:idRelative"],
+        ["xpath=//lable/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c9a925-8461-40cc-a5c1-e9c24d3f5acf",
+      "comment": "",
+      "command": "type",
+      "target": "name=UsrID",
+      "targets": [
+        ["name=UsrID", "name"],
+        ["css=li:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='UsrID']", "xpath:attributes"],
+        ["xpath=//div[@id='login_input']/ul/li/lable/input", "xpath:idRelative"],
+        ["xpath=//lable/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "01484b6e-f7cc-46c2-8175-66bd89fcfb5e",
+      "comment": "",
+      "command": "type",
+      "target": "name=PWord",
+      "targets": [
+        ["name=PWord", "name"],
+        ["css=li:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='PWord']", "xpath:attributes"],
+        ["xpath=//div[@id='login_input']/ul/li[2]/lable/input", "xpath:idRelative"],
+        ["xpath=//li[2]/lable/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3ab34b9b-b46a-4876-b1c9-455a3765b193",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=PWord",
+      "targets": [
+        ["name=PWord", "name"],
+        ["css=li:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='PWord']", "xpath:attributes"],
+        ["xpath=//div[@id='login_input']/ul/li[2]/lable/input", "xpath:idRelative"],
+        ["xpath=//li[2]/lable/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7282df56-b941-4149-8787-4e55fb0cdedf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "130688cb-afc9-4f1c-b2fc-b95b21fcf03b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c03df55-06e2-4277-af81-592bbf2e35fc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0810ec6d-6be3-413f-ba3c-7df4afdfd1ee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e39f8aaf-ea0c-4f9e-b4b7-40e670d9ca52", "1084828d-4989-411f-9513-0f344ae2c987"]
+  }],
+  "urls": ["http://jnue.kr/"],
+  "plugins": []
+}

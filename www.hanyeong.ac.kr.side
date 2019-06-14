@@ -1,0 +1,147 @@
+{
+  "id": "e625175e-064c-4334-b334-f3645013626a",
+  "version": "2.0",
+  "name": "www.hanyeong.ac.kr",
+  "url": "http://www.hanyeong.ac.kr/",
+  "tests": [{
+    "id": "42bf77b7-6e25-46de-a658-3c47d81311f8",
+    "name": "메인",
+    "commands": [{
+      "id": "cb4a0936-d877-4b79-ac9f-0556225e8f71",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42799efa-3f4d-4623-b5b0-29da1ce5157b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e2e749f-fc1d-47a3-b82e-69d7a6797940",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.tnb > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"crLayer('로그인','/?r=home&system=iframe.login&iframe=Y&referer=%2F%3F','iframe',665,250,'15%');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f3cdba-475e-479c-b486-86f3af9d6bd9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abffc1b-1cde-48ed-b758-0a2598c69f70",
+      "comment": "",
+      "command": "click",
+      "target": "id=_xi_1",
+      "targets": [
+        ["id=_xi_1", "id"],
+        ["name=id", "name"],
+        ["css=#\\_xi_1", "css:finder"],
+        ["xpath=//input[@id='_xi_1']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c2cf11c-6332-4ba6-a60a-02d3297a5e8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=_xi_1",
+      "targets": [
+        ["id=_xi_1", "id"],
+        ["name=id", "name"],
+        ["css=#\\_xi_1", "css:finder"],
+        ["xpath=//input[@id='_xi_1']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "208816e0-aa21-4ff8-ba98-d38403863c11",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2) > div",
+      "targets": [
+        ["css=label:nth-child(2) > div", "css:finder"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/label[2]/div", "xpath:idRelative"],
+        ["xpath=//label[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc45feb4-00bc-4230-9648-0aaf0c4a3f7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=_xi_2",
+      "targets": [
+        ["id=_xi_2", "id"],
+        ["name=pw", "name"],
+        ["css=#\\_xi_2", "css:finder"],
+        ["xpath=//input[@id='_xi_2']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ffb6926-ba4d-4602-80f8-c6db27658f17",
+      "comment": "",
+      "command": "type",
+      "target": "id=_xi_2",
+      "targets": [
+        ["id=_xi_2", "id"],
+        ["name=pw", "name"],
+        ["css=#\\_xi_2", "css:finder"],
+        ["xpath=//input[@id='_xi_2']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "3e59bde9-f319-421e-9ebe-5f42caa712ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=_login_btn_",
+      "targets": [
+        ["id=_login_btn_", "id"],
+        ["css=#\\_login_btn_", "css:finder"],
+        ["xpath=//input[@id='_login_btn_']", "xpath:attributes"],
+        ["xpath=//div[@id='loginBox']/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11452118-9826-45f6-ba41-5d3056e240ae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5786062b-540a-441b-b5f9-7e2a65b3287a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["42bf77b7-6e25-46de-a658-3c47d81311f8"]
+  }],
+  "urls": ["http://www.hanyeong.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,513 @@
+{
+  "id": "14805314-1e9d-4da4-b3c4-c091c95f4ebe",
+  "version": "2.0",
+  "name": "anyang.ac.kr",
+  "url": "http://www.anyang.ac.kr",
+  "tests": [{
+    "id": "e2690b67-6983-4346-825e-c2fe0e786544",
+    "name": "메인",
+    "commands": [{
+      "id": "4eed1971-180d-4190-a530-812ea16e7908",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74b022ab-5872-4ea3-8a6f-fc7e53a63e32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(1) em",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1) em", "css:finder"],
+        ["xpath=//div[@id='page']/div/div[2]/div/div/a/div/em", "xpath:idRelative"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'안양대학교 홈페이지')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5333a39-82b5-42ae-9df0-bd679a6b3b3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=안양인",
+      "targets": [
+        ["linkText=안양인", "linkText"],
+        ["css=.col-xs-3:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#none')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "017948bc-ce5d-4844-80d1-282aa08dc330",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=사이버강의",
+      "targets": [
+        ["linkText=사이버강의", "linkText"],
+        ["css=.pl0:nth-child(2) .col-sm-6:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'사이버강의')]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://cyber.anyang.ac.kr/index.jsp']", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'사이버강의')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3343",
+      "windowTimeout": 2000
+    }, {
+      "id": "ed193981-8804-465b-b6a7-54d2f30ccc90",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c15fad2-ba65-4726-8b7f-138e67a37ef2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3343}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecece366-bfb5-4f0e-935c-c0063e7c04e7",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "193319e5-1f95-4b47-8d81-1c0785a83f0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=userId", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5fe3608-1294-48b3-bb00-af751a36b2ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=userId", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "f9d49a9b-31c4-4f3a-8208-fb3e30484077",
+      "comment": "",
+      "command": "click",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=password", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2479b0b-77d5-456b-82d0-8bc6094d4523",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["name=password", "name"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "51013cfb-fcf0-480f-af27-aad404fde564",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.loginBtn", "css:finder"],
+        ["xpath=(//a[contains(text(),'로그인')])[2]", "xpath:link"],
+        ["xpath=//a[@onclick='fnLogin();']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/fieldset/p[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[20]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd85558-5603-4d19-883b-b9e72a50422f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a670d06-97ac-48d9-aa7f-326d16b32897",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8d869d1-5e1b-4a74-865e-e90350b736b2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bdff2b0c-60d8-47b2-8e09-84a1689ea774",
+    "name": "도서관",
+    "commands": [{
+      "id": "46479305-cc7e-4556-8062-6ee51ebda140",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "235c35db-100a-40f7-9ad5-354e54d948c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(1) em",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1) em", "css:finder"],
+        ["xpath=//div[@id='page']/div/div[2]/div/div/a/div/em", "xpath:idRelative"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'안양대학교 홈페이지')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8ed06c2-7b66-4f68-8640-69272cc13c58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=안양인",
+      "targets": [
+        ["linkText=안양인", "linkText"],
+        ["css=.col-xs-3:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#none')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb1c6baf-c12f-40bc-b378-5bcbf3fdfa0b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=일우중앙도서관",
+      "targets": [
+        ["linkText=일우중앙도서관", "linkText"],
+        ["css=.pl0:nth-child(2) .col-sm-6:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'일우중앙도서관')]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://lib.anyang.ac.kr/']", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'일우중앙도서관')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win141",
+      "windowTimeout": 2000
+    }, {
+      "id": "119b6263-1bf3-4994-a70a-2db6262de74d",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8182b099-9b52-4c17-a7c9-bb7a4c10887c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win141}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a515d508-fccd-4a7e-a407-33d7cbde5bc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login",
+      "targets": [
+        ["css=.btn_login", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//nav[@id='header_nav']/div/div/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,' 로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d64848d-a720-4df3-8654-5fad0d18db3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=UsrID",
+      "targets": [
+        ["id=UsrID", "id"],
+        ["name=user_id", "name"],
+        ["css=#UsrID", "css:finder"],
+        ["xpath=//input[@id='UsrID']", "xpath:attributes"],
+        ["xpath=//div[@id='content_content']/form/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84554242-0fa2-4b98-a3b0-1d7e98a0d715",
+      "comment": "",
+      "command": "type",
+      "target": "id=UsrID",
+      "targets": [
+        ["id=UsrID", "id"],
+        ["name=user_id", "name"],
+        ["css=#UsrID", "css:finder"],
+        ["xpath=//input[@id='UsrID']", "xpath:attributes"],
+        ["xpath=//div[@id='content_content']/form/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "00d29bf7-2262-4498-82dd-2afc2f597d37",
+      "comment": "",
+      "command": "click",
+      "target": "id=PWord",
+      "targets": [
+        ["id=PWord", "id"],
+        ["name=user_passwd", "name"],
+        ["css=#PWord", "css:finder"],
+        ["xpath=//input[@id='PWord']", "xpath:attributes"],
+        ["xpath=//div[@id='content_content']/form/div/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97cab772-f545-4448-8bc8-250aa4acafd8",
+      "comment": "",
+      "command": "type",
+      "target": "id=PWord",
+      "targets": [
+        ["id=PWord", "id"],
+        ["name=user_passwd", "name"],
+        ["css=#PWord", "css:finder"],
+        ["xpath=//input[@id='PWord']", "xpath:attributes"],
+        ["xpath=//div[@id='content_content']/form/div/div[2]/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "af788ffc-3f71-488d-b902-52896448e313",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//div[@id='content_content']/form/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a78a14b6-05fa-4b6e-b73e-2957b873c368",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7c7ac03-c370-463b-b1b8-8fc2b3d303c2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1aa77741-2987-453c-bcd8-eadd7f34feeb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7528ce45-5f7a-450f-8e4b-553b4c4422de",
+    "name": "포털",
+    "commands": [{
+      "id": "2f69a0da-d63e-41bf-bf25-cd5a0d029ebc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b569d628-fa64-47cd-9cef-3a82f7627002",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(1) em",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1) em", "css:finder"],
+        ["xpath=//div[@id='page']/div/div[2]/div/div/a/div/em", "xpath:idRelative"],
+        ["xpath=//em", "xpath:position"],
+        ["xpath=//em[contains(.,'안양대학교 홈페이지')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9729bfc3-24f6-41ce-bc8d-44b5cbfd90b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=안양인",
+      "targets": [
+        ["linkText=안양인", "linkText"],
+        ["css=.col-xs-3:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#none')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4683149d-dafa-4bf5-abd7-9bba72aed933",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pl0:nth-child(2) .col-sm-6:nth-child(2) > a",
+      "targets": [
+        ["css=.pl0:nth-child(2) .col-sm-6:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'포탈시스템')])[2]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://portal.anyang.ac.kr/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9158",
+      "windowTimeout": 2000
+    }, {
+      "id": "a2c2f31e-172c-42f0-bbc0-d3b6e9265ee5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b69344f9-f3b9-4bd2-938f-937de0da5b4c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9158}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5300755-f51d-4942-9988-822ecc3cb782",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658db1b5-3f2a-4441-b791-db1d801ca44d",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "e02c7d84-a807-42c6-9d4a-f558ea80b8db",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668f67d2-f805-429d-a0f1-01e75c114600",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5fd2badd-8045-4362-9fc1-c919ef6348b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginImg",
+      "targets": [
+        ["id=loginImg", "id"],
+        ["css=#loginImg", "css:finder"],
+        ["xpath=//img[@id='loginImg']", "xpath:attributes"],
+        ["xpath=//div[@id='loginForm']/form/div/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "778cc6ec-7dfb-4a3b-9aa9-9e4a340de076",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec5c0d90-154d-412f-a7be-0cd4ef936461",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18af944a-2744-444a-8b3b-4ea062b2ca63",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1cb71963-8283-4d1f-a407-24a1bf2c7561",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2690b67-6983-4346-825e-c2fe0e786544"]
+  }],
+  "urls": ["http://www.anyang.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,606 @@
+{
+  "id": "c9e2adae-e978-4435-b461-ce5b2bbe98b7",
+  "version": "2.0",
+  "name": "seoultech.ac.kr.side",
+  "url": "http://seoultech.ac.kr",
+  "tests": [{
+    "id": "d28ce0df-605e-45bd-b26c-1da3756f563e",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "099460e8-0caf-41e7-85ae-7fac23d3bf21",
+      "comment": "",
+      "command": "open",
+      "target": "http://seoultech.ac.kr/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fcdb378-472b-422c-bfef-e78cbc285c20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LOGIN",
+      "targets": [
+        ["linkText=LOGIN", "linkText"],
+        ["css=li:nth-child(4) > .login", "css:finder"],
+        ["xpath=//a[contains(text(),'LOGIN')]", "xpath:link"],
+        ["xpath=//div[@id='m_head']/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:popup_Login(24);')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOGIN')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8507",
+      "windowTimeout": 2000
+    }, {
+      "id": "9d22ef58-a037-4ccb-bc88-259dc25960f8",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8192718d-aa12-4795-abb4-da80eddab220",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8507}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4327532f-7aa0-4e89-9db4-eaf715eef24b",
+      "comment": "",
+      "command": "type",
+      "target": "name=id",
+      "targets": [
+        ["name=id", "name"],
+        ["css=.box:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='id']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "9189e1b5-abac-4710-9849-ca81b175b8c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=pw",
+      "targets": [
+        ["name=pw", "name"],
+        ["css=.box:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@name='pw']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "316da881-6522-46ec-a694-acea8bdf0065",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > img",
+      "targets": [
+        ["css=.btn > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2801851b-f300-469d-b22f-149766966b70",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77a611fc-2234-4c0f-8943-789c6c532e5b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f77ca9af-d694-482f-a6b3-eea6157cf40d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a2264c4d-2466-40eb-bdc6-c2b8af0c451b",
+    "name": "Webmail",
+    "commands": [{
+      "id": "565732c5-b406-4064-b392-c874cc391cf9",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.seoultech.ac.kr/index.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e00e858-5f0e-4ec0-936d-437d4fd36b65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1490x880",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51f8b760-7233-4cfd-a9c7-c74fc69e9f2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=웹메일",
+      "targets": [
+        ["linkText=웹메일", "linkText"],
+        ["css=.t13 > a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'웹메일')]", "xpath:link"],
+        ["xpath=//div[@id='tail']/div/div[2]/div/a[8]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.seoultech.ac.kr/')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'웹메일')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4165",
+      "windowTimeout": 2000
+    }, {
+      "id": "e6331420-9338-4dc7-a165-b69b1ae79623",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5e70df7-a03c-4129-95fe-70482029b376",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4165}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdf25e6c-5248-4b55-8570-a8aaae40c50f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8d926eb-1c99-44f4-8a13-a2ea0cff4eda",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//div[@id='normalLogin']/div[2]/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "86160f3b-b785-43ba-84ae-593a00346217",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//div[@id='normalLogin']/div[2]/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0c19ea5a-db19-464f-a8f5-5f639d0db1e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login > span",
+      "targets": [
+        ["css=.btn_login > span", "css:finder"],
+        ["xpath=//div[@id='normalLogin']/div[2]/table/tbody/tr[2]/td[2]/a/span", "xpath:idRelative"],
+        ["xpath=//td[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0db2a36-383a-4843-a487-bbc93ae4915d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6a53762-1902-4ba3-b56e-49ab4c9a27ab",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "219d8bb6-c2af-43f4-aace-109c388e5114",
+    "name": "PORTAL",
+    "commands": [{
+      "id": "6911c228-bd03-47e5-a226-d23a59e4e2e2",
+      "comment": "",
+      "command": "open",
+      "target": "http://portal.seoultech.ac.kr",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec15260b-33c2-47fe-be53-8b3dfab596ab",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "06acf478-8cf1-4096-9984-dd20555214df",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='PageLoginForm']/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "2051b837-1850-4c1c-90d3-1fc9f5181ae1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='PageLoginForm']/fieldset/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "6ea58cfc-8459-43cc-91a7-1cf6ee4805fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginKor",
+      "targets": [
+        ["id=loginKor", "id"],
+        ["linkText=로그인", "linkText"],
+        ["css=#loginKor", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@id='loginKor']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#.')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb920602-5312-46d1-8852-7650792fd334",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "73444026-3f14-46ef-87b3-3bcb7e397020",
+    "name": "eclass",
+    "commands": [{
+      "id": "948b141a-0461-4426-b672-1d7cd2559823",
+      "comment": "",
+      "command": "open",
+      "target": "http://eclass.seoultech.ac.kr/ilos/main/main_form.acl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e32f4d-4562-4cae-8684-3fc315d431e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_login > div:nth-child(2)",
+      "targets": [
+        ["css=.header_login > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='header']/div[4]/ul/a/li/div[2]", "xpath:idRelative"],
+        ["xpath=//li/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6624c574-acee-4a98-bd47-2e61b2748f0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=usr_id", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "293b67f3-e6d5-4e3a-aeef-19c4677b0a4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pwd",
+      "targets": [
+        ["id=usr_pwd", "id"],
+        ["name=usr_pwd", "name"],
+        ["css=#usr_pwd", "css:finder"],
+        ["xpath=//input[@id='usr_pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "c0215965-e220-4a83-b9bd-707014b17a8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btntype",
+      "targets": [
+        ["css=.btntype", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "517f98af-2532-498a-a361-5f97a541a285",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "85fe9ba5-af1d-4d74-b08b-ebdfeed8f958",
+    "name": "FOR-S",
+    "commands": [{
+      "id": "0f92f2b6-a322-4ec1-9614-6716e5cbfde6",
+      "comment": "",
+      "command": "open",
+      "target": "http://for-s.seoultech.ac.kr/view/login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70be77ab-3fbd-47fe-8d93-a72fd5799862",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_ID",
+      "targets": [
+        ["id=USER_ID", "id"],
+        ["name=USER_NUMB", "name"],
+        ["css=#USER_ID", "css:finder"],
+        ["xpath=//input[@id='USER_ID']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "89a25ad7-3b0a-48b7-9b01-e0478cd64dbc",
+      "comment": "",
+      "command": "type",
+      "target": "id=PWD",
+      "targets": [
+        ["id=PWD", "id"],
+        ["name=PWD", "name"],
+        ["css=#PWD", "css:finder"],
+        ["xpath=//input[@id='PWD']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "0a59d02e-8e7c-4de1-b8d3-d923347d1690",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_Login",
+      "targets": [
+        ["id=btn_Login", "id"],
+        ["css=#btn_Login", "css:finder"],
+        ["xpath=//span[@id='btn_Login']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f87b294-d25b-41f3-969e-1d98d5c4264b",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "대상자가 아니거나 패스워드가 틀렸습니다.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61951017-8b56-4013-9b19-a9924d73deae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b864b6b8-0db8-4b09-9cfb-a247991097dc",
+    "name": "FOR-U",
+    "commands": [{
+      "id": "2c290a71-22f1-4c60-98ad-28a982f7017e",
+      "comment": "",
+      "command": "open",
+      "target": "http://for-u.seoultech.ac.kr/generate/OUTER/index_post.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d081acc-cce8-46fa-92a0-e34e646d137e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_id",
+      "targets": [
+        ["id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_id", "id"],
+        ["css=#mainframe_VFrameSet_LoginFrame_form_div_login_edt_id", "css:finder"],
+        ["xpath=//div[@id='mainframe_VFrameSet_LoginFrame_form_div_login_edt_id']", "xpath:attributes"],
+        ["xpath=//div[@id='mainframe_VFrameSet_LoginFrame_form_div_loginScrollableContainerElement']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cf2efd1-a662-49c5-a6fe-84421fc0fb3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_id_input",
+      "targets": [
+        ["id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_id_input", "id"],
+        ["css=#mainframe_VFrameSet_LoginFrame_form_div_login_edt_id_input", "css:finder"],
+        ["xpath=//input[@id='mainframe_VFrameSet_LoginFrame_form_div_login_edt_id_input']", "xpath:attributes"],
+        ["xpath=//div[@id='mainframe_VFrameSet_LoginFrame_form_div_login_edt_idInputElement']/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "db60c8ac-b0d8-47f2-bb37-c8859daa84d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_pw_input",
+      "targets": [
+        ["id=mainframe_VFrameSet_LoginFrame_form_div_login_edt_pw_input", "id"],
+        ["css=#mainframe_VFrameSet_LoginFrame_form_div_login_edt_pw_input", "css:finder"],
+        ["xpath=//input[@id='mainframe_VFrameSet_LoginFrame_form_div_login_edt_pw_input']", "xpath:attributes"],
+        ["xpath=//div[@id='mainframe_VFrameSet_LoginFrame_form_div_login_edt_pwInputElement']/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bacf35a7-34dd-4be8-b95a-f0940991aa0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainframe_VFrameSet_LoginFrame_form_div_login_btn_loginTextBoxElement > div",
+      "targets": [
+        ["css=#mainframe_VFrameSet_LoginFrame_form_div_login_btn_loginTextBoxElement > div", "css:finder"],
+        ["xpath=//div[@id='mainframe_VFrameSet_LoginFrame_form_div_login_btn_loginTextBoxElement']/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3510b0ac-0df5-41aa-aa6e-8f38dda6db8e",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "아이디 또는 패스워드가 틀렸습니다.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70482646-9014-459c-acd1-dc370fd05d0b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "92f2ee77-8701-46ca-9dea-1c3e5204506b",
+    "name": "FUTURE",
+    "commands": [{
+      "id": "a720941c-7e68-4a59-a53c-dadbd41099b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://future.seoultech.ac.kr/login/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03e2f723-acbf-4182-b29f-8a4efb0bdc00",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd57008d-f11c-4f0d-b318-62866aaa52d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1557187771472_44']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41bab4e9-fdd5-4d99-b296-69b02d2ffa22",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1557187771472_44']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f8dc52b-b40b-4444-9796-65bd0f8031bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1557187771472_44']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TESTTEST"
+    }, {
+      "id": "eb32a281-4a24-422e-8285-6f3672d23c46",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1557187771472_50']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "31ed9520-4dd7-412a-bfc4-e2c90bfc189d",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//input[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "44fd7fa3-8db1-400d-96ff-6a707f90b43f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://seoultech.ac.kr/", "http://portal.seoultech.ac.kr/"],
+  "plugins": []
+}

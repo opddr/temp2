@@ -1,0 +1,307 @@
+{
+  "id": "deba673b-fefe-4cac-8da9-7d2442894716",
+  "version": "2.0",
+  "name": "mokwon.ac.kr",
+  "url": "http://mokwon.ac.kr",
+  "tests": [{
+    "id": "c6c81956-6c2a-4be9-a04a-457272a13263",
+    "name": "메인",
+    "commands": [{
+      "id": "f1cf6ac0-b67b-419e-913c-00ab3a52e17c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a636cd3-ef3e-4245-ac10-7b2e4eef9281",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gnb01 li:nth-child(2) img",
+      "targets": [
+        ["css=#gnb01 li:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='LOGIN']", "xpath:img"],
+        ["xpath=//div[@id='gnb01']/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/ul/li[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53d2639-518f-46b1-bcf1-e639207caab7",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-field-id",
+      "targets": [
+        ["id=login-field-id", "id"],
+        ["name=haksa_id", "name"],
+        ["css=#login-field-id", "css:finder"],
+        ["xpath=//input[@id='login-field-id']", "xpath:attributes"],
+        ["xpath=//form[@id='contentForm']/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9902f795-b7b9-4222-983d-0175dba4838b",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-field-id",
+      "targets": [
+        ["id=login-field-id", "id"],
+        ["name=haksa_id", "name"],
+        ["css=#login-field-id", "css:finder"],
+        ["xpath=//input[@id='login-field-id']", "xpath:attributes"],
+        ["xpath=//form[@id='contentForm']/fieldset/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a837d765-939a-4ff2-98cb-ff6467085a57",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-field-password",
+      "targets": [
+        ["id=login-field-password", "id"],
+        ["name=haksa_pw", "name"],
+        ["css=#login-field-password", "css:finder"],
+        ["xpath=//input[@id='login-field-password']", "xpath:attributes"],
+        ["xpath=//form[@id='contentForm']/fieldset/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f5e9d5fe-d59b-4e33-925d-ceb9a2e09e5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > input",
+      "targets": [
+        ["css=.btn > input", "css:finder"],
+        ["xpath=(//input[@type='image'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='contentForm']/fieldset/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa662003-2258-493f-aaa6-f62708f80b53",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfe93604-08ea-4373-b54d-c0c8997ed3df",
+    "name": "종합정보시스템",
+    "commands": [{
+      "id": "570d1693-cad3-41ae-8f67-6ca96e2b75ab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "906508f5-df96-481a-af4a-9fc3663f08a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gnb02 .first img",
+      "targets": [
+        ["css=#gnb02 .first img", "css:finder"],
+        ["xpath=//img[@alt='종합정보시스템']", "xpath:img"],
+        ["xpath=//div[@id='gnb02']/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win924",
+      "windowTimeout": 2000
+    }, {
+      "id": "cddad431-21ae-408d-8d2e-b253c238f8f3",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a4e2dc6-7264-4ade-9976-3c4cac120950",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win924}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7246b902-0e1b-44ae-a0be-6fc482c6a87e",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtID",
+      "targets": [
+        ["id=txtID", "id"],
+        ["name=txtID", "name"],
+        ["css=#txtID", "css:finder"],
+        ["xpath=//input[@id='txtID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/table/tbody/tr[3]/td[2]/table/tbody/tr/td[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtes"
+    }, {
+      "id": "caf66ae7-722b-44cd-b3ce-f6dfa12a91ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPw",
+      "targets": [
+        ["id=txtPw", "id"],
+        ["name=txtPw", "name"],
+        ["css=#txtPw", "css:finder"],
+        ["xpath=//input[@id='txtPw']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/table/tbody/tr[3]/td[2]/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "8453329c-25dd-40cc-bda9-24ec9edd6634",
+      "comment": "",
+      "command": "click",
+      "target": "id=ImageButton1",
+      "targets": [
+        ["id=ImageButton1", "id"],
+        ["name=ImageButton1", "name"],
+        ["css=#ImageButton1", "css:finder"],
+        ["xpath=//input[@id='ImageButton1']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/table/tbody/tr[3]/td[2]/table/tbody/tr/td[2]/table/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9a61d9e-05ee-41ca-8034-998201cfd931",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4722e0f-3945-4099-89fe-cec0cbe06dd5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9adb7e19-bdb5-457d-9986-885fab2b2804",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fb9b317c-7bd0-475e-8692-8f83b7c46286",
+    "name": "그룹웨어",
+    "commands": [{
+      "id": "fadd0ab5-a8dd-4d9a-93ed-5c3462730aa1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41834769-5bef-481d-b722-058b394ebabf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#gnb02 li:nth-child(2) img",
+      "targets": [
+        ["css=#gnb02 li:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='그룹웨어']", "xpath:img"],
+        ["xpath=//div[@id='gnb02']/ul/li[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li[2]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8773",
+      "windowTimeout": 2000
+    }, {
+      "id": "216021db-0794-4cca-9e3d-ca36148b9440",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0a22b94-269f-4a30-aa17-28af037d4628",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8773}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9633427b-5b14-481c-a1f4-e810c00b3427",
+      "comment": "",
+      "command": "type",
+      "target": "id=TextUserID",
+      "targets": [
+        ["id=TextUserID", "id"],
+        ["name=TextUserID", "name"],
+        ["css=#TextUserID", "css:finder"],
+        ["xpath=//input[@id='TextUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wrap']/div[3]/div/fieldset/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "3ed05dab-ed7b-4e3f-962e-625ff9253ab5",
+      "comment": "",
+      "command": "type",
+      "target": "id=TextPassword",
+      "targets": [
+        ["id=TextPassword", "id"],
+        ["name=TextPassword", "name"],
+        ["css=#TextPassword", "css:finder"],
+        ["xpath=//input[@id='TextPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wrap']/div[3]/div/fieldset/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "1103f06e-c0b8-48f4-bc3b-0629b59507d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=LoginButton",
+      "targets": [
+        ["id=LoginButton", "id"],
+        ["name=LoginButton", "name"],
+        ["css=#LoginButton", "css:finder"],
+        ["xpath=//input[@id='LoginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='login_wrap']/div[3]/div/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df4f3e9e-93e2-4e7d-8b19-d349e94ac4e6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c32f416-39d5-4e3c-8d53-1b46ff01f061",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2817030-64ce-43bd-86bc-ff962ad6e692",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4a4de328-3891-4695-a96f-b1abf5f6d627",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c6c81956-6c2a-4be9-a04a-457272a13263", "fb9b317c-7bd0-475e-8692-8f83b7c46286", "bfe93604-08ea-4373-b54d-c0c8997ed3df"]
+  }],
+  "urls": ["http://mokwon.ac.kr/"],
+  "plugins": []
+}

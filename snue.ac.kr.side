@@ -1,0 +1,378 @@
+{
+  "id": "92c186e1-a458-4aa6-bd71-f07af3e928fc",
+  "version": "2.0",
+  "name": "snue.ac.kr",
+  "url": "http://snue.ac.kr",
+  "tests": [{
+    "id": "71f7eed5-2104-47ee-a3ab-9508f0d9abb7",
+    "name": "PORTAL",
+    "commands": [{
+      "id": "494633b9-e3df-4815-8bf2-c00684839c64",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bcdfbb4-f1c7-417f-a8a3-9f2755e8b456",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PORTAL",
+      "targets": [
+        ["linkText=PORTAL", "linkText"],
+        ["css=#top_nav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PORTAL')]", "xpath:link"],
+        ["xpath=//div[@id='top_nav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://portal.snue.ac.kr']", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PORTAL')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2717dc1-588f-4d90-8fb7-b298d85556ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=userId",
+      "targets": [
+        ["id=userId", "id"],
+        ["name=userId", "name"],
+        ["css=#userId", "css:finder"],
+        ["xpath=//input[@id='userId']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/dl/dd/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "41d7e0a8-ab4b-49b4-ac84-2f719d178f0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='LoginForm']/fieldset/dl[2]/dd/input", "xpath:idRelative"],
+        ["xpath=//dl[2]/dd/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bbc82d3b-3270-4a51-b00e-2b3ada2768a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_login > input",
+      "targets": [
+        ["css=#btn_login > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//p[@id='btn_login']/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eadc3d44-5e4d-429d-b6d7-40a57b38ab4e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7b555f71-0b77-4969-8882-ef6aff849b26",
+    "name": "학사",
+    "commands": [{
+      "id": "de55edd2-2cf3-4ee4-9db9-3d14101f795e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfa034d1-ae7a-44a9-9a8f-7783c7655bb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=학사시스템",
+      "targets": [
+        ["linkText=학사시스템", "linkText"],
+        ["css=.last li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'학사시스템')]", "xpath:link"],
+        ["xpath=//div[@id='quick_service_wrapper']/ul/li[6]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://eos.snue.ac.kr/']", "xpath:href"],
+        ["xpath=//li[6]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'학사시스템')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6030",
+      "windowTimeout": 2000
+    }, {
+      "id": "3331165e-6776-4959-80ae-289fe1078c11",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7874472-cefc-44f3-8828-7b6a76d0ad7f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6030}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "785a2074-c16c-4ada-b31e-8ef160d8f0f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .inputText",
+      "targets": [
+        ["css=tr:nth-child(3) .inputText", "css:finder"],
+        ["xpath=(//input[@name='user_idnt'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mainDiv']/table/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a1db7f6-8d16-4f77-9c41-35e9c224f3cc",
+      "comment": "",
+      "command": "type",
+      "target": "css=tr:nth-child(3) .inputText",
+      "targets": [
+        ["css=tr:nth-child(3) .inputText", "css:finder"],
+        ["xpath=(//input[@name='user_idnt'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mainDiv']/table/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "TESTTEST"
+    }, {
+      "id": "ca39738d-1639-4b71-b138-c17e4b471bec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainDiv > table.smallTable > tbody > tr:nth-child(4) > td > input:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dc57547-2747-4c0f-89b0-87d59c8e7433",
+      "comment": "",
+      "command": "type",
+      "target": "css=.inputText:nth-child(2)",
+      "targets": [
+        ["css=.inputText:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='pass_word'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='mainDiv']/table/tbody/tr[4]/td/input[2]", "xpath:idRelative"],
+        ["xpath=//td/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ed951eab-3790-4085-89d9-71ddcd85ccf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(8) img",
+      "targets": [
+        ["css=tr:nth-child(8) img", "css:finder"],
+        ["xpath=//img[@onclick='pki_login();']", "xpath:attributes"],
+        ["xpath=//div[@id='mainDiv']/table/tbody/tr[8]/td/img", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f0a70f-ec6a-4589-8c8d-ddf356074650",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "674fdda6-1444-4bd1-a483-2997c2360207",
+    "name": "평생교육원",
+    "commands": [{
+      "id": "8c40d088-6d48-4f52-93ec-96e5074bd013",
+      "comment": "",
+      "command": "open",
+      "target": "http://lifelongstudy.snue.ac.kr/customer/PopUpOpenView.asp?seq=183",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52b411b8-953f-4b5e-9d23-bfebcb7fe8c4",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "$popup",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ff9f1f5-43fd-4b8c-9dc0-84a5aea658c6",
+      "comment": "",
+      "command": "click",
+      "target": "name=pop_chk",
+      "targets": [
+        ["name=pop_chk", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='pop_chk']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f93c1077-fa12-4955-970d-84b6387bff9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > input",
+      "targets": [
+        ["css=td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0014a20c-d219-4258-8e0d-651069184e26",
+      "comment": "",
+      "command": "open",
+      "target": "http://lifelongstudy.snue.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20bdbde7-c8e2-4b47-b6b6-11647dbba8a5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "$root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faea8a15-9f57-425e-ba3f-849dfeda74c8",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4df1a87-e0e0-4cc2-b72f-c8a92692e739",
+      "comment": "",
+      "command": "click",
+      "target": "id=membership_id",
+      "targets": [
+        ["id=membership_id", "id"],
+        ["name=membership_id", "name"],
+        ["css=#membership_id", "css:finder"],
+        ["xpath=//input[@id='membership_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cfc4a22-2558-47b0-9be8-c66d7a4691a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=membership_id",
+      "targets": [
+        ["id=membership_id", "id"],
+        ["name=membership_id", "name"],
+        ["css=#membership_id", "css:finder"],
+        ["xpath=//input[@id='membership_id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "1995231d-9c22-4c77-a1a2-b96c882b371f",
+      "comment": "",
+      "command": "type",
+      "target": "id=membership_password",
+      "targets": [
+        ["id=membership_password", "id"],
+        ["name=membership_password", "name"],
+        ["css=#membership_password", "css:finder"],
+        ["xpath=//input[@id='membership_password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e1d403e3-4990-4472-aa8f-108cee45b929",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > input",
+      "targets": [
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39879a5d-82e2-4bb4-aa01-f2cdeeeeab5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a9c3c2a3-d4ac-403c-81ef-12d61ce408aa",
+    "name": "스마트카드",
+    "commands": [{
+      "id": "83e7555f-6ca1-4b6e-8b7d-bc92f87e5281",
+      "comment": "",
+      "command": "open",
+      "target": "http://smartcard.snue.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61ea9f0c-bb1f-440f-8a84-da90430501e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/section/form/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "cc287af1-fc18-43e7-ba82-d745022014c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/section/form/div/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ae8dc6c5-4026-41fd-a02d-9154c66f0c35",
+      "comment": "",
+      "command": "click",
+      "target": "css=button img",
+      "targets": [
+        ["css=button img", "css:finder"],
+        ["xpath=//img[@alt='login']", "xpath:img"],
+        ["xpath=//div[@id='content']/section/form/div/button/a/img", "xpath:idRelative"],
+        ["xpath=//button/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "948ab59f-c0dd-4e22-be20-019adff4351e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b6e5d465-5130-463b-aede-4ebdba9257a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71f7eed5-2104-47ee-a3ab-9508f0d9abb7"]
+  }],
+  "urls": ["http://www.snue.ac.kr/", "http://lifelongstudy.snue.ac.kr/", "https://smartcard.snue.ac.kr/", "http://snue.ac.kr/"],
+  "plugins": []
+}

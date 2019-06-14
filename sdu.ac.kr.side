@@ -1,0 +1,276 @@
+{
+  "id": "519b6674-ff90-4fe7-8a9f-8607760f0346",
+  "version": "2.0",
+  "name": "sdu.ac.kr",
+  "url": "http://sdu.ac.kr",
+  "tests": [{
+    "id": "30fc2cb1-70b9-4a15-b82e-e103bc6ff8da",
+    "name": "LOGIN",
+    "commands": [{
+      "id": "8ce1059f-2b85-4daa-820e-3e6acbd957f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "325e25d9-cad1-4fe2-bc3b-b449f1e49780",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["name=privatelogin", "name"],
+        ["css=.fr > .login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@name='privatelogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8463c68c-6c5a-4120-9f74-01157f1ac19f",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["name=privatelogin", "name"],
+        ["css=.fr > .login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[@name='privatelogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba2c8e3d-8d75-4a69-9a19-9dfbc8f4a370",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginnum",
+      "targets": [
+        ["id=loginnum", "id"],
+        ["name=userid", "name"],
+        ["css=#loginnum", "css:finder"],
+        ["xpath=//input[@id='loginnum']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad2b6b1f-cbc4-45b7-a693-c1df9b694f95",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginnum",
+      "targets": [
+        ["id=loginnum", "id"],
+        ["name=userid", "name"],
+        ["css=#loginnum", "css:finder"],
+        ["xpath=//input[@id='loginnum']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "7a4a178d-d0f1-44c1-b462-437ffe961951",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginpass",
+      "targets": [
+        ["id=loginpass", "id"],
+        ["name=pwd", "name"],
+        ["css=#loginpass", "css:finder"],
+        ["xpath=//input[@id='loginpass']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "01e82632-4e64-4525-aed3-9a403fbfdcf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=span > input:nth-child(3)",
+      "targets": [
+        ["css=span > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='LOGIN']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLogin']/div/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "314522e4-008f-45d6-ac74-e21513175f5f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "46b73349-8bfd-4dbd-bd6f-b57f0e8d3d74",
+    "name": "MAIL",
+    "commands": [{
+      "id": "0338ae2c-3b95-413a-b44b-54d09b85e06c",
+      "comment": "",
+      "command": "open",
+      "target": "http://mail.sdu.ac.kr/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06e6d36f-64e1-401c-b98a-9c639486dd75",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7cb9992-5d94-4f3b-9817-f5d097726690",
+      "comment": "",
+      "command": "type",
+      "target": "name=USERS_ID",
+      "targets": [
+        ["name=USERS_ID", "name"],
+        ["css=p:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='USERS_ID']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "34fbf41b-abce-4030-ba90-a7653afc4829",
+      "comment": "",
+      "command": "type",
+      "target": "name=USERS_PASSWD",
+      "targets": [
+        ["name=USERS_PASSWD", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='USERS_PASSWD']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5dc4a695-a447-45dd-8de6-d9778da49562",
+      "comment": "",
+      "command": "click",
+      "target": "css=.loginBtn > input",
+      "targets": [
+        ["css=.loginBtn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1128eae-cc7c-4a7c-a02d-503e17a4ecd5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fd74873-579c-4f74-887a-7873c489d0d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["name=main", "name"],
+        ["css=#main", "css:finder"],
+        ["xpath=//frame[@id='main']", "xpath:attributes"],
+        ["xpath=//frame", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8d4f513-b515-47b7-b8dc-f58033a6d099",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b9be7e9-d79f-40f1-b719-193514c16477",
+    "name": "LOGIN2",
+    "commands": [{
+      "id": "8f4400c3-6f5e-4fff-a5cc-5054a79cfded",
+      "comment": "",
+      "command": "open",
+      "target": "/sdu/information/login.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f2361b-211b-4249-b39e-f3841a60b284",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginnum2",
+      "targets": [
+        ["id=loginnum2", "id"],
+        ["css=#loginnum2", "css:finder"],
+        ["xpath=//input[@id='loginnum2']", "xpath:attributes"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/form/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/div/form/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f881a58-1687-46ee-9e74-97029563edfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginnum2",
+      "targets": [
+        ["id=loginnum2", "id"],
+        ["css=#loginnum2", "css:finder"],
+        ["xpath=//input[@id='loginnum2']", "xpath:attributes"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/form/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/div/form/div/span/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "29374922-354a-4b76-88bb-700f90b85d13",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginpass2",
+      "targets": [
+        ["id=loginpass2", "id"],
+        ["css=#loginpass2", "css:finder"],
+        ["xpath=//input[@id='loginpass2']", "xpath:attributes"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/form/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/div/form/div/span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "2078124b-fb5a-49d4-bac7-57c0650b0c6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1) > input",
+      "targets": [
+        ["css=form:nth-child(1) > input", "css:finder"],
+        ["xpath=(//input[@value='LOGIN'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='jwxe_main_content']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7d989a-fa4b-46ab-8d1d-921be08fe016",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f55855a5-da72-4c7e-9ea4-71e9c6f9401f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["30fc2cb1-70b9-4a15-b82e-e103bc6ff8da"]
+  }],
+  "urls": ["http://sdu.ac.kr/"],
+  "plugins": []
+}

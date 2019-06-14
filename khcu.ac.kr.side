@@ -1,0 +1,120 @@
+{
+  "id": "e2d1bc91-61af-483c-b8f8-e953fa3975b8",
+  "version": "2.0",
+  "name": "khcu.ac.kr",
+  "url": "http://khcu.ac.kr",
+  "tests": [{
+    "id": "45bb4f4c-d4ad-4b5a-8daf-6752b6ef96fc",
+    "name": "메인",
+    "commands": [{
+      "id": "c01cb5b3-1d31-4ca6-a08b-46f77b90b564",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3a80b3b-5d9e-41d8-8a9c-97f5354de086",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7908e52f-4d76-46c6-bd2f-d8e056923c0f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.btnLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sub/content.do?MENU_SEQ=200000040')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08b2f05a-d0b2-4542-831f-97c0162b75e4",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=.login:nth-child(1) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//main[@id='contents']/ul/li[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "484a6fb8-8691-429a-8b21-45f104baa7f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_id",
+      "targets": [
+        ["name=user_id", "name"],
+        ["css=.login:nth-child(1) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='user_id']", "xpath:attributes"],
+        ["xpath=//main[@id='contents']/ul/li[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "dd99635d-6467-4437-a8d0-fc60f67f5f87",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_pass",
+      "targets": [
+        ["name=user_pass", "name"],
+        ["css=.login > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='user_pass']", "xpath:attributes"],
+        ["xpath=//main[@id='contents']/ul/li[2]/div/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//div/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b654ea-7e67-4727-9f77-d6c9962cc283",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_pass",
+      "targets": [
+        ["name=user_pass", "name"],
+        ["css=.login > input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='user_pass']", "xpath:attributes"],
+        ["xpath=//main[@id='contents']/ul/li[2]/div/form/div/input[3]", "xpath:idRelative"],
+        ["xpath=//div/input[3]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "9e8c3956-2407-4084-95bc-60568301098a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnSubmit:nth-child(5)",
+      "targets": [
+        ["css=.btnSubmit:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@value='로그인'])[2]", "xpath:attributes"],
+        ["xpath=//main[@id='contents']/ul/li[2]/div/form/div/input[5]", "xpath:idRelative"],
+        ["xpath=//div/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e28b9a4-ec04-4610-9566-cf356b781769",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "06fe90d9-d808-4c15-a5c6-43a5bbcb5c7a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["45bb4f4c-d4ad-4b5a-8daf-6752b6ef96fc"]
+  }],
+  "urls": ["http://khcu.ac.kr/"],
+  "plugins": []
+}

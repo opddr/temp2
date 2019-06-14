@@ -1,0 +1,104 @@
+{
+  "id": "f08292d1-9090-4087-8d6f-81e534c26802",
+  "version": "2.0",
+  "name": "scau.ac.kr",
+  "url": "http://scau.ac.kr",
+  "tests": [{
+    "id": "fa9d1312-1773-4447-9b89-40a5649fb4ab",
+    "name": "메인",
+    "commands": [{
+      "id": "35451c94-3fcd-47dc-937f-f896f59bddee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94d673fe-0acd-4f9d-8d82-f8da3acd8a8e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://learn.scau.ac.kr/Account/Login')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8f5eb3b-6213-4aec-abf0-cb4277e525e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=logId_1",
+      "targets": [
+        ["id=logId_1", "id"],
+        ["name=userid_normal", "name"],
+        ["css=#logId_1", "css:finder"],
+        ["xpath=//input[@id='logId_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbb912b-8ebc-4ea6-b502-dbde79498645",
+      "comment": "",
+      "command": "type",
+      "target": "id=logId_1",
+      "targets": [
+        ["id=logId_1", "id"],
+        ["name=userid_normal", "name"],
+        ["css=#logId_1", "css:finder"],
+        ["xpath=//input[@id='logId_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "82f39739-a6f6-47a0-ad03-e99d027a345b",
+      "comment": "",
+      "command": "type",
+      "target": "id=logPw_1",
+      "targets": [
+        ["id=logPw_1", "id"],
+        ["name=password_normal", "name"],
+        ["css=#logPw_1", "css:finder"],
+        ["xpath=//input[@id='logPw_1']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "bd5420e8-bf2e-4b91-93fe-61f063c52534",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_Login",
+      "targets": [
+        ["id=btn_Login", "id"],
+        ["css=#btn_Login", "css:finder"],
+        ["xpath=//input[@id='btn_Login']", "xpath:attributes"],
+        ["xpath=//form[@id='frm_login']/div/div[2]/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b204c258-43ab-48cc-a896-d2c9430a0a91",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ffad285d-471b-43f9-b7cc-6822be19dff6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fa9d1312-1773-4447-9b89-40a5649fb4ab"]
+  }],
+  "urls": ["http://scau.ac.kr/"],
+  "plugins": []
+}

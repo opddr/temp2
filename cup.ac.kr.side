@@ -1,0 +1,295 @@
+{
+  "id": "83c4dc30-525e-4b65-bf4a-c615a6a7afc4",
+  "version": "2.0",
+  "name": "cup.ac.kr",
+  "url": "http://cup.ac.kr",
+  "tests": [{
+    "id": "fe64300f-f03a-4611-95fe-0d3d58c56dfb",
+    "name": "login",
+    "commands": [{
+      "id": "fad4f76b-d176-4117-8605-f39a58087ebf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e9be9db-998c-499b-b397-cbc25624a16f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f5b7b8f-afc0-42b3-842b-658836908b40",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Login",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "0c47f5a5-4341-4da7-b54b-f70f8f90ff8d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='print_section1']/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:open_Login();')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2573",
+      "windowTimeout": 2000
+    }, {
+      "id": "4a986280-9414-4e96-8cd6-edb57e8a01f5",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ed8d68c-f3b5-45a1-80fa-3ef0c8b3fbcb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2573}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d94199fc-6e68-4f5b-b04f-2d326aa852ae",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=m_id",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "75e1a252-c856-4c7b-be95-39be37085461",
+      "comment": "",
+      "command": "click",
+      "target": "id=m_id",
+      "targets": [
+        ["id=m_id", "id"],
+        ["name=m_id", "name"],
+        ["css=#m_id", "css:finder"],
+        ["xpath=//input[@id='m_id']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c043f00-8c0f-4f9c-b122-1cc52cbe6fd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=m_id",
+      "targets": [
+        ["id=m_id", "id"],
+        ["name=m_id", "name"],
+        ["css=#m_id", "css:finder"],
+        ["xpath=//input[@id='m_id']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "4a6db76b-69de-449c-864f-a9201edeb4b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=m_passwd",
+      "targets": [
+        ["id=m_passwd", "id"],
+        ["name=m_passwd", "name"],
+        ["css=#m_passwd", "css:finder"],
+        ["xpath=//input[@id='m_passwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b127c3ac-bb5d-47a9-8225-0a97fe63cfa2",
+      "comment": "",
+      "command": "type",
+      "target": "id=m_passwd",
+      "targets": [
+        ["id=m_passwd", "id"],
+        ["name=m_passwd", "name"],
+        ["css=#m_passwd", "css:finder"],
+        ["xpath=//input[@id='m_passwd']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[3]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "04efda27-a321-44de-8e83-9cad17d2f172",
+      "comment": "",
+      "command": "click",
+      "target": "id=imageField",
+      "targets": [
+        ["id=imageField", "id"],
+        ["name=imageField", "name"],
+        ["css=#imageField", "css:finder"],
+        ["xpath=//input[@id='imageField']", "xpath:attributes"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "384445f9-4f6c-4dbc-a23e-695cc56b168e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32363cca-7598-43a1-8bdd-26686662a2d1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c35f58b9-f5da-4c6d-8e78-fcd9867b7423",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "240d4619-3958-43eb-9126-f7af63827f01",
+    "name": "종합정보시스템",
+    "commands": [{
+      "id": "02b07198-dafb-4844-8f31-41e17091f57d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2bcc0c3-d43c-42f3-b1e7-29bb2deb99d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d027695a-3a17-44c8-bf9b-89f873ff2ab4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=캠퍼스생활",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "d4ad92bf-0ad9-4163-b277-352d711d5f8c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=캠퍼스생활",
+      "targets": [
+        ["linkText=캠퍼스생활", "linkText"],
+        ["css=.top_on:nth-child(6) > div > a", "css:finder"],
+        ["xpath=//a[contains(text(),'캠퍼스생활')]", "xpath:link"],
+        ["xpath=//div[@id='print_section1']/div[2]/ul/li[6]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/living/living_01_01.asp')]", "xpath:href"],
+        ["xpath=//li[6]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'캠퍼스생활')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70738882-07b9-4d57-987a-d3c6fc30f63f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=종합정보시스템",
+      "targets": [
+        ["linkText=종합정보시스템", "linkText"],
+        ["css=#TopNavi_5 > .sec_ul:nth-child(1) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'종합정보시스템')]", "xpath:link"],
+        ["xpath=//div[@id='TopNavi_5']/ul/li/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/living/living_01_02.asp')]", "xpath:href"],
+        ["xpath=//li[6]/div/div/ul/li/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'종합정보시스템')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62c26bd4-ab71-412d-abc5-b364cfac66a8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.btn_system img",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "503f63d4-e867-4406-a598-3b824fc3517b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_system img",
+      "targets": [
+        ["css=.btn_system img", "css:finder"],
+        ["xpath=//img[@alt='시스템 바로가기']", "xpath:img"],
+        ["xpath=//div[@id='body_wrapper']/div[2]/div/div[2]/div[2]/div[2]/div/div/p[2]/a/img", "xpath:idRelative"],
+        ["xpath=//p[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "672b0eba-6128-44f9-a344-c0abd7c204d0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=_userId",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "9b7f7f1d-ccdc-46f0-9cde-70a26caa36a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=_userId",
+      "targets": [
+        ["id=_userId", "id"],
+        ["name=_userId", "name"],
+        ["css=#\\_userId", "css:finder"],
+        ["xpath=//input[@id='_userId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ae5d5248-ead0-474c-a8b9-9584f28824db",
+      "comment": "",
+      "command": "type",
+      "target": "id=_userPw",
+      "targets": [
+        ["id=_userPw", "id"],
+        ["name=_userPw", "name"],
+        ["css=#\\_userPw", "css:finder"],
+        ["xpath=//input[@id='_userPw']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "860cb7b6-2c96-4e8d-8ea8-924f2aad8d51",
+      "comment": "",
+      "command": "click",
+      "target": "id=b1",
+      "targets": [
+        ["id=b1", "id"],
+        ["name=b1", "name"],
+        ["css=#b1", "css:finder"],
+        ["xpath=//button[@id='b1']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,' 로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "669c852e-99c4-49b6-b131-65968f27e901",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6612a1d-53f0-451c-aede-36bafc35160c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fe64300f-f03a-4611-95fe-0d3d58c56dfb", "240d4619-3958-43eb-9126-f7af63827f01"]
+  }],
+  "urls": ["http://cup.ac.kr/"],
+  "plugins": []
+}

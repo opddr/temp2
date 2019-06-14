@@ -1,0 +1,532 @@
+{
+  "id": "19e2bac7-4149-45ae-8e2e-43fa58c8b746",
+  "version": "2.0",
+  "name": "tu.ac.kr",
+  "url": "http://tu.ac.kr",
+  "tests": [{
+    "id": "852680e6-2c35-4066-bbae-9197f80691ea",
+    "name": "메인페이지",
+    "commands": [{
+      "id": "e9a72f8e-c6cc-4766-a296-7455e5eeae67",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b13c81e-c9e8-4f07-affc-0580edb1281c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lnb8 > a",
+      "targets": [
+        ["css=.lnb8 > a", "css:finder"],
+        ["xpath=//ul[@id='lnb']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:ssoLogin();')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db118890-38d8-415f-8ca5-4927f246af74",
+      "comment": "",
+      "command": "click",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=.web_login tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19655af8-e860-41ee-93b3-66f4b3ea8bb8",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_login",
+      "targets": [
+        ["name=_58_login", "name"],
+        ["css=.web_login tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='_58_login']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "48db55d9-8b2b-4417-8351-5d14d80650bf",
+      "comment": "",
+      "command": "click",
+      "target": "name=_58_password",
+      "targets": [
+        ["name=_58_password", "name"],
+        ["css=tr:nth-child(3) > td > input", "css:finder"],
+        ["xpath=//input[@name='_58_password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa7075d-5d22-407c-b68e-e48bc8a4de02",
+      "comment": "",
+      "command": "type",
+      "target": "name=_58_password",
+      "targets": [
+        ["name=_58_password", "name"],
+        ["css=tr:nth-child(3) > td > input", "css:finder"],
+        ["xpath=//input[@name='_58_password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "7bcd7f5a-9eed-43af-8a96-0353d2fa8165",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginImg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d08f09b2-4090-4cfd-97d8-87a354cc8e9d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "64be9d75-b8c1-4706-8c63-5d7da0632bf3",
+    "name": "평생교육원",
+    "commands": [{
+      "id": "d8c2a60e-703f-4c4c-9b78-3b09f8636198",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8786262-1ca3-4571-ad87-d73eeb489d57",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=평생교육원",
+      "targets": [
+        ["linkText=평생교육원", "linkText"],
+        ["css=.sb08 > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'평생교육원')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-content']/div[4]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lifedu.tu.ac.kr/LifelongEdu/')]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win929",
+      "windowTimeout": 2000
+    }, {
+      "id": "656e7259-122b-4aae-a6f0-6530c90cf9a7",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7db85d5e-0c2c-434c-9c74-a9cae820bce4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win929}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0d92d2b-c867-456c-8762-f3b35d419fce",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPASSUserID",
+      "targets": [
+        ["id=txtPASSUserID", "id"],
+        ["name=txtPASSUserID", "name"],
+        ["css=#txtPASSUserID", "css:finder"],
+        ["xpath=//input[@id='txtPASSUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='Content']/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eb924c3-9aeb-4c4b-8ea9-1d8c3bf01b40",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPASSUserID",
+      "targets": [
+        ["id=txtPASSUserID", "id"],
+        ["name=txtPASSUserID", "name"],
+        ["css=#txtPASSUserID", "css:finder"],
+        ["xpath=//input[@id='txtPASSUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='Content']/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "9afcfa9a-f03b-4548-b798-a0b38dca55a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='Content']/div[2]/p/input[2]", "xpath:idRelative"],
+        ["xpath=//p/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b734530d-918f-459f-9b3c-f57c4de23485",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='Content']/div[2]/p/input[2]", "xpath:idRelative"],
+        ["xpath=//p/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "31fbf53d-61ad-4f56-aba5-d913d60b19ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=btnLogin", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='Content']/div[2]/p/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "638ce967-3482-45a0-8c98-1010e4f11f9b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4c68f2e-ec86-47f3-9c7d-144dcec2d807",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67d59d76-f3cd-40ee-9da3-867caca0c329",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e8df9c60-c39e-4110-9725-c46373c57451",
+    "name": "사이버강좌",
+    "commands": [{
+      "id": "008c5f38-7816-4df1-b5b0-4c6c5b0427fc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf76b9cf-078e-4675-9932-0570ee3d628e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=사이버강좌",
+      "targets": [
+        ["linkText=사이버강좌", "linkText"],
+        ["css=.sb06 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'사이버강좌')]", "xpath:link"],
+        ["xpath=//div[@id='main-content']/div[4]/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://smart.tu.ac.kr')])[2]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'사이버강좌')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2014",
+      "windowTimeout": 2000
+    }, {
+      "id": "8ce95b13-eb25-4552-83c1-14efce848310",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74b41375-aec3-48eb-9fbe-6bbf2d8dc209",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2014}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "800d0594-d583-4d78-a3dd-38110933f450",
+      "comment": "",
+      "command": "click",
+      "target": "id=logId",
+      "targets": [
+        ["id=logId", "id"],
+        ["name=userid", "name"],
+        ["css=#logId", "css:finder"],
+        ["xpath=//input[@id='logId']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login']/dl/dt/input", "xpath:idRelative"],
+        ["xpath=//dt/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61b82635-9f96-405f-9a2e-544129642cc0",
+      "comment": "",
+      "command": "type",
+      "target": "id=logId",
+      "targets": [
+        ["id=logId", "id"],
+        ["name=userid", "name"],
+        ["css=#logId", "css:finder"],
+        ["xpath=//input[@id='logId']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login']/dl/dt/input", "xpath:idRelative"],
+        ["xpath=//dt/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "49d534d6-75fd-402a-b18f-2efc602f8584",
+      "comment": "",
+      "command": "click",
+      "target": "id=logPw",
+      "targets": [
+        ["id=logPw", "id"],
+        ["name=password", "name"],
+        ["css=#logPw", "css:finder"],
+        ["xpath=//input[@id='logPw']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login']/dl/dt[2]/input", "xpath:idRelative"],
+        ["xpath=//dt[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa38675-2610-4083-9da2-432399d63692",
+      "comment": "",
+      "command": "type",
+      "target": "id=logPw",
+      "targets": [
+        ["id=logPw", "id"],
+        ["name=password", "name"],
+        ["css=#logPw", "css:finder"],
+        ["xpath=//input[@id='logPw']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login']/dl/dt[2]/input", "xpath:idRelative"],
+        ["xpath=//dt[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "b5f7e213-7ebc-4909-ae4e-5f9a076c608f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_Login",
+      "targets": [
+        ["id=btn_Login", "id"],
+        ["css=#btn_Login", "css:finder"],
+        ["xpath=//input[@id='btn_Login']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88841584-07c2-48ed-bbb3-2f8e55e9f04d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdf1f602-7319-475e-b6f5-6b29990be33f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96aeaed1-4061-4a74-8790-56be8e18506c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c15c3999-ff4c-4374-b8fa-11bda81125b1",
+    "name": "진로 취업",
+    "commands": [{
+      "id": "66f59c41-3fe5-4cb9-a9f3-849f151bd219",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96be45ff-b62f-40d4-b8b0-b10d15391945",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "002525e9-fc93-4e11-9c94-cf962f87f720",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=진로·취업(t-up)",
+      "targets": [
+        ["linkText=진로·취업(t-up)", "linkText"],
+        ["css=.sb02 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'진로·취업(t-up)')]", "xpath:link"],
+        ["xpath=//div[@id='main-content']/div[4]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://up.tu.ac.kr/']", "xpath:href"],
+        ["xpath=//div[4]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'진로·취업(t-up)')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6043",
+      "windowTimeout": 2000
+    }, {
+      "id": "71e2663b-9537-483f-b321-013699bec83e",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dacfbef0-b99d-4663-bda7-12fb2ac2c302",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6043}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "587fa324-d5c9-410a-896d-abd7afa62779",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd86cd0-980c-46e3-b095-bb9cad7c1ce8",
+      "comment": "",
+      "command": "click",
+      "target": "name=rUserid",
+      "targets": [
+        ["name=rUserid", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='rUserid']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd375171-2d45-4351-94a2-eff2ef4490fc",
+      "comment": "",
+      "command": "type",
+      "target": "name=rUserid",
+      "targets": [
+        ["name=rUserid", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='rUserid']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "5a56946b-4993-40bc-a030-58a59ffd3227",
+      "comment": "",
+      "command": "click",
+      "target": "name=rPW",
+      "targets": [
+        ["name=rPW", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='rPW']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "788fde49-abc5-49b8-8173-36ae87dce53b",
+      "comment": "",
+      "command": "type",
+      "target": "name=rPW",
+      "targets": [
+        ["name=rPW", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='rPW']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "41733146-5b1c-4fcd-8510-6b3de469977f",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) > input",
+      "targets": [
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@value='로그인']", "xpath:attributes"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ade0edf-eada-44c2-9841-fa1c3fe4f0e7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c86f6a84-1a5d-4534-b4b3-f7b43adca5e6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e291fcd-06a3-4717-b26c-cf651d029424",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4be84ae2-779c-46f1-bb2f-26c93a1cbef4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["852680e6-2c35-4066-bbae-9197f80691ea","e8df9c60-c39e-4110-9725-c46373c57451","c15c3999-ff4c-4374-b8fa-11bda81125b1","64be9d75-b8c1-4706-8c63-5d7da0632bf3"]
+  }],
+  "urls": ["http://tu.ac.kr/"],
+  "plugins": []
+}

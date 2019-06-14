@@ -1,0 +1,324 @@
+{
+  "id": "6949bf59-1365-4d04-9bf6-297687cbbaf7",
+  "version": "2.0",
+  "name": "www.cue.ac.kr",
+  "url": "http://www.cue.ac.kr",
+  "tests": [{
+    "id": "7657b6cf-42a3-4680-aef2-8601813735c8",
+    "name": "두류포탈시스템",
+    "commands": [{
+      "id": "6424a3ce-bd09-4eac-bf47-244b8f63aeba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4369cc95-dc12-4bab-a991-aa0359411f4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5108e11e-ead7-4737-bd66-c55caad6c80f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=두류포탈시스템",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "80ef3181-b30f-421a-9616-2d1ce694939d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=두류포탈시스템",
+      "targets": [
+        ["linkText=두류포탈시스템", "linkText"],
+        ["css=.in > ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'두류포탈시스템')]", "xpath:link"],
+        ["xpath=//a[@href='http://portal.cue.ac.kr/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'두류포탈시스템')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3265",
+      "windowTimeout": 2000
+    }, {
+      "id": "f24b84b0-fff6-4f8e-abbe-d929f418a8c0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "207f2093-4035-4227-9054-76e391334563",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3265}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e22dad7c-1258-4122-b3e4-3eada77f0499",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=uid",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "ff784437-4dc6-47c0-b1d2-2fb45759039c",
+      "comment": "",
+      "command": "click",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=ssousername", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='SignOn']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87acd489-86ba-4e45-9728-15f3947672b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=ssousername", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//form[@id='SignOn']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "c60b0310-7918-4393-bf1e-c07cdf3e2615",
+      "comment": "",
+      "command": "type",
+      "target": "id=upw",
+      "targets": [
+        ["id=upw", "id"],
+        ["name=password", "name"],
+        ["css=#upw", "css:finder"],
+        ["xpath=//input[@id='upw']", "xpath:attributes"],
+        ["xpath=//form[@id='SignOn']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "707da825-aadb-4b54-b9c2-2e458357feea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn_login > img",
+      "targets": [
+        ["css=.btn_login > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//form[@id='SignOn']/fieldset/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f2a3ec7-e74f-4f6d-95da-2e4e6f219ad6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3265}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7670565-d1a0-4200-9f00-5e8b33a0590c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b8b046f-d490-4c4b-91ce-fd2a75b365cd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57009850-ba3c-44f4-87ad-45818c76948d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "53011dab-be95-41b5-a0f9-635179289da0",
+    "name": "인터넷증명발급",
+    "commands": [{
+      "id": "ba06001b-8937-479e-b71d-b25403380054",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef18af9f-09d3-4242-ac22-191cfddd93cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e742d770-db73-47f3-ad17-6a9d6817d005",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.quickMenu li:nth-child(5) img",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "bf84df4a-06c3-4f15-b78a-790bf913697f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.quickMenu li:nth-child(5) img",
+      "targets": [
+        ["css=.quickMenu li:nth-child(5) img", "css:finder"],
+        ["xpath=//img[@alt='인터넷증명발급']", "xpath:img"],
+        ["xpath=//div[3]/ul/li[5]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3185",
+      "windowTimeout": 2000
+    }, {
+      "id": "8b523041-915f-42de-82b1-01c71fba10b6",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67152a26-8a9f-4c83-8a06-1de6527e6e49",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3185}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62fcc0cd-417e-4fe0-b831-4693d33d9a6c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9d7bc40-123a-4999-aac9-bc571808901b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=로그인",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "8035cbd0-cbe8-4dc6-ac29-ec129ab7c6e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=#mem td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='mem']/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login/login.asp')]", "xpath:href"],
+        ["xpath=//div/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "177afd95-e6bd-4724-8072-4651cbdfc42a",
+      "comment": "",
+      "command": "click",
+      "target": "name=as_email",
+      "targets": [
+        ["name=as_email", "name"],
+        ["css=table:nth-child(4) tr:nth-child(1) .textfield2", "css:finder"],
+        ["xpath=//input[@name='as_email']", "xpath:attributes"],
+        ["xpath=//form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f4b0479-7ba5-41d3-b63f-02e849419598",
+      "comment": "",
+      "command": "type",
+      "target": "name=as_email",
+      "targets": [
+        ["name=as_email", "name"],
+        ["css=table:nth-child(4) tr:nth-child(1) .textfield2", "css:finder"],
+        ["xpath=//input[@name='as_email']", "xpath:attributes"],
+        ["xpath=//form/table/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "096f3803-f7d9-45b7-b820-31eb02ed8744",
+      "comment": "",
+      "command": "type",
+      "target": "name=as_pass",
+      "targets": [
+        ["name=as_pass", "name"],
+        ["css=tr:nth-child(2) > td > .textfield2", "css:finder"],
+        ["xpath=//input[@name='as_pass']", "xpath:attributes"],
+        ["xpath=//form/table/tbody/tr[2]/td/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "1b17d502-e845-4edd-a35c-02bb5ccccd36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=회원로그인",
+      "targets": [
+        ["linkText=회원로그인", "linkText"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[@onclick='onSelect_in2()']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//tr[3]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'회원로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e703591b-f274-4512-bcc3-493d9f22b658",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3185}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c92c2a1-6846-4751-809c-e9116ca7ad3c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9478f96f-3b7f-4b28-b983-bc001025a9a5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f0ad435-baf7-4650-bf4a-442ddff93ab5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "411ba192-67c5-4c53-8df7-3e071b450ae7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7657b6cf-42a3-4680-aef2-8601813735c8", "53011dab-be95-41b5-a0f9-635179289da0"]
+  }],
+  "urls": ["http://www.cue.ac.kr/"],
+  "plugins": []
+}

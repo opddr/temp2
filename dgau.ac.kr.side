@@ -1,0 +1,221 @@
+{
+  "id": "f87d9e71-e179-41b5-bafd-f12dba676b7d",
+  "version": "2.0",
+  "name": "dgau.ac.kr",
+  "url": "http://dgau.ac.kr",
+  "tests": [{
+    "id": "a6826dc7-05dd-4262-9fbc-92b035cd7251",
+    "name": "로그인",
+    "commands": [{
+      "id": "19448154-437a-416e-9f7f-ca86af7ca2f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "825436cb-930e-43b1-a233-a89332071d73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da5ea1c8-3ef8-4ac5-907e-bcca2371aa64",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(3) img:nth-child(1)",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "c7cf559b-6700-4b29-956d-9cc8359a136e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(3) img:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(3) img:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='로그온']", "xpath:img"],
+        ["xpath=//div[@id='top_menu']/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[3]/a/img", "xpath:idRelative"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e327c5a-ba5f-4d35-a935-ddf75924b3da",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtLogonID",
+      "targets": [
+        ["name=txtLogonID", "name"],
+        ["css=tr:nth-child(1) > td > .text1", "css:finder"],
+        ["xpath=//input[@name='txtLogonID']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "90607050-75c2-4ef9-9cb0-0dcce5df052e",
+      "comment": "",
+      "command": "type",
+      "target": "name=txtLogonPW",
+      "targets": [
+        ["name=txtLogonPW", "name"],
+        ["css=tr:nth-child(3) > td > .text1", "css:finder"],
+        ["xpath=//input[@name='txtLogonPW']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4b5baf04-c4f1-4844-b101-58b1d56af25a",
+      "comment": "",
+      "command": "click",
+      "target": "id=image12",
+      "targets": [
+        ["id=image12", "id"],
+        ["name=image1", "name"],
+        ["css=#image12", "css:finder"],
+        ["xpath=//input[@id='image12']", "xpath:attributes"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a84bd9c-3347-4c73-8f5d-d63b66514581",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "813f2d08-7fe5-432d-bf39-32c7e6a68d6a",
+    "name": "통합정보시스템",
+    "commands": [{
+      "id": "cc16255b-00e9-4b72-be6e-bae5b5287276",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b492fd04-ee97-46a4-9420-f76196634f51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ab3ece3-5809-4316-9580-25ffaff4d001",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(2) img:nth-child(1)",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "7b1195dd-781c-4e9d-9fab-8d3fe00f43a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(2) img:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) td:nth-child(2) img:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='학생포탈시스템 바로가기']", "xpath:img"],
+        ["xpath=//div[@id='top_menu']/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/a/img", "xpath:idRelative"],
+        ["xpath=//td[2]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8390",
+      "windowTimeout": 2000
+    }, {
+      "id": "c9e4fc64-549e-4fd4-adfa-6830fad543b3",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c674d96-446e-4d74-9cd9-17c8cf1370b2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8390}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b008cdae-3905-4b29-aed1-f9db2b776852",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "f48cccee-ae40-4c88-9a8d-08740c5c9629",
+      "comment": "",
+      "command": "type",
+      "target": "id=textfield2",
+      "targets": [
+        ["id=textfield2", "id"],
+        ["name=txtUserID", "name"],
+        ["css=#textfield2", "css:finder"],
+        ["xpath=//input[@id='textfield2']", "xpath:attributes"],
+        ["xpath=//div[@id='bodyWrap']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr/td/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "6ef32e4d-fe82-4446-931d-4dedb95a81cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=textfield3",
+      "targets": [
+        ["id=textfield3", "id"],
+        ["name=txtPasswd", "name"],
+        ["css=#textfield3", "css:finder"],
+        ["xpath=//input[@id='textfield3']", "xpath:attributes"],
+        ["xpath=//div[@id='bodyWrap']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/label/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/label/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "47134956-e3c0-4d3e-bd64-d40e6854596a",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) img",
+      "targets": [
+        ["css=td:nth-child(3) img", "css:finder"],
+        ["xpath=//div[@id='bodyWrap']/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/table/tbody/tr/td/table/tbody/tr/td[3]/a/img", "xpath:idRelative"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37380ab8-f5e4-46f4-8563-a6a81f88ecb2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20bc4332-5e78-498b-a71b-3b687a39d96c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1a33cdf-2e3d-4247-b1cc-465430d17167",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "921d6bf7-838b-40d4-8b53-1cb64d6aa81b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6826dc7-05dd-4262-9fbc-92b035cd7251", "813f2d08-7fe5-432d-bf39-32c7e6a68d6a"]
+  }],
+  "urls": ["http://dgau.ac.kr/"],
+  "plugins": []
+}

@@ -1,0 +1,118 @@
+{
+  "id": "1c7484f5-5849-4af5-b955-e6380b0ca47b",
+  "version": "2.0",
+  "name": "ltu.ac.kr",
+  "url": "https://www.ltu.ac.kr",
+  "tests": [{
+    "id": "081acf81-3c7c-4244-aed2-94418f1c2387",
+    "name": "메인",
+    "commands": [{
+      "id": "2cec521e-9f2c-4e1e-8485-d1b4de035099",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e33952c7-09bd-435d-a4d2-47b5bac53d97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0f25f1c-8565-49f7-bd76-7d35194552d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login",
+      "targets": [
+        ["css=.login", "css:finder"],
+        ["xpath=//ul[@id='TopMenu']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './Member/Login.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d053af81-837e-4420-9ffc-c340d3ac920e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login_ID",
+      "targets": [
+        ["name=Login_ID", "name"],
+        ["css=.memberid", "css:finder"],
+        ["xpath=//input[@name='Login_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='Login_Div']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76b0b9f1-41d0-4ebc-81da-62267bcd5639",
+      "comment": "",
+      "command": "type",
+      "target": "name=Login_ID",
+      "targets": [
+        ["name=Login_ID", "name"],
+        ["css=.memberid", "css:finder"],
+        ["xpath=//input[@name='Login_ID']", "xpath:attributes"],
+        ["xpath=//div[@id='Login_Div']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "a3a973b7-7744-41e6-9b90-060270aea538",
+      "comment": "",
+      "command": "click",
+      "target": "name=Login_PASS",
+      "targets": [
+        ["name=Login_PASS", "name"],
+        ["css=.pw > .required", "css:finder"],
+        ["xpath=//input[@name='Login_PASS']", "xpath:attributes"],
+        ["xpath=//div[@id='Login_Div']/div/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7630c935-638b-4043-9d3b-8550ea63e440",
+      "comment": "",
+      "command": "type",
+      "target": "name=Login_PASS",
+      "targets": [
+        ["name=Login_PASS", "name"],
+        ["css=.pw > .required", "css:finder"],
+        ["xpath=//input[@name='Login_PASS']", "xpath:attributes"],
+        ["xpath=//div[@id='Login_Div']/div/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "285d0547-f659-43fc-9cd7-1874a0594755",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > input",
+      "targets": [
+        ["css=.btn > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='Login_Div']/div/div/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "793c9a59-79e5-4b5d-8e68-fdbb8c36b774",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2813b153-a68e-41ee-9ed2-a9ab4487cc21",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["081acf81-3c7c-4244-aed2-94418f1c2387"]
+  }],
+  "urls": ["https://www.ltu.ac.kr/"],
+  "plugins": []
+}

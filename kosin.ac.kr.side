@@ -1,0 +1,100 @@
+{
+  "id": "52f96ab0-f9a5-4581-98ac-03d8382afe89",
+  "version": "2.0",
+  "name": "kosin.ac.kr",
+  "url": "http://kosin.ac.kr",
+  "tests": [{
+    "id": "a001927e-bd54-44f8-9be4-a8a7776562b7",
+    "name": "메인",
+    "commands": [{
+      "id": "23a33b76-3253-4113-8b20-423c2d661d8d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94a4e9a0-25e2-4f49-95f1-ff4bb95391c6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d840d07-b88f-4340-8914-a7f11549b678",
+      "comment": "",
+      "command": "click",
+      "target": "id=TextUserID",
+      "targets": [
+        ["id=TextUserID", "id"],
+        ["name=TextUserID", "name"],
+        ["css=#TextUserID", "css:finder"],
+        ["xpath=//input[@id='TextUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='login_from']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8faece27-f5c1-4d94-806b-800e10306912",
+      "comment": "",
+      "command": "type",
+      "target": "id=TextUserID",
+      "targets": [
+        ["id=TextUserID", "id"],
+        ["name=TextUserID", "name"],
+        ["css=#TextUserID", "css:finder"],
+        ["xpath=//input[@id='TextUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='login_from']/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "0d2614e6-2b0b-43f4-b33c-f79293169ce6",
+      "comment": "",
+      "command": "type",
+      "target": "id=TextPassword",
+      "targets": [
+        ["id=TextPassword", "id"],
+        ["name=TextPassword", "name"],
+        ["css=#TextPassword", "css:finder"],
+        ["xpath=//input[@id='TextPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='login_from']/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "db581188-d70c-485c-92fd-8df4e3fb6aa3",
+      "comment": "",
+      "command": "click",
+      "target": "id=LoginButton",
+      "targets": [
+        ["id=LoginButton", "id"],
+        ["name=LoginButton", "name"],
+        ["css=#LoginButton", "css:finder"],
+        ["xpath=//input[@id='LoginButton']", "xpath:attributes"],
+        ["xpath=//div[@id='login_from']/ul/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b0580e1-6b6f-4ae9-a785-d38a61dc7937",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cbe3cb5c-ceee-4a2d-9d1b-f1ed54c3f8f6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a001927e-bd54-44f8-9be4-a8a7776562b7"]
+  }],
+  "urls": ["http://kosin.ac.kr/"],
+  "plugins": []
+}

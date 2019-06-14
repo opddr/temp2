@@ -1,0 +1,120 @@
+{
+  "id": "ff50caf9-c9d2-4b23-a389-dcbd99f604b2",
+  "version": "2.0",
+  "name": "kaay.mil.kr",
+  "url": "http://kaay.mil.kr",
+  "tests": [{
+    "id": "a5516ef4-0b50-477f-91fa-789e7499055a",
+    "name": "도서관",
+    "commands": [{
+      "id": "8e3e6741-59e9-4092-8920-5c91b3db7412",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d1958e6-2ad4-4490-a652-8849efba12a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daf6b54b-d3f6-4e9f-b832-632cb8da0c7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21910970-0bfe-4ede-8d12-d45cfe87a3f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.r8",
+      "targets": [
+        ["css=.r8", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div[3]/div/table/tbody/tr[2]/td[4]/a/span", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42febf6e-f642-40e0-96a9-14fcb583bc38",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' 로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8855488e-d28b-4188-8700-b34e238035a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "df70a4b5-1cc4-40c8-9159-a3025dfde3b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "7be4d158-7b18-4333-9b0b-4ec9b3294ad1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "51ba2caa-295f-4d7b-9d91-d1f75708b40d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "214ffc86-9e88-4e5d-a808-18c2c3039da1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a5516ef4-0b50-477f-91fa-789e7499055a"]
+  }],
+  "urls": ["http://kaay.mil.kr/"],
+  "plugins": []
+}

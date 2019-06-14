@@ -1,0 +1,135 @@
+{
+  "id": "e470ac6a-06f3-4896-82eb-043ac5be6f71",
+  "version": "2.0",
+  "name": "smu.ac.kr",
+  "url": "http://www.smu.ac.kr",
+  "tests": [{
+    "id": "ae1a71bb-c15f-4687-b986-a266ddc2ea35",
+    "name": "메인",
+    "commands": [{
+      "id": "ef1c4287-cc4b-4c34-aca2-efa3cdb3b53e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4e99431-2818-485b-b505-222611f1a4ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d60cf13-86d3-4f62-8cb0-e7719f82403d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.login:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//body[@id='item_body']/header/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:loginPopupOpen();')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9990",
+      "windowTimeout": 2000
+    }, {
+      "id": "65bdb64b-920e-41fe-b1b5-4729a6981dba",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "045858a2-a78b-4917-863a-deab711c6baf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9990}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec3fd17c-f74e-44f7-8fbe-8ee214de0e1b",
+      "comment": "",
+      "command": "click",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02eb7097-8591-493f-b2f5-44ffb2b1d464",
+      "comment": "",
+      "command": "type",
+      "target": "name=uid",
+      "targets": [
+        ["name=uid", "name"],
+        ["css=.INPUT_TXT", "css:finder"],
+        ["xpath=//input[@name='uid']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "b0a73aa3-fb24-44a3-9b52-cb6437d0cda4",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=.input_pw", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "a65beff2-33cf-460b-b73b-5e2d1b936220",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bt_login2",
+      "targets": [
+        ["css=.bt_login2", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88a2c253-c048-4069-8666-682926ad7cf1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1cdeb4f-4b7f-4d27-9787-d573de51d334",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91dafd5a-7571-47f2-9daa-42ddfac59190",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ad577791-d34c-42e9-b7ce-d3bababb56b3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ae1a71bb-c15f-4687-b986-a266ddc2ea35"]
+  }],
+  "urls": ["http://www.smu.ac.kr/"],
+  "plugins": []
+}

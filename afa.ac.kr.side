@@ -1,0 +1,394 @@
+{
+  "id": "c57ffd1c-a402-457b-816b-3f7adb4bf390",
+  "version": "2.0",
+  "name": "afa.ac.kr",
+  "url": "http://afa.ac.kr",
+  "tests": [{
+    "id": "2da3dfa8-f5c8-4d1d-9878-a0692cfb4f5a",
+    "name": "도서관",
+    "commands": [{
+      "id": "974cc1b9-2996-4e08-8f41-425b14d4eeac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "773d5f36-b793-40ab-b673-4ab83e53e8d5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(3) > img",
+      "targets": [
+        ["css=a:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@alt='학적증명서']", "xpath:img"],
+        ["xpath=//div[@id='main_visual']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59163dc4-be71-49ef-a7d6-9b2d008686b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .bannerImg54358",
+      "targets": [
+        ["css=li:nth-child(1) .bannerImg54358", "css:finder"],
+        ["xpath=//img[@alt='공사 도서관']", "xpath:img"],
+        ["xpath=//div[@id='bannerViewDiv_54358']/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/div/ul/li/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win162",
+      "windowTimeout": 2000
+    }, {
+      "id": "981510d5-b19f-4793-9e57-c40d4697bacc",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0c822cf-322a-4d90-b56e-00830b11072b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win162}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "131796a1-4bed-488c-9afe-5426469f23c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.log > a", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='divGlobalMenu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' 로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa499068-43cf-4e32-8cde-e48e3b675a89",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//dd/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "0aa9d5ab-a5f3-4ca0-b3b8-faa0d2c0646b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10713354-80cd-4181-a50f-d25022387f2e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "e8c7d948-6bed-4ccf-bdbd-07d038b8f085",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitbutton",
+      "targets": [
+        ["id=submitbutton", "id"],
+        ["css=#submitbutton", "css:finder"],
+        ["xpath=//input[@id='submitbutton']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/fieldset/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ca64787-b7a6-4575-892d-c0db986f88ad",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "704615e6-2ea5-4154-833b-38987e3d081a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a49aa74-fc20-4666-9974-637d03e55385",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b4bd9583-7ed7-4a61-8568-6b5bb03dfc19",
+    "name": "학적증명서",
+    "commands": [{
+      "id": "2191f1ef-c987-40eb-a136-c59992868cba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a8a928d-1f93-4243-a7f8-bdd71877d0b9",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11e22af1-290b-44fb-9cb7-a8c989295e0e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85e8c449-d157-4ec2-b6eb-0e962577c331",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > img",
+      "targets": [
+        ["css=a:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@alt='학적증명서']", "xpath:img"],
+        ["xpath=//div[@id='main_visual']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2090",
+      "windowTimeout": 2000
+    }, {
+      "id": "355ccf5d-078d-49c8-9802-76ad4c5ecc57",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2090}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2916e1a0-62dd-44a3-adf7-417aa2a46d67",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > img",
+      "targets": [
+        ["css=a:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//header[@id='header']/div/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4f0810a-c65c-4b41-997b-2e170a45436d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#callLoginIdPwPopup > img",
+      "targets": [
+        ["css=#callLoginIdPwPopup > img", "css:finder"],
+        ["xpath=//img[@alt='ID/PW로그인']", "xpath:img"],
+        ["xpath=//a[@id='callLoginIdPwPopup']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "588944f9-22d9-461a-bc0c-83062f0f644a",
+      "comment": "",
+      "command": "click",
+      "target": "name=lSn",
+      "targets": [
+        ["name=lSn", "name"],
+        ["css=#loginPopup .ploginInpt > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='lSn']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPopup']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2b6737-e1b7-4a5e-8ec0-723a87a64331",
+      "comment": "",
+      "command": "type",
+      "target": "name=lSn",
+      "targets": [
+        ["name=lSn", "name"],
+        ["css=#loginPopup .ploginInpt > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='lSn']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPopup']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "819a8d61-b7d8-4fd8-8209-1a9872a62e0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=lPasswd",
+      "targets": [
+        ["name=lPasswd", "name"],
+        ["css=#loginPopup input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='lPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPopup']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00d08ee0-80ff-4162-aaf8-75fc0b4c91fb",
+      "comment": "",
+      "command": "type",
+      "target": "name=lPasswd",
+      "targets": [
+        ["name=lPasswd", "name"],
+        ["css=#loginPopup input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='lPasswd']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPopup']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "f60c0188-2901-464a-9ebb-c5bfb155fb01",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginIdPw",
+      "targets": [
+        ["id=loginIdPw", "id"],
+        ["css=#loginIdPw", "css:finder"],
+        ["xpath=//button[@id='loginIdPw']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPopup']/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e1b20f-c865-47f5-8816-a6b5825aec13",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2e09a0c-06f9-4734-9f2a-3f828c7d180b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a882a951-0c1e-4cba-829c-e077778f4cca",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7f090d6d-c24d-4644-9c38-3408e448036d",
+    "name": "총동창회",
+    "commands": [{
+      "id": "0c012a75-36b8-4150-992d-954bbf13bd76",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.kafaaa.or.kr/member/login.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1c15478-8f84-47d7-b222-18f311f09d98",
+      "comment": "",
+      "command": "click",
+      "target": "name=login_id",
+      "targets": [
+        ["name=login_id", "name"],
+        ["css=tr:nth-child(1) > td > .input_login", "css:finder"],
+        ["xpath=//input[@name='login_id']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2b890ef-cd48-42e1-b102-e946a1859c45",
+      "comment": "",
+      "command": "type",
+      "target": "name=login_id",
+      "targets": [
+        ["name=login_id", "name"],
+        ["css=tr:nth-child(1) > td > .input_login", "css:finder"],
+        ["xpath=//input[@name='login_id']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ceed40d5-f9aa-4f02-9e58-8c12443129fa",
+      "comment": "",
+      "command": "click",
+      "target": "name=login_pw",
+      "targets": [
+        ["name=login_pw", "name"],
+        ["css=tr:nth-child(2) .input_login", "css:finder"],
+        ["xpath=//input[@name='login_pw']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "934650a2-c118-431d-8250-b4e1943a232a",
+      "comment": "",
+      "command": "type",
+      "target": "name=login_pw",
+      "targets": [
+        ["name=login_pw", "name"],
+        ["css=tr:nth-child(2) .input_login", "css:finder"],
+        ["xpath=//input[@name='login_pw']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "465135e2-1788-4041-b924-340a5cc8008b",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) > input",
+      "targets": [
+        ["css=td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f39a0ff-025a-4654-a014-ac4593d765cb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c4253791-9ab3-4416-8a07-9b88e87f91e9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2da3dfa8-f5c8-4d1d-9878-a0692cfb4f5a"]
+  }],
+  "urls": ["http://www.afa.ac.kr/", "http://afa.ac.kr/"],
+  "plugins": []
+}

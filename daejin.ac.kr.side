@@ -1,0 +1,372 @@
+{
+  "id": "c3700d60-3f4a-4873-b0cc-d91e04426a17",
+  "version": "2.0",
+  "name": "daejin.ac.kr",
+  "url": "http://daejin.ac.kr",
+  "tests": [{
+    "id": "1944bc8b-ed35-4fdf-bf6d-5d910173059a",
+    "name": "main",
+    "commands": [{
+      "id": "ddabeb94-aa43-4358-9e44-442d92e0872d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc960990-8035-4117-963a-38d79f0c1e93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.set-login", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f56c00-d055-4e42-83b3-9c3de831ee1d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "0be8a1bb-dafb-492e-96b0-2959851c58f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login .t",
+      "targets": [
+        ["css=.login .t", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32367592-b4ec-49fc-8a84-ead225fa8bd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login:nth-child(2)",
+      "targets": [
+        ["css=.login:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16bfa0e6-dab4-4b08-88d6-5e8fa8e78ac0",
+      "comment": "",
+      "command": "click",
+      "target": "id=LOGIN_INPUT_ID",
+      "targets": [
+        ["id=LOGIN_INPUT_ID", "id"],
+        ["name=id", "name"],
+        ["css=#LOGIN_INPUT_ID", "css:finder"],
+        ["xpath=//input[@id='LOGIN_INPUT_ID']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "823ddee0-41c2-4755-88b6-c70766882832",
+      "comment": "",
+      "command": "type",
+      "target": "id=LOGIN_INPUT_ID",
+      "targets": [
+        ["id=LOGIN_INPUT_ID", "id"],
+        ["name=id", "name"],
+        ["css=#LOGIN_INPUT_ID", "css:finder"],
+        ["xpath=//input[@id='LOGIN_INPUT_ID']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "aaf8fe3a-1a84-4dcf-840a-c3e9d9b2e6a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login:nth-child(2)",
+      "targets": [
+        ["css=.login:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96113b98-ad33-480f-8b2b-4f57a41853d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=LOGIN_INPUT_PW",
+      "targets": [
+        ["id=LOGIN_INPUT_PW", "id"],
+        ["name=passwd", "name"],
+        ["css=#LOGIN_INPUT_PW", "css:finder"],
+        ["xpath=//input[@id='LOGIN_INPUT_PW']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e24607a-3745-4673-9ffa-5bd1c305c78c",
+      "comment": "",
+      "command": "type",
+      "target": "id=LOGIN_INPUT_PW",
+      "targets": [
+        ["id=LOGIN_INPUT_PW", "id"],
+        ["name=passwd", "name"],
+        ["css=#LOGIN_INPUT_PW", "css:finder"],
+        ["xpath=//input[@id='LOGIN_INPUT_PW']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5c680280-130c-4c50-a725-c32e0205a5df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submit",
+      "targets": [
+        ["css=.submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a1e9f08-cc6e-4f07-8468-826d73c37952",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5a97a4f0-a547-4569-96a8-8d9c66fec5b8",
+    "name": "웹메일",
+    "commands": [{
+      "id": "4b1e4730-c83e-4a4a-9886-22e06c68e467",
+      "comment": "",
+      "command": "open",
+      "target": "https://gsuite.daejin.ac.kr/gsuite/login.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c5fa5ea-f122-4302-b1e9-5a2d2e4e403d",
+      "comment": "",
+      "command": "type",
+      "target": "id=uid",
+      "targets": [
+        ["id=uid", "id"],
+        ["name=id", "name"],
+        ["css=#uid", "css:finder"],
+        ["xpath=//input[@id='uid']", "xpath:attributes"],
+        ["xpath=//div[@id='login_container']/div/div[2]/form/fieldset/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "61adf415-e4ab-460a-addf-f2ab659d40f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_container']/div/div[2]/form/fieldset/div[2]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f2a078-dc2b-48b9-abc5-8d5804bf2460",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_container']/div/div[2]/form/fieldset/div[2]/div/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "8b88aa8a-33df-48a4-9d04-b30c24af2346",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=로그인",
+      "targets": [
+        ["linkText=로그인", "linkText"],
+        ["css=.login_btn", "css:finder"],
+        ["xpath=//a[contains(text(),'로그인')]", "xpath:link"],
+        ["xpath=//div[@id='login_container']/div/div[2]/form/fieldset/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:login()')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'로그인')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67774381-ebb4-445f-90b9-f1671b61245f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4b76f2e2-e44e-43c4-a5e8-ce237ef26a8f",
+    "name": "e-learning",
+    "commands": [{
+      "id": "5cfef1c8-e06c-451a-a6e3-5620e80f7508",
+      "comment": "",
+      "command": "open",
+      "target": "http://e-learning.daejin.ac.kr/ilos/lo/login_sso.acl",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a78a055f-84e4-4549-bbe9-66bc7efed9c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_id",
+      "targets": [
+        ["id=usr_id", "id"],
+        ["name=usr_id", "name"],
+        ["css=#usr_id", "css:finder"],
+        ["xpath=//input[@id='usr_id']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "6f6e17a3-a772-49f6-ad6b-fcc0e7128b51",
+      "comment": "",
+      "command": "type",
+      "target": "id=usr_pwd",
+      "targets": [
+        ["id=usr_pwd", "id"],
+        ["name=usr_pwd", "name"],
+        ["css=#usr_pwd", "css:finder"],
+        ["xpath=//input[@id='usr_pwd']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//fieldset/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "4ef0bdd8-69ba-41c5-ae92-8d670fbe58ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_btn",
+      "targets": [
+        ["id=login_btn", "id"],
+        ["css=#login_btn", "css:finder"],
+        ["xpath=//div[@id='login_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='myform']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4114d59a-546c-47fe-9506-453dd117d683",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "29a6d945-ea4b-4f04-a648-7484526bf85b",
+    "name": "도서관",
+    "commands": [{
+      "id": "f1ce94a6-7e99-48aa-ad95-dfd0186abd49",
+      "comment": "",
+      "command": "open",
+      "target": "http://library.daejin.ac.kr/dlsearch/TGUI/Theme/Daejin/index.asp?sso=ok",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9757b4d-43a6-4e05-b80c-58f6c2d9031d",
+      "comment": "",
+      "command": "click",
+      "target": "name=ID",
+      "targets": [
+        ["name=ID", "name"],
+        ["css=table:nth-child(3) .textbox_1", "css:finder"],
+        ["xpath=//input[@name='ID']", "xpath:attributes"],
+        ["xpath=//form[@id='form2']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3337bea1-2ea2-45ff-816a-d8c4e660b3da",
+      "comment": "",
+      "command": "type",
+      "target": "name=ID",
+      "targets": [
+        ["name=ID", "name"],
+        ["css=table:nth-child(3) .textbox_1", "css:finder"],
+        ["xpath=//input[@name='ID']", "xpath:attributes"],
+        ["xpath=//form[@id='form2']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "ed86eae5-306f-42a2-b18c-8b2eadd622f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=table:nth-child(4) .textbox_1", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//form[@id='form2']/table[2]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c4f9226-325d-43e1-ac30-9b6c66d6afc3",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=table:nth-child(4) .textbox_1", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//form[@id='form2']/table[2]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "15bb219c-2989-453a-970a-a300852e85c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=image3",
+      "targets": [
+        ["id=image3", "id"],
+        ["name=image3", "name"],
+        ["css=#image3", "css:finder"],
+        ["xpath=//input[@id='image3']", "xpath:attributes"],
+        ["xpath=//form[@id='form2']/table[4]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[4]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56feb720-d267-4b76-8889-075e727307d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3c200a1a-7093-4ef8-93a8-387cae9d5140",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1944bc8b-ed35-4fdf-bf6d-5d910173059a", "4b76f2e2-e44e-43c4-a5e8-ce237ef26a8f", "29a6d945-ea4b-4f04-a648-7484526bf85b", "5a97a4f0-a547-4569-96a8-8d9c66fec5b8"]
+  }],
+  "urls": ["http://daejin.ac.kr/"],
+  "plugins": []
+}

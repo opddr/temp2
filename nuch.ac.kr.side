@@ -1,0 +1,147 @@
+{
+  "id": "c84359f2-00a6-4211-ae93-666b4ff7b14c",
+  "version": "2.0",
+  "name": "nuch.ac.kr",
+  "url": "https://nuch.ac.kr",
+  "tests": [{
+    "id": "d6eca639-0a64-47f6-808c-fcf53280c1df",
+    "name": "포탈",
+    "commands": [{
+      "id": "50213311-cf56-4e8d-b2b7-f12bb161fa80",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b71ff74c-ae92-4795-a563-4722285a5fc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=대학 홈페이지",
+      "targets": [
+        ["linkText=대학 홈페이지", "linkText"],
+        ["css=.homepage_btn > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'대학 홈페이지')]", "xpath:link"],
+        ["xpath=//div[@id='contents']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/main.do')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'대학 홈페이지')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "daf4bc76-1378-429c-8c6e-4cc4d384b083",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list:nth-child(1) li:nth-child(1) > a",
+      "targets": [
+        ["linkText=NUCH포털", "linkText"],
+        ["css=.list:nth-child(1) li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'NUCH포털')])[3]", "xpath:link"],
+        ["xpath=//div[@id='aside']/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ep.nuch.ac.kr/luxor_portal/login/goCommonLogin.do')])[3]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6078",
+      "windowTimeout": 2000
+    }, {
+      "id": "c8fd987f-9cc0-4bb3-9ee6-3e66fa331954",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28c13bb1-aa7f-409e-8869-873d35e27ae4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6078}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ca08a7f-900e-4240-a502-cfa0740852dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31fa3243-e940-40a6-bdf5-b0ba96503519",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "52e91981-09c9-44fc-9356-030ff7e3e303",
+      "comment": "",
+      "command": "type",
+      "target": "id=pw",
+      "targets": [
+        ["id=pw", "id"],
+        ["css=#pw", "css:finder"],
+        ["xpath=//input[@id='pw']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input[2]", "xpath:idRelative"],
+        ["xpath=//p/input[2]", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "5d60ef84-fab2-4e1e-b67a-fdbdfeb632a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLOGIN",
+      "targets": [
+        ["id=btnLOGIN", "id"],
+        ["css=#btnLOGIN", "css:finder"],
+        ["xpath=//input[@id='btnLOGIN']", "xpath:attributes"],
+        ["xpath=//form[@id='loginform']/div/div/p/input[4]", "xpath:idRelative"],
+        ["xpath=//p/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e71e16e-7214-4ec0-b5ee-d744fa47b8df",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a3c7b8b-9399-4e2a-b328-45d0086c39d9",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "456e9bdb-9c7c-4a53-807a-3c00d4bfb8e4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38d7a202-b2d1-487e-a640-4339d3e729a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6eca639-0a64-47f6-808c-fcf53280c1df"]
+  }],
+  "urls": ["https://nuch.ac.kr/"],
+  "plugins": []
+}

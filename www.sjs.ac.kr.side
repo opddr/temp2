@@ -1,0 +1,154 @@
+{
+  "id": "a433a75b-0413-428f-91f6-d27ffa2d11a3",
+  "version": "2.0",
+  "name": "www.sjs.ac.kr",
+  "url": "http://www.sjs.ac.kr/",
+  "tests": [{
+    "id": "38689aea-2b56-4695-9e5d-64c7e4ebdefe",
+    "name": "메인",
+    "commands": [{
+      "id": "ef135f6f-6151-4ca1-b57b-cf3b5538513f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6724d374-f603-4f36-a3ec-a999d8147c47",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21fc2450-94b0-4c23-a500-5996d9771516",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > a > img",
+      "targets": [
+        ["css=li:nth-child(1) > a > img", "css:finder"],
+        ["xpath=//img[@alt='서울장신대학교 홈페이지 바로가기']", "xpath:img"],
+        ["xpath=//div[@id='main_wrap']/article[2]/div/ul/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9dfee13-09dd-4829-84f7-cc4ec30d59ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.utilMenu1 > li:nth-child(4) img",
+      "targets": [
+        ["css=.utilMenu1 > li:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='로그인']", "xpath:img"],
+        ["xpath=//div[@id='wrapper']/div[3]/div/div[2]/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d73c806-e03e-49ed-83bf-0a0a5fd79b93",
+      "comment": "",
+      "command": "click",
+      "target": "name=userid",
+      "targets": [
+        ["name=userid", "name"],
+        ["css=tr:nth-child(1) > td > .input", "css:finder"],
+        ["xpath=//input[@name='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1868702f-c2a6-46b8-b23e-25147f53818c",
+      "comment": "",
+      "command": "type",
+      "target": "name=userid",
+      "targets": [
+        ["name=userid", "name"],
+        ["css=tr:nth-child(1) > td > .input", "css:finder"],
+        ["xpath=//input[@name='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtset"
+    }, {
+      "id": "15a86359-cab8-45a3-abb7-abde273616fb",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e074524-0072-4ce1-be72-cba019b514f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=tr:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "11111111"
+    }, {
+      "id": "ad6341f1-1860-4594-8390-0ef0fba49535",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody:nth-child(5) > tr > td > table > tbody",
+      "targets": [
+        ["css=tbody:nth-child(5) > tr > td > table > tbody", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody", "xpath:idRelative"],
+        ["xpath=//td/table/tbody", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fcd0175-f233-4f50-a982-4d1bac6892b3",
+      "comment": "",
+      "command": "type",
+      "target": "name=userid",
+      "targets": [
+        ["name=userid", "name"],
+        ["css=tr:nth-child(1) > td > .input", "css:finder"],
+        ["xpath=//input[@name='userid']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "testtest"
+    }, {
+      "id": "029a8fe0-db6c-4469-882a-6e5c2458e44f",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='image']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/div/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b4dc978-7d4d-4447-bb9e-072b76045e6b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e9cc2da8-89f3-44a4-95ed-46a6e150d1f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38689aea-2b56-4695-9e5d-64c7e4ebdefe"]
+  }],
+  "urls": ["http://www.sjs.ac.kr/", "http://sjs.ac.kr/"],
+  "plugins": []
+}
